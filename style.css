@@ -1,0 +1,32 @@
+body {
+  background-image: url('./img/build_more_space_needles.png');
+  background-size: 40%;
+}
+
+#main {
+  width: 800px;
+  margin: auto;
+  padding: 1em;
+  margin-top: 2em;
+  border: solid black 1px;
+  background-color: white;
+  font-family: monospace;
+}
+
+#main h1 {
+  text-align: center;
+}
+
+img {
+  max-width: 95%;
+  margin: 1em;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  margin: auto;
+  max-width: 60%;
+}
