@@ -5,12 +5,14 @@ body {
 
 #main {
   width: 800px;
+  min-height: 80vh;
   margin: auto;
   padding: 1em;
-  margin-top: 2em;
+  margin-top: 4em;
   border: solid black 1px;
   background-color: white;
   font-family: monospace;
+  position: relative;
 }
 
 #main h1 {
@@ -29,4 +31,29 @@ img {
 .logo img {
   margin: auto;
   max-width: 60%;
+}
+
+.tournament-nav-button {
+  position: absolute;
+  top: -43px;
+  left: -1px;
+  background-color: white;
+  min-height: 45px;
+  border-radius: 6px 6px 0 0;
+
+  button {
+    font-family: monospace;
+    padding: 1em;
+    cursor: pointer;
+    border-width: 1px 1px 0;
+    background-color: white;
+    border-radius: 6px 6px 0 0;
+    min-width: 15em;
+    max-height: 43px;
+
+    &:hover {
+      background-color: #f2f2f2;
+    }
+  }
+
 }
