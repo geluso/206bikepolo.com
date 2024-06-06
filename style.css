@@ -33,7 +33,7 @@ img {
   max-width: 60%;
 }
 
-.tournament-nav-button {
+.tournament-nav-container {
   position: absolute;
   top: -43px;
   left: -1px;
@@ -56,4 +56,9 @@ img {
     }
   }
 
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
 }
