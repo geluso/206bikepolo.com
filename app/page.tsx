@@ -22,9 +22,9 @@ export default function Page() {
                         <ul>
                             <li>We play at Judkins Park <a href="https://maps.app.goo.gl/UxkWUMPTLsNPhg5WA">47.591401,-122.302915</a></li>
                             <ul>
-                            <li>Saturdays 2PM till dark</li>
-                            <li>Sundays 11AM till dark</li>
-                            <li>Wednesdays 6PM till dark</li>
+                                <li>Saturdays 2PM till dark</li>
+                                <li>Sundays 11AM till dark</li>
+                                <li>Wednesdays 6PM till dark</li>
                             </ul>
                             <li>Come out June 1st and 2nd 2024 for the <a
                                 href="https://bikepolocalendar.com/event/nah-cascadia-qualifier">Cascadia Qualifier</a></li>

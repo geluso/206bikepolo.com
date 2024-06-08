@@ -3,3 +3,4 @@ node_modules/
 .next/
 .swc/
 .*.env
+next-env.d.ts
