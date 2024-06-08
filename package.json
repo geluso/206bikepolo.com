@@ -1,0 +1,36 @@
+{
+  "name": "206bikepolo.com",
+  "version": "1.0.0",
+  "description": "Simple website for Seattle Bike Polo living at [206bikepolo.com](http://206bikepolo.com)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geluso/206bikepolo.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geluso/206bikepolo.com/issues"
+  },
+  "homepage": "https://github.com/geluso/206bikepolo.com#readme",
+  "dependencies": {
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.2",
+    "@types/react": "18.3.3",
+    "typescript": "^5.4.5"
+  }
+}
