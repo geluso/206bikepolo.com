@@ -19,8 +19,9 @@ export default function Home() {
         <li>Come out June 1st and 2nd 2024 for the <a
             href="https://bikepolocalendar.com/event/nah-cascadia-qualifier">Cascadia Qualifier</a></li>
         <li><a href="https://www.instagram.com/206bikepolo/">@206bikepolo</a> on Instagram</li>
-        <li>Talk to everyone on <a
-            href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2im5od2df-FlTl~Oc9YVC8feu95iVM8g">Slack</a>
+        <li>
+          Talk to everyone on
+          <a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2im5od2df-FlTl~Oc9YVC8feu95iVM8g">Slack</a>
         </li>
         <li>
           Rules? Don't be a dick. Also <a href="/docs/2022-nah-ruleset.pdf">official NAH rules</a> and the <a href="/docs/polo_bible.pdf">polo bible</a>.
