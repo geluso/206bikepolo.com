@@ -16,6 +16,11 @@ export default function Home() {
           <li>Sundays 11AM till dark</li>
           <li>Wednesdays 6PM till dark</li>
         </ul>
+        <li>Come out October 26th and 27th 2024 for the <a
+            href="https://bikepolocalendar.com/event/the-cascadia-triple-crown-emerald-city-open">Emerald City Open: Cascadia Triple Crown</a>
+            <ul><li>Register for ECO <a href="https://forms.gle/6z6ba3aCkqtqJS416">here</a></li></ul>
+        </li>
+        <li><a href="https://www.instagram.com/206bikepolo/">@206bikepolo</a> on Instagram</li>
         <li>Come out June 1st and 2nd 2024 for the <a
             href="https://bikepolocalendar.com/event/nah-cascadia-qualifier">Cascadia Qualifier</a></li>
         <li><a href="https://www.instagram.com/206bikepolo/">@206bikepolo</a> on Instagram</li>
