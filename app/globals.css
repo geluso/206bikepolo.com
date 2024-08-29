@@ -30,7 +30,7 @@ body {
   position: relative;
 }
 
-#main h1 {
+#main h1 .center {
   text-align: center;
 }
 
