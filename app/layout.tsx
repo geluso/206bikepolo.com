@@ -26,11 +26,11 @@ export default function RootLayout({
             <a href="/">
               <button>Home</button>
             </a>
-            <a href="/tournaments/2024-emerald-city-open-cascadia-triple-crown">
-              <button>2024 Emerald City Open 💎</button>
+            <a href="/tournaments">
+              <button>🏆 Tournaments</button>
             </a>
-            <a href="/tournaments/2024-cascadia-qualifier">
-              <button>2024 Cascadia Qualifier &#x2728;</button>
+            <a href="/history">
+              <button>⏳ History</button>
             </a>
           </div>
           <div>
