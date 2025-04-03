@@ -10,6 +10,12 @@ datasource db {
   directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
 }
 
+model RoyalRumbleTournamentState {
+  currentTag String
+  currentSeries String
+  currentRound String
+}
+
 model RoyalRumblePlayer {
   id String @id
   player String
