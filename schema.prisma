@@ -1,0 +1,51 @@
+// schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+}
+
+model RoyalRumblePlayer {
+  id String @id
+  player String
+  wrestlerName String
+
+  tag String // something to allow us to have different sets of data non destructively
+}
+
+model RoyalRumbleTeam {
+  id String @id
+  name String @default("")
+
+  series String // day1, day2, finals
+  
+  player1Id String
+  player2Id String
+  player3Id String
+}
+
+model RoyalRumbleGame {
+  id String @default(cuid()) @id
+
+  isComplete Boolean @default(false)
+
+  series String // day1, day2, finals
+  roundNumber Int // 1-5 rounds
+  gameNumber Int // 1-10 games per round
+
+  team1Id String
+  team2Id String
+
+  team1Player1Points Int @default(0)
+  team1Player2Points Int @default(0)
+  team1Player3Points Int @default(0)
+  
+  team2Player1Points Int @default(0)
+  team2Player2Points Int @default(0)
+  team2Player3Points Int @default(0)
+}

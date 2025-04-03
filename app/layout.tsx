@@ -26,6 +26,9 @@ export default function RootLayout({
             <a href="/">
               <button>Home</button>
             </a>
+            <a href="/rumble">
+              <button>🤼 Rumble</button>
+            </a>
             <a href="/tournaments">
               <button>🏆 Tournaments</button>
             </a>
