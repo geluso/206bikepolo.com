@@ -9,7 +9,7 @@ export default async function Page() {
   const currentTag = await getCurrentTag()
   const currentTagSettings = await getCurrentTagSettings()
   if (!currentTagSettings) {
-    return <div>Error: no current tag set.</div>>
+    return <div>Error: no current tag set.</div>
   }
   return <div>
     <h3>Manage Tournament State</h3>
