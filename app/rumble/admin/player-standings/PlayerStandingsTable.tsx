@@ -31,12 +31,12 @@ export function PlayerStandingsTable({ playerStandings }: { playerStandings: Pla
             <th>{playerStandings.playerWins[player.id] + playerStandings.playerTies[player.id] + playerStandings.playerLosses[player.id]}</th>
             <td className="p-1">{player.player}</td>
             <td className="p-1">{player.wrestlerName}</td>
-            <td>{playerStandings.playerWins[player.id]}</td>
-            <td>{playerStandings.playerTies[player.id]}</td>
-            <td>{playerStandings.playerLosses[player.id]}</td>
-            <td>{playerStandings.playerGoals[player.id]}</td>
-            <td>{playerStandings.playerPoints[player.id]}</td>
-            <td>{indexToABC(index)}</td>
+            <td className="text-center">{playerStandings.playerWins[player.id]}</td>
+            <td className="text-center">{playerStandings.playerTies[player.id]}</td>
+            <td className="text-center">{playerStandings.playerLosses[player.id]}</td>
+            <td className="text-center">{playerStandings.playerGoals[player.id]}</td>
+            <td className="text-center">{playerStandings.playerPoints[player.id]}</td>
+            <td className="text-center">{indexToABC(index)}</td>
           </tr>
         })}
       </tbody>
