@@ -4,9 +4,8 @@ import { ManageTournamentState } from "./ManageTournamentState";
 export default async function Page() {
   const tournamentState = await prisma.royalRumbleTournamentState.findFirst()
   console.log({tournamentState})
-  const currentTag = tournamentState?.currentTag ?? "live"
+  let currentTag = tournamentState?.currentTag ?? "live"
   const currentSeries = tournamentState?.currentSeries ?? "day1"
-  const currentRound = tournamentState?.currentRound ?? 1
 
   const tags = (await prisma.royalRumblePlayer.findMany({
     distinct: ['tag'],
@@ -15,9 +14,14 @@ export default async function Page() {
     }
   })).map(tag => tag.tag);
 
-  console.log({ currentTag, currentSeries, currentRound, tags })
+  if (!tags.includes(currentTag)) {
+    console.log(`reset current tag. was=${currentTag} now=${tags[0]}`)
+    currentTag = tags[0]
+  }
+
+  console.log({ currentTag, currentSeries, tags })
 
   return <div>
-    <ManageTournamentState tags={tags} currentTag={currentTag} currentSeries={currentSeries} currentRound={currentRound} />
+    <ManageTournamentState tags={tags} currentTag={currentTag} currentSeries={currentSeries} />
   </div>
 }

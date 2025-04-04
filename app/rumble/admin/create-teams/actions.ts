@@ -1,8 +1,14 @@
 "use server"
 
+import { PlayerStandings } from "@/app/hooks/usePlayerStandings";
 import prisma from "@/lib/prisma";
 
-export async function createTeams(standings: PlayerStandings, series: string) {
+export async function createTeams(tag: string, series: string, standings: PlayerStandings) {
+  const isAlreadyCreated = await prisma.royalRumbleTeam.findFirst({ where: { tag, series }})
+  if (isAlreadyCreated) {
+    throw `Error createTeams already created [tag=${tag}, series=${series}]` 
+  }
+
   const sortedTeams = []
   for (let i = 0; i < 20; i++) {
     let teamNumber = i + 1
@@ -15,6 +21,7 @@ export async function createTeams(standings: PlayerStandings, series: string) {
     const player3Id = standings.sortedPlayers[i + 40].id
     const team = {
       name,
+      tag,
       series,
       player1Id,
       player2Id,
@@ -32,6 +39,7 @@ export async function createTeams(standings: PlayerStandings, series: string) {
     const team2Id = createdTeams[i + 1].id
 
     const game = await prisma.royalRumbleGame.create({ data: {
+      tag,
       series,
       gameNumber,
       team1Id,

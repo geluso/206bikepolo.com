@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { parse } from 'csv-parse';
 import prisma from '@/lib/prisma';
 import { RoyalRumblePlayer } from '@prisma/client';
+import { setTournamentState } from '@/app/rumble/admin/manage-tournament-state/actions';
 
 export async function POST(request: NextRequest) {
   const data = await request.formData();
@@ -47,6 +48,9 @@ export async function POST(request: NextRequest) {
           skipDuplicates: true
         });
         console.log({created})
+
+        await setTournamentState(tag, 'round1')
+
         resolve(NextResponse.json({ message: `${records.length} players created successfully.` }, { status: 200 }))
       } catch (error) {
         console.error('upload-players', error)

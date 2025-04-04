@@ -8,8 +8,11 @@ import TeamsTable from "./TeamsTable"
 import { PlayerStandings } from "@/app/hooks/usePlayerStandings"
 import GamesTable from "./GamesTables"
 
-export function CreateTeams({ players, playerStandings, playerIdsToPlayer }: {
-  players: RoyalRumblePlayer[], playerStandings: PlayerStandings, playerIdsToPlayer: Record<string, RoyalRumblePlayer>
+export function CreateTeams({ tag, players, playerStandings, playerIdsToPlayer }: {
+  tag: string,
+  players: RoyalRumblePlayer[],
+  playerStandings: PlayerStandings,
+  playerIdsToPlayer: Record<string, RoyalRumblePlayer>
 }) {
   const [series, setSeries] = useState('round1')
   const [teams, setTeams] = useState<RoyalRumbleTeam[]>([])
@@ -20,9 +23,14 @@ export function CreateTeams({ players, playerStandings, playerIdsToPlayer }: {
       console.error("Error can't create teams standings still loading.")
       return
     }
-    const { createdTeams, createdGames } = await createTeams(playerStandings, series)
-    setTeams(createdTeams)
-    setGames(createdGames)
+    try {
+      const { createdTeams, createdGames } = await createTeams(tag, series, playerStandings)
+      setTeams(createdTeams)
+      setGames(createdGames)
+    } catch (e) {
+      console.error('createTeams', e)
+      return
+    }
   }
 
   return <div>

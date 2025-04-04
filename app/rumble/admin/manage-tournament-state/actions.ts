@@ -2,14 +2,27 @@
 
 import prisma from "@/lib/prisma"
 
-export async function setTournamentState(tag: string, series: string, round: number) {
+export async function resetDefaultTournamentState() {
   try {
-    console.log('SAVE setTournamentState', tag, series, round)
+    await prisma.royalRumbleTournamentState.deleteMany()
+    await prisma.royalRumbleTournamentState.create({ data: {
+      currentTag: 'default',
+      currentSeries: 'day1',
+    }})
+  } catch (e) {
+    console.error("Error resetDefaultTournamentState", e)
+    return false
+  }
+  return true
+}
+
+export async function setTournamentState(tag: string, series: string) {
+  try {
+    console.log('SAVE setTournamentState', tag, series)
     await prisma.royalRumbleTournamentState.deleteMany()
     await prisma.royalRumbleTournamentState.create({ data: {
       currentTag: tag,
       currentSeries: series,
-      currentRound: round
     }})
   } catch (e) {
     console.error("Error setTournamentState", e)
