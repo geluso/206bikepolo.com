@@ -4,9 +4,11 @@ import prisma from '@/lib/prisma';
 import { RoyalRumblePlayer } from '@prisma/client';
 import { setTournamentState } from '@/app/rumble/admin/manage-tournament-state/actions';
 
+type ResponseBody = { error: string } | { message: string };
+
 export async function POST(request: NextRequest) {
   const data = await request.formData();
-  return await new Promise(async (resolve, reject) => {
+  return await new Promise<NextResponse<ResponseBody>>(async (resolve, reject) => {
     const file = data.get('file');
     const tag = data.get('tag') as string;
     console.log('Creating players with tag', tag)
