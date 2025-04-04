@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import getPlayers from "../util/getPlayers";
 import PlayersTable from "./PlayersTable";
 
