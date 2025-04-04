@@ -27,15 +27,7 @@ export function PlayerUploadForm() {
 
   return <div>
     <h2>Create New Player Set</h2>
-    <p>
-      Using a unique version tag allows us to swap datasets in the app non
-      destructively, like &ldquot;trial-test-friday-evening.&rdquot;
-    </p>
-
     <form onSubmit={handleSubmit} encType="multipart/form-data">
-      <p>
-        Version tag: <input type="text" name="tag" defaultValue={"hotdog" + Math.floor(Math.random() * 1000)} />
-      </p>
       <p>
         <input type="file" id="file" name="file" required />
       </p>

@@ -12,7 +12,7 @@ export default async function Page() {
   const playerStandings = await getPlayerStandings()
   const playerIdsToPlayer = await getPlayerIdsToPlayers()
   return <div>
-    <h1>Create Teams</h1>
+    <h3>Create Teams</h3>
     <CreateTeams tag={tag} players={players} playerStandings={playerStandings} playerIdsToPlayer={playerIdsToPlayer} />
   </div>
 }

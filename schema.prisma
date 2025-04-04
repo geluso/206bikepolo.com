@@ -12,7 +12,17 @@ datasource db {
 
 model RoyalRumbleTournamentState {
   currentTag String @id @default("default")
-  currentSeries String @default("round1")
+}
+
+model RoyalRumbleTagSettings {
+  id String @default(cuid()) @id
+  tag String @unique
+  isRound1Up Boolean @default(false)
+  isRound2Up Boolean @default(false)
+  isRound3Up Boolean @default(false)
+  isRound4Up Boolean @default(false)
+  isRound5Up Boolean @default(false)
+  isFinalTeamsUp Boolean @default(false)
 }
 
 model RoyalRumblePlayer {

@@ -2,7 +2,7 @@ import Link from "next/dist/client/link";
 
 export default function Page({ children }: { children: React.ReactNode }) {
   return <div>
-    <h1>💀 2025 Royal Rumble</h1>
+    <h1>🌹☠️ 2025 Rose City Royal Rumble 💀🥀</h1>
     <div>
       <Link href="/rumble/players">Players</Link> |{' '}
       <Link href="/rumble/rounds/1">Round 1</Link> |{' '}

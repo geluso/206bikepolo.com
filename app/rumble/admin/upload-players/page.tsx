@@ -3,7 +3,7 @@ import { PlayerUploadForm } from "./PlayerUploadForm";
 
 export default function Page() {
   return <div>
-    <h1>Upload Players</h1>
+    <h3>Upload Players</h3>
     <p>Upload player spreadsheet. The player spreadsheet follow this format:</p>
 
     <ul>

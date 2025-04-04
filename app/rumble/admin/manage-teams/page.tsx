@@ -21,20 +21,20 @@ export default async function Page() {
   const round5Teams = await getTeams("round5")
 
   return <div>
-    <h1>Manage Teams</h1>
-    <h2>Round 1 Teams</h2>
+    <h3>Manage Teams</h3>
+    <h4>Round 1 Teams</h4>
     <TeamsTable players={players} teams={round1Teams} playerIdsToPlayer={playerIdsToPlayer} />
 
-    <h2>Round 2 Teams</h2>
+    <h4>Round 2 Teams</h4>
     <TeamsTable players={players} teams={round2Teams} playerIdsToPlayer={playerIdsToPlayer} />
 
-    <h2>Round 3 Teams</h2>
+    <h4>Round 3 Teams</h4>
     <TeamsTable players={players} teams={round3Teams} playerIdsToPlayer={playerIdsToPlayer} />
 
-    <h2>Round 4 Teams</h2>
+    <h4>Round 4 Teams</h4>
     <TeamsTable players={players} teams={round4Teams} playerIdsToPlayer={playerIdsToPlayer} />
 
-    <h2>Round 5 Teams</h2>
+    <h4>Round 5 Teams</h4>
     <TeamsTable players={players} teams={round5Teams} playerIdsToPlayer={playerIdsToPlayer} />
   </div>
 }

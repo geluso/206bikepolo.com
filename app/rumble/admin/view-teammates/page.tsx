@@ -8,7 +8,7 @@ export default async function Page() {
   const playerStandings = await getPlayerStandings()
   const playerIdsToPlayers = await getPlayerIdsToPlayers()
   return <div>
-    <h1>View Teammates</h1>
+    <h3>View Teammates</h3>
     <ViewTeammatesTable playerStandings={playerStandings} playerIdsToPlayers={playerIdsToPlayers} />
   </div>
 }

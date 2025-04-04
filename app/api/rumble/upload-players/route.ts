@@ -2,11 +2,12 @@ import { NextRequest, NextResponse } from 'next/server';
 import * as XLSX from 'xlsx';
 import prisma from '@/lib/prisma';
 import { setTournamentState } from '@/app/rumble/admin/manage-tournament-state/actions';
+import getCurrentTag from '@/app/rumble/util/getCurrentTag';
 
 export async function POST(request: NextRequest) {
   const data = await request.formData();
   const file = data.get('file') as File;
-  const tag = data.get('tag') as string;
+  const tag = await getCurrentTag()
   console.log('Creating players with tag', tag)
 
   if (!file) {
@@ -43,7 +44,7 @@ export async function POST(request: NextRequest) {
       skipDuplicates: true
     });
 
-    await setTournamentState(tag, 'round1')
+    await setTournamentState(tag)
 
     return NextResponse.json({ message: `${records.length} players created successfully.` }, { status: 200 })
   } catch (error) {

@@ -6,7 +6,7 @@ import { PlayerStandingsTable } from "./PlayerStandingsTable";
 export default async function Page() {
   const playerStandings = await getPlayerStandings()
   return <div>
-    <h1>Player Standings</h1>
+    <h3>Player Standings</h3>
     <PlayerStandingsTable playerStandings={playerStandings} />
   </div>
 }
