@@ -41,10 +41,10 @@ export default function TeamsTable({ teams, playerIdsToPlayer }: {
           const player2Name = playerIdsToPlayer[team.player2Id]
           const player3Name = playerIdsToPlayer[team.player3Id]
           return <tr key={team.id}>
-            <th>{team.name}</th>
-            <th>{player1Name.player}</th>
-            <th>{player2Name.player}</th>
-            <th>{player3Name.player}</th>
+            <td className="pl-1">{team.name}</td>
+            <td className="pl-1">{player1Name.player}</td>
+            <td className="pl-1">{player2Name.player}</td>
+            <td className="pl-1">{player3Name.player}</td>
           </tr>
         })}
       </tbody>
