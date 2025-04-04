@@ -2,7 +2,7 @@
 export default function Page() {
   return <div>
     <div>Finals bracket</div>
-    <pre>
+    <pre>  
 +=============+
 |   Team 1  0 |-----+
 |   Team 2  0 |     |  +==============+
