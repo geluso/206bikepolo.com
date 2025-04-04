@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import getCurrentTag from "../../util/getCurrentTag"
 import getPlayerIdsToPlayers from "../../util/getPlayerIdsToPlayers"
 import getPlayers from "../../util/getPlayers"

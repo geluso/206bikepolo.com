@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import { getPlayerStandings } from "../../util/getPlayerStandings";
 import { PlayerStandingsTable } from "./PlayerStandingsTable";
 
