@@ -1,6 +1,8 @@
 "use client"
 
 import { RoyalRumbleGame } from "@prisma/client"
+import { useState } from "react"
+import { updateScore } from "./actions"
 
 function team1TotalPoints(game: RoyalRumbleGame) {
   const { team1Player1Points, team1Player2Points, team1Player3Points } = game
@@ -17,9 +19,25 @@ export default function GameScoreCard({game, playerIdsToPlayer, teamIdsToTeam}: 
   playerIdsToPlayer: any,
   teamIdsToTeam: any,
 }) {
+  const [currentGame, setCurrentGame] = useState(game)
 
-  const team1 = teamIdsToTeam[game.team1Id]
-  const team2 = teamIdsToTeam[game.team2Id]
+  function increment(game: RoyalRumbleGame, playerId: string) {
+    bonkScore(game, playerId, 1)
+  }
+
+  function decrement(game: RoyalRumbleGame, playerId: string) {
+    bonkScore(game, playerId, -1)
+  }
+
+  async function bonkScore(game: RoyalRumbleGame, playerId: string, delta: number) {
+    const updatedGame = await updateScore(game.id, playerId, delta)
+    if (updatedGame) {
+      setCurrentGame(updatedGame)
+    }
+  }
+
+  const team1 = teamIdsToTeam[currentGame.team1Id]
+  const team2 = teamIdsToTeam[currentGame.team2Id]
 
   const team1Player1 = playerIdsToPlayer[team1.player1Id].player
   const team1Player2 = playerIdsToPlayer[team1.player2Id].player
@@ -32,11 +50,11 @@ export default function GameScoreCard({game, playerIdsToPlayer, teamIdsToTeam}: 
   const {
     team1Player1Points, team1Player2Points, team1Player3Points,
     team2Player1Points, team2Player2Points, team2Player3Points
-  } = game
+  } = currentGame
 
   return <div>
-    <h4>{game.series} Game {game.gameNumber}</h4>
-    <table key={game.id} className="w-full" border={1}>
+    <h4>{currentGame.series} Game {currentGame.gameNumber}</h4>
+    <table key={currentGame.id} className="w-full" border={1}>
       <thead>
         <tr>
           <th></th>
@@ -51,40 +69,40 @@ export default function GameScoreCard({game, playerIdsToPlayer, teamIdsToTeam}: 
       </thead>
       <tbody>
           <tr>
-            <td className="text-center"><button>-</button></td>
+            <td className="text-center"><button onClick={() => decrement(currentGame, team1.player1Id)}>-</button></td>
             <td className="text-center">{team1Player1Points}</td>
-            <td className="text-center"><button>+</button></td>
+            <td className="text-center"><button onClick={() => increment(currentGame, team1.player1Id)}>+</button></td>
             <td className="pl-1">{team1Player1}</td>
             <td className="pl-1">{team2Player1}</td>
-            <td className="text-center"><button>-</button></td>
+            <td className="text-center"><button onClick={() => decrement(currentGame, team2.player1Id)}>-</button></td>
             <td className="text-center">{team2Player1Points}</td>
-            <td className="text-center"><button>+</button></td>
+            <td className="text-center"><button onClick={() => increment(currentGame, team2.player1Id)}>+</button></td>
           </tr>
           <tr>
-            <td className="text-center"><button>-</button></td>
+            <td className="text-center"><button onClick={() => decrement(currentGame, team1.player2Id)}>-</button></td>
             <td className="text-center">{team1Player2Points}</td>
-            <td className="text-center"><button>+</button></td>
+            <td className="text-center"><button onClick={() => increment(currentGame, team1.player2Id)}>+</button></td>
             <td className="pl-1">{team1Player2}</td>
             <td className="pl-1">{team2Player2}</td>
-            <td className="text-center"><button>-</button></td>
+            <td className="text-center"><button onClick={() => decrement(currentGame, team2.player2Id)}>-</button></td>
             <td className="text-center">{team2Player2Points}</td>
-            <td className="text-center"><button>+</button></td>
+            <td className="text-center"><button onClick={() => increment(currentGame, team2.player2Id)}>+</button></td>
           </tr>
           <tr>
-            <td className="text-center"><button>-</button></td>
+            <td className="text-center"><button onClick={() => decrement(currentGame, team1.player3Id)}>-</button></td>
             <td className="text-center">{team1Player3Points}</td>
-            <td className="text-center"><button>+</button></td>
+            <td className="text-center"><button onClick={() => increment(currentGame, team1.player3Id)}>+</button></td>
             <td className="pl-1">{team1Player3}</td>
             <td className="pl-1">{team2Player3}</td>
-            <td className="text-center"><button>-</button></td>
+            <td className="text-center"><button onClick={() => decrement(currentGame, team2.player3Id)}>-</button></td>
             <td className="text-center">{team2Player3Points}</td>
-            <td className="text-center"><button>+</button></td>
+            <td className="text-center"><button onClick={() => increment(currentGame, team2.player3Id)}>+</button></td>
           </tr>
           <tr>
-            <td className="text-center" colSpan={3}>{team1TotalPoints(game)}</td>
+            <td className="text-center" colSpan={3}>{team1TotalPoints(currentGame)}</td>
             <td></td>
             <td></td>
-            <td className="text-center" colSpan={3}>{team2TotalPoints(game)}</td>
+            <td className="text-center" colSpan={3}>{team2TotalPoints(currentGame)}</td>
           </tr>
       </tbody>
     </table>
