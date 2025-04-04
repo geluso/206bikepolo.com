@@ -11,7 +11,7 @@ type ResponseBody = { error: string } | { message: string };
 export async function POST(request: NextRequest) {
   const data = await request.formData();
   return await new Promise<NextResponse<ResponseBody>>(async (resolve, reject) => {
-    const file = data.get('file');
+    const file = data.get('file') as File;
     const tag = data.get('tag') as string;
     console.log('Creating players with tag', tag)
 
@@ -24,7 +24,6 @@ export async function POST(request: NextRequest) {
       return resolve(NextResponse.json({ error: `Tag '${tag}' already exists. Choose a unique tag.` }, { status: 400 }));
     }
 
-    // @ts-ignore
     const text = await file.text();
     const records: RoyalRumblePlayer[] = [];
 
