@@ -1,7 +1,7 @@
 "use server"
 
-import { PlayerStandings } from "@/app/rumble/util/getPlayerStandings";
 import prisma from "@/lib/prisma";
+import { PlayerStandings } from "../../util/getPlayerStandings";
 
 export async function createTeams(tag: string, series: string, standings: PlayerStandings) {
   const isAlreadyCreated = await prisma.royalRumbleTeam.findFirst({ where: { tag, series }})

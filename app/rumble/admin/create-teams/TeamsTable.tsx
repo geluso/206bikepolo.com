@@ -2,7 +2,6 @@
 
 import { RoyalRumblePlayer, RoyalRumbleTeam } from "@prisma/client";
 import { PlayerDropdown } from "./PlayerDropdown";
-import { useState } from "react";
 
 function toCSV(teams: RoyalRumbleTeam[], playerIdsToPlayer: Record<string, RoyalRumblePlayer>) {
   let prefix = "data:text/csv;charset=utf-8,";

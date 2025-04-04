@@ -1,8 +1,8 @@
-import getPlayerIdsToPlayers from "@/app/rumble/util/getPlayerIdsToPlayers";
-import { CreateTeams } from "./CreateTeams";
-import { getPlayerStandings } from "@/app/rumble/util/getPlayerStandings";
-import getPlayers from "@/app/rumble/util/getPlayers";
-import getCurrentTag from "@/app/rumble/util/getCurrentTag";
+import getCurrentTag from "../../util/getCurrentTag"
+import getPlayerIdsToPlayers from "../../util/getPlayerIdsToPlayers"
+import getPlayers from "../../util/getPlayers"
+import { getPlayerStandings } from "../../util/getPlayerStandings"
+import { CreateTeams } from "./CreateTeams"
 
 export default async function Page() {
   const tag = await getCurrentTag()

@@ -5,8 +5,8 @@ import { PlayerStandingsTable } from "../player-standings/PlayerStandingsTable"
 import { createTeams } from "./actions"
 import { RoyalRumbleGame, RoyalRumblePlayer, RoyalRumbleTeam } from "@prisma/client"
 import TeamsTable from "./TeamsTable"
-import { PlayerStandings } from "@/app/rumble/util/getPlayerStandings"
 import GamesTable from "./GamesTables"
+import { PlayerStandings } from "../../util/getPlayerStandings"
 
 export function CreateTeams({ tag, players, playerStandings, playerIdsToPlayer }: {
   tag: string,

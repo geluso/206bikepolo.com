@@ -1,4 +1,4 @@
-import { getPlayerStandings } from "@/app/rumble/util/getPlayerStandings";
+import { getPlayerStandings } from "../../util/getPlayerStandings";
 import { PlayerStandingsTable } from "./PlayerStandingsTable";
 
 export default async function Page() {

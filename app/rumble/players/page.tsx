@@ -1,4 +1,4 @@
-import getPlayers from "@/app/rumble/util/getPlayers";
+import getPlayers from "../util/getPlayers";
 import PlayersTable from "./PlayersTable";
 
 export default async function Page() {
