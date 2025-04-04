@@ -1,22 +1,32 @@
 "use server"
 
 import prisma from "@/lib/prisma"
+import { RoyalRumblePlayer, RoyalRumbleTeam } from "@prisma/client"
 
-export async function getPlayerStandings() {
+export type PlayerStandings = {
+  playerWins: Record<string, number>
+  playerTies: Record<string, number>
+  playerLosses: Record<string, number>
+  playerGoals: Record<string, number>
+  playerPoints: Record<string, number>
+  sortedPlayers: RoyalRumblePlayer[]
+}
+
+export async function usePlayerStandings(): Promise<PlayerStandings> {
   const tournamentState = await prisma.royalRumbleTournamentState.findFirst()
   const tag = tournamentState?.currentTag ?? "live"
   const players = (await prisma.royalRumblePlayer.findMany({ where: { tag } }))
   const teams = (await prisma.royalRumbleTeam.findMany())
   const games = (await prisma.royalRumbleGame.findMany())
   
-  const teamIdToTeam = teams.reduce((accum, curr) => accum[curr.id] = curr, {})
+  const teamIdToTeam = teams.reduce((accum, curr) => accum[curr.id] = curr, {} as Record<string, RoyalRumbleTeam>)
   console.log(teamIdToTeam)
 
-  const playerWins = {}
-  const playerTies = {}
-  const playerLosses = {}
-  const playerGoals = {}
-  const playerPoints = {}
+  const playerWins: Record<string, number> = {}
+  const playerTies: Record<string, number> = {}
+  const playerLosses: Record<string, number> = {}
+  const playerGoals: Record<string, number> = {}
+  const playerPoints: Record<string, number> = {}
 
   players.forEach(player => {
     const wins = Math.ceil(Math.random() * 5)

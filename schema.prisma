@@ -26,7 +26,7 @@ model RoyalRumblePlayer {
 }
 
 model RoyalRumbleTeam {
-  id String @id
+  id String @default(cuid()) @id
   name String @default("")
 
   series String // day1, day2, finals

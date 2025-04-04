@@ -1,13 +1,45 @@
 "use client"
 
-import { PlayerStandings } from "../player-standings/PlayerStandings"
+import { useEffect, useState } from "react"
+import { PlayerStandings, usePlayerStandings } from "../player-standings/actions"
+import { PlayerStandingsTable } from "../player-standings/PlayerStandingsTable"
+import { createTeams } from "./actions"
+import { RoyalRumbleTeam } from "@prisma/client"
+import TeamsTable from "./TeamsTable"
 
 export function CreateTeams() {
+  const [standings, setStandings] = useState<PlayerStandings | null>(null)
+  const [teams, setTeams] = useState<RoyalRumbleTeam[]>([])
+
+  useEffect(() => {
+    async function getStandings() {
+      const gotStandings = await usePlayerStandings()
+      console.log({gotStandings})
+      setStandings(gotStandings)
+    }
+
+    getStandings()
+  }, [])
+
+  async function handleCreateTeams() {
+    if (!standings) {
+      console.error("Error can't create teams standings still loading.")
+      return
+    }
+    const gotTeams = await createTeams(standings)
+    setTeams(gotTeams)
+  }
+
   return <div>
     <p>
-      <button>Create Teams</button>
+      <button disabled={!standings} onClick={handleCreateTeams}>Create Teams</button>
     </p>
 
-    <PlayerStandings />
+    <TeamsTable teams={teams} />
+
+
+    <h2>Player Standings</h2>
+    {!standings && <div>Loading...</div>}
+    {standings && <PlayerStandingsTable standings={standings} />}
   </div>
 }
