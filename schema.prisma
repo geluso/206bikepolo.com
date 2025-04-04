@@ -17,13 +17,12 @@ model RoyalRumbleTournamentState {
 }
 
 model RoyalRumblePlayer {
+  id String @default(cuid()) @id
+
   tag String // something to allow us to have different sets of data non destructively
-  id String
+  spreadsheetPlayerId String
   player String
   wrestlerName String
-
-
-  @@id([tag, id])
 }
 
 model RoyalRumbleTeam {

@@ -6,6 +6,7 @@ export default async function Page() {
   if (!tag) {
     tag = 'live'
   }
+  console.log('using tag', tag)
   const players = await prisma.royalRumblePlayer.findMany({ where: { tag: tag }})
   return <div>
     <p>Welcome to the Royal Rumble!!</p>
@@ -13,7 +14,6 @@ export default async function Page() {
     <table border={1}>
       <thead>
         <tr>
-          <th>ID</th>
           <th>Player</th>
           <th>Wrestler Name</th>
         </tr>
@@ -21,7 +21,6 @@ export default async function Page() {
       <tbody>
         {players.map(player => {
           return <tr key={player.tag + player.id}>
-            <td className="p-1">{player.id}</td>
             <td className="p-1">{player.player}</td>
             <td className="p-1">{player.wrestlerName}</td>
           </tr>

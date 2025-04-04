@@ -4,6 +4,7 @@ import prisma from "@/lib/prisma"
 
 export async function setTournamentState(tag: string, series: string, round: number) {
   try {
+    console.log('SAVE setTournamentState', tag, series, round)
     await prisma.royalRumbleTournamentState.deleteMany()
     await prisma.royalRumbleTournamentState.create({ data: {
       currentTag: tag,

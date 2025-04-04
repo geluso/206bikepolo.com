@@ -31,12 +31,12 @@ export async function POST(request: NextRequest) {
       }
 
       for (const record of output) {
-        const id = record['PID'].trim()
+        const spreadsheetPlayerId = record['PID'].trim()
         const player = record['PLAYER'].trim()
         const wrestlerName = record['WRESTLER NAME'].trim()
         records.push({
-          id,
           tag,
+          spreadsheetPlayerId,
           player,
           wrestlerName,
         });
@@ -49,7 +49,8 @@ export async function POST(request: NextRequest) {
         console.log({created})
         resolve(NextResponse.json({ message: `${records.length} players created successfully.` }, { status: 200 }))
       } catch (error) {
-        reject(NextResponse.json({ error: `Error creating players. ${error}` }, { status: 500 }));
+        console.error('upload-players', error)
+        resolve(NextResponse.json({ error: `Error creating players.` }, { status: 500 }));
       }
     });
   })

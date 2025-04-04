@@ -33,8 +33,8 @@ export function ManageTournamentState({ tags, currentTag, currentSeries, current
         Select Tag:
       </p>
       <select value={tag} onChange={(ev) => setTag(ev.currentTarget.value)}>
-        {tags.map(tag => {
-          return <option key={tag} value={tag}>{tag}</option>
+        {tags.map((tagOption) => {
+          return <option key={tagOption} value={tagOption}>{tagOption}</option>
         })}
       </select>
     </div>

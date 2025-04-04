@@ -9,6 +9,9 @@ export default function Page() {
       <li>
         <Link href="/rumble/admin/upload-players">Upload Players</Link>
       </li>
+      <li>
+        <Link href="/rumble/admin/player-standings">Player Standings</Link>
+      </li>
     </ul>
   </div>
 }
