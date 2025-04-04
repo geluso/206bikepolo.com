@@ -16,7 +16,7 @@ function toCSV(teams: RoyalRumbleTeam[]) {
 
 export default function TeamsTable({ teams, playerIdsToPlayer }: {
   teams: RoyalRumbleTeam[],
-  playersIdToPlayer: Record<string, RoyalRumblePlayer>
+  playerIdsToPlayer: Record<string, RoyalRumblePlayer>
 }) {
   if (!teams || teams.length === 0) {
     return null

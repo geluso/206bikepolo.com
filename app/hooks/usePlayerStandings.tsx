@@ -29,10 +29,10 @@ export async function usePlayerStandings(): Promise<PlayerStandings> {
   const playerPoints: Record<string, number> = {}
 
   players.forEach(player => {
-    const wins = Math.ceil(Math.random() * 5)
-    const losses = Math.ceil(Math.random() * (5 - wins))
-    const ties = Math.ceil(Math.random() * (5 - wins - losses))
-    const goals = Math.ceil(Math.random() * 15)
+    let wins = 0
+    let losses = 0
+    let ties = 0
+    let goals = 0
 
     playerWins[player.id] = wins
     playerTies[player.id] = ties

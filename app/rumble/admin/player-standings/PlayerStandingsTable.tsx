@@ -1,4 +1,4 @@
-import { PlayerStandings } from "./actions"
+import { PlayerStandings } from "@/app/hooks/usePlayerStandings"
 
 function indexToABC(index: number) {
   if (index < 20) {
@@ -9,7 +9,7 @@ function indexToABC(index: number) {
   return 'CCC'
 }
 
-export function PlayerStandingsTable({ standings }: { standings: PlayerStandings }) {
+export function PlayerStandingsTable({ playerStandings }: { playerStandings: PlayerStandings }) {
   return <div>
     <table className="w-full" border={1}>
       <thead>
@@ -26,17 +26,17 @@ export function PlayerStandingsTable({ standings }: { standings: PlayerStandings
         </tr>
       </thead>
       <tbody>
-        {standings.sortedPlayers.map((player, index) => {
+        {playerStandings.sortedPlayers.map((player, index) => {
           return <tr key={player.id}>
-            <th>{standings.playerWins[player.id] + standings.playerTies[player.id] + standings.playerLosses[player.id]}</th>
+            <th>{playerStandings.playerWins[player.id] + playerStandings.playerTies[player.id] + playerStandings.playerLosses[player.id]}</th>
             <td className="p-1">{player.player}</td>
             <td className="p-1">{player.wrestlerName}</td>
-            <th>{standings.playerWins[player.id]}</th>
-            <th>{standings.playerTies[player.id]}</th>
-            <th>{standings.playerLosses[player.id]}</th>
-            <th>{standings.playerGoals[player.id]}</th>
-            <th>{standings.playerPoints[player.id]}</th>
-            <th>{indexToABC(index)}</th>
+            <td>{playerStandings.playerWins[player.id]}</td>
+            <td>{playerStandings.playerTies[player.id]}</td>
+            <td>{playerStandings.playerLosses[player.id]}</td>
+            <td>{playerStandings.playerGoals[player.id]}</td>
+            <td>{playerStandings.playerPoints[player.id]}</td>
+            <td>{indexToABC(index)}</td>
           </tr>
         })}
       </tbody>

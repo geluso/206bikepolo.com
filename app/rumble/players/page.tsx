@@ -1,13 +1,7 @@
-import prisma from "@/lib/prisma";
+import usePlayers from "@/app/hooks/usePlayers";
 
 export default async function Page() {
-  const tournamentState = await prisma.royalRumbleTournamentState.findFirst()
-  let tag = tournamentState?.currentTag
-  if (!tag) {
-    tag = 'live'
-  }
-  console.log('using tag', tag)
-  const players = await prisma.royalRumblePlayer.findMany({ where: { tag: tag }})
+  const players = await usePlayers()
   return <div>
     <p>Welcome to the Royal Rumble!!</p>
 
