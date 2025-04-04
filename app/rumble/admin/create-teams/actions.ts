@@ -13,6 +13,7 @@ export async function createTeams(tag: string, series: string, standings: Player
   for (let i = 0; i < 20; i++) {
     let teamNumber = i + 1
     if (teamNumber < 10) {
+      // @ts-ignore
       teamNumber = '0' + teamNumber
     }
     const name = 'Team ' + teamNumber
