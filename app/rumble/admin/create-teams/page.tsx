@@ -1,4 +1,4 @@
-"user server"
+"use server"
 
 import usePlayerIdsToPlayers from "@/app/hooks/usePlayerIdsToPlayers";
 import { CreateTeams } from "./CreateTeams";
