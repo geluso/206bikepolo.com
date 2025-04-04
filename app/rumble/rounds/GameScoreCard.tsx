@@ -30,6 +30,7 @@ export default function GameScoreCard({game, playerIdsToPlayer, teamIdsToTeam}: 
   }
 
   async function bonkScore(game: RoyalRumbleGame, playerId: string, delta: number) {
+    console.log('bonk score', game.id, playerId, delta)
     const updatedGame = await updateScore(game.id, playerId, delta)
     if (updatedGame) {
       setCurrentGame(updatedGame)

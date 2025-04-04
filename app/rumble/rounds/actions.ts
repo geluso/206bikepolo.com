@@ -1,5 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-
 "use server"
 
 import prisma from "@/lib/prisma"
