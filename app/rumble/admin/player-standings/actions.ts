@@ -9,6 +9,9 @@ export async function getPlayerStandings() {
   const teams = (await prisma.royalRumbleTeam.findMany())
   const games = (await prisma.royalRumbleGame.findMany())
   
+  const teamIdToTeam = teams.reduce((accum, curr) => accum[curr.id] = curr, {})
+  console.log(teamIdToTeam)
+
   const playerWins = {}
   const playerTies = {}
   const playerLosses = {}

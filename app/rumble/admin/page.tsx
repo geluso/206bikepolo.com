@@ -12,6 +12,9 @@ export default function Page() {
       <li>
         <Link href="/rumble/admin/player-standings">Player Standings</Link>
       </li>
+      <li>
+        <Link href="/rumble/admin/create-teams">Create Teams</Link>
+      </li>
     </ul>
   </div>
 }

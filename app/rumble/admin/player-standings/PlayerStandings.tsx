@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { getPlayerStandings } from "./actions";
 
 function indexToABC(index: number) {
@@ -9,11 +10,20 @@ function indexToABC(index: number) {
   return 'CCC'
 }
 
-export async function PlayerStandings() {
-  const {
-    playerWins, playerTies, playerLosses, playerGoals, playerPoints,
-    sortedPlayers
-  } = await getPlayerStandings()
+export function PlayerStandings() {
+  const [playerStats, setPlayerStats] = useState({})
+  const [stateSortedPlayers, setSortedPlayers] = useState([])
+
+  useEffect(() => {
+    (async () => {
+      const {
+        playerWins, playerTies, playerLosses, playerGoals, playerPoints,
+        sortedPlayers
+      } = await getPlayerStandings()
+      setSortedPlayers(sortedPlayers)
+      setPlayerStats({ playerWins, playerTies, playerLosses, playerGoals, playerPoints })
+    })()
+  }, [])
   return <table border={1}>
     <thead>
       <tr>
@@ -29,16 +39,16 @@ export async function PlayerStandings() {
       </tr>
     </thead>
     <tbody>
-      {sortedPlayers.map((player, index) => {
+      {stateSortedPlayers.map((player, index) => {
         return <tr key={player.id}>
-          <th>{playerWins[player.id] + playerTies[player.id] + playerLosses[player.id]}</th>
+          <th>{playerStats.playerWins[player.id] + playerStats.playerTies[player.id] + playerStats.playerLosses[player.id]}</th>
           <td className="p-1">{player.player}</td>
           <td className="p-1">{player.wrestlerName}</td>
-          <th>{playerWins[player.id]}</th>
-          <th>{playerTies[player.id]}</th>
-          <th>{playerLosses[player.id]}</th>
-          <th>{playerGoals[player.id]}</th>
-          <th>{playerPoints[player.id]}</th>
+          <th>{playerStats.playerWins[player.id]}</th>
+          <th>{playerStats.playerTies[player.id]}</th>
+          <th>{playerStats.playerLosses[player.id]}</th>
+          <th>{playerStats.playerGoals[player.id]}</th>
+          <th>{playerStats.playerPoints[player.id]}</th>
           <th>{indexToABC(index)}</th>
         </tr>
       })}
