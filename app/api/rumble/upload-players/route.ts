@@ -22,6 +22,7 @@ export async function POST(request: NextRequest) {
       return resolve(NextResponse.json({ error: `Tag '${tag}' already exists. Choose a unique tag.` }, { status: 400 }));
     }
 
+    // @ts-ignore
     const text = await file.text();
     const records: RoyalRumblePlayer[] = [];
 
@@ -37,6 +38,7 @@ export async function POST(request: NextRequest) {
         const spreadsheetPlayerId = record['PID'].trim()
         const player = record['PLAYER'].trim()
         const wrestlerName = record['WRESTLER NAME'].trim()
+        // @ts-ignore
         records.push({
           tag,
           spreadsheetPlayerId,
