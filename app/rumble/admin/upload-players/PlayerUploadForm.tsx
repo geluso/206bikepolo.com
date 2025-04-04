@@ -37,7 +37,7 @@ export function PlayerUploadForm() {
         Version tag: <input type="text" name="tag" defaultValue={"hotdog" + Math.floor(Math.random() * 1000)} />
       </p>
       <p>
-        <input type="file" id="file" name="file" accept=".csv" required />
+        <input type="file" id="file" name="file" required />
       </p>
       <p>
         <button type="submit">Upload</button>

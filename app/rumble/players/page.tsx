@@ -1,7 +1,12 @@
 import prisma from "@/lib/prisma";
 
 export default async function Page() {
-  const players = await prisma.royalRumblePlayer.findMany()
+  const tournamentState = await prisma.royalRumbleTournamentState.findFirst()
+  let tag = tournamentState?.currentTag
+  if (!tag) {
+    tag = 'live'
+  }
+  const players = await prisma.royalRumblePlayer.findMany({ where: { tag: tag }})
   return <div>
     <p>Welcome to the Royal Rumble!!</p>
 
@@ -15,7 +20,7 @@ export default async function Page() {
       </thead>
       <tbody>
         {players.map(player => {
-          return <tr key={player.id}>
+          return <tr key={player.tag + player.id}>
             <td className="p-1">{player.id}</td>
             <td className="p-1">{player.player}</td>
             <td className="p-1">{player.wrestlerName}</td>

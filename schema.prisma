@@ -11,17 +11,19 @@ datasource db {
 }
 
 model RoyalRumbleTournamentState {
-  currentTag String
-  currentSeries String
-  currentRound String
+  currentTag String @id @default("live")
+  currentSeries String @default("day1")
+  currentRound Int @default(1)
 }
 
 model RoyalRumblePlayer {
-  id String @id
+  tag String // something to allow us to have different sets of data non destructively
+  id String
   player String
   wrestlerName String
 
-  tag String // something to allow us to have different sets of data non destructively
+
+  @@id([tag, id])
 }
 
 model RoyalRumbleTeam {

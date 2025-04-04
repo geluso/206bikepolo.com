@@ -7,6 +7,7 @@ export async function POST(request: NextRequest) {
   const data = await request.formData();
   const file = data.get('file');
   const tag = data.get('tag') as string;
+  console.log('Creating players with tag', tag)
 
   if (!file) {
     return NextResponse.json({ error: 'No file uploaded' }, { status: 400 });
@@ -41,10 +42,11 @@ export async function POST(request: NextRequest) {
         });
       }
       try {
-        await prisma.royalRumblePlayer.createMany({
+        const created = await prisma.royalRumblePlayer.createMany({
           data: records,
           skipDuplicates: true
         });
+        console.log({created})
         resolve(NextResponse.json({ message: `${records.length} players created successfully.` }, { status: 200 }))
       } catch (error) {
         reject(NextResponse.json({ error: `Error creating players. ${error}` }, { status: 500 }));
