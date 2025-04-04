@@ -45,7 +45,7 @@ export async function usePlayerStandings(): Promise<PlayerStandings> {
     console.log('GAME', game.series, game.gameNumber, game.team1Player1Points, game.team1Player2Points, game.team1Player3Points, game.team2Player1Points, game.team2Player2Points, game.team2Player3Points)
 
     const team1 = teamIdsToTeam[game.team1Id]
-    const team2 = teamIdsToTeam[game.team1Id]
+    const team2 = teamIdsToTeam[game.team2Id]
 
     const t1p1Id = team1.player1Id
     const t1p2Id = team1.player2Id
@@ -82,13 +82,13 @@ export async function usePlayerStandings(): Promise<PlayerStandings> {
       playerLosses[t1p2Id]++
       playerLosses[t1p3Id]++
     } else if (team1TotalScore === team2TotalScore) {
-      playerTies[t2p1Id]++
-      playerTies[t2p2Id]++
-      playerTies[t2p3Id]++
-
       playerTies[t1p1Id]++
       playerTies[t1p2Id]++
       playerTies[t1p3Id]++
+
+      playerTies[t2p1Id]++
+      playerTies[t2p2Id]++
+      playerTies[t2p3Id]++
     }
   })
 
