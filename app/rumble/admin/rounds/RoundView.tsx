@@ -1,6 +1,6 @@
-import getGames from "../util/getGames"
-import getPlayerIdsToPlayers from "../util/getPlayerIdsToPlayers"
-import getTeamIdsToTeams from "../util/getTeamIdsToTeams"
+import getGames from "../../util/getGames"
+import getPlayerIdsToPlayers from "../../util/getPlayerIdsToPlayers"
+import getTeamIdsToTeams from "../../util/getTeamIdsToTeams"
 import GameScoreCard from "./GameScoreCard"
 
 export default async function RoundView({displayName, series}: { displayName: string, series: string }) {

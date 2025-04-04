@@ -1,7 +1,7 @@
 export const revalidate = 0;
 
-import RoundView from "../RoundView"
+import PublicRoundView from "../PublicRoundView";
 
 export default async function Page() {
-  return <RoundView displayName="Round 1" series="round1" />
+  return <PublicRoundView displayName="Round 1" series="round1" />
 }

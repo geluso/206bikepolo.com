@@ -1,7 +1,7 @@
 "use server"
 
 import prisma from "@/lib/prisma"
-import getTeamIdsToTeams from "../util/getTeamIdsToTeams";
+import getTeamIdsToTeams from "../../util/getTeamIdsToTeams";
 
 export async function toggleComplete(gameId: string) {
   const game = await prisma.royalRumbleGame.findFirst({ where: { id: gameId } })
