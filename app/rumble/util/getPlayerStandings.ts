@@ -12,6 +12,7 @@ export type PlayerStandings = {
   playerGoals: Record<string, number>
   playerPoints: Record<string, number>
   sortedPlayers: RoyalRumblePlayer[]
+  playerTeammates: Record<string, string[]>
 }
 
 export async function getPlayerStandings(): Promise<PlayerStandings> {
@@ -30,6 +31,7 @@ export async function getPlayerStandings(): Promise<PlayerStandings> {
   const playerLosses: Record<string, number> = {}
   const playerGoals: Record<string, number> = {}
   const playerPoints: Record<string, number> = {}
+  const playerTeammates: Record<string, string[]> = {}
 
   // initialize all player counts as zero for easy math
   players.forEach(player => {
@@ -38,6 +40,7 @@ export async function getPlayerStandings(): Promise<PlayerStandings> {
     playerLosses[player.id] = 0
     playerGoals[player.id] = 0
     playerPoints[player.id] = 0
+    playerTeammates[player.id] = []
   })
 
   games.forEach(game => {
@@ -54,9 +57,28 @@ export async function getPlayerStandings(): Promise<PlayerStandings> {
     const t1p2Id = team1.player2Id
     const t1p3Id = team1.player3Id
 
+    playerTeammates[t1p1Id].push(t1p2Id)
+    playerTeammates[t1p1Id].push(t1p3Id)
+
+    playerTeammates[t1p2Id].push(t1p1Id)
+    playerTeammates[t1p2Id].push(t1p3Id)
+
+    playerTeammates[t1p3Id].push(t1p1Id)
+    playerTeammates[t1p3Id].push(t1p2Id)
+
     const t2p1Id = team2.player1Id
     const t2p2Id = team2.player2Id
     const t2p3Id = team2.player3Id
+
+    playerTeammates[t2p1Id].push(t2p2Id)
+    playerTeammates[t2p1Id].push(t2p3Id)
+
+    playerTeammates[t2p2Id].push(t2p1Id)
+    playerTeammates[t2p2Id].push(t2p3Id)
+
+    playerTeammates[t2p3Id].push(t2p1Id)
+    playerTeammates[t2p3Id].push(t2p2Id)
+
 
     playerGoals[t1p1Id] += game.team1Player1Points
     playerGoals[t1p2Id] += game.team1Player2Points
@@ -96,6 +118,8 @@ export async function getPlayerStandings(): Promise<PlayerStandings> {
   })
 
   players.forEach(player => {
+    playerTeammates[player.id].sort()
+
     let wins = playerWins[player.id]
     let ties = playerTies[player.id]
 
@@ -115,7 +139,8 @@ export async function getPlayerStandings(): Promise<PlayerStandings> {
 
   const standings: PlayerStandings = {
     playerWins, playerTies, playerLosses, playerGoals, playerPoints,
-    sortedPlayers
+    sortedPlayers,
+    playerTeammates
   }
   return standings
 }
