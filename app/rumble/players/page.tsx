@@ -11,7 +11,7 @@ export default async function Page() {
   return <div>
     <p>Welcome to the Royal Rumble!!</p>
 
-    <table border={1}>
+    <table className="w-full" border={1}>
       <thead>
         <tr>
           <th>Player</th>

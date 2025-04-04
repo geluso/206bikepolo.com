@@ -4,10 +4,10 @@ import { useEffect, useState } from "react"
 import { PlayerStandings, usePlayerStandings } from "../player-standings/actions"
 import { PlayerStandingsTable } from "../player-standings/PlayerStandingsTable"
 import { createTeams } from "./actions"
-import { RoyalRumbleTeam } from "@prisma/client"
+import { RoyalRumblePlayer, RoyalRumbleTeam } from "@prisma/client"
 import TeamsTable from "./TeamsTable"
 
-export function CreateTeams() {
+export function CreateTeams({ playerIdsToPlayer }: { playerIdsToPlayer: Record<string, RoyalRumblePlayer> }) {
   const [standings, setStandings] = useState<PlayerStandings | null>(null)
   const [teams, setTeams] = useState<RoyalRumbleTeam[]>([])
 
@@ -35,7 +35,7 @@ export function CreateTeams() {
       <button disabled={!standings} onClick={handleCreateTeams}>Create Teams</button>
     </p>
 
-    <TeamsTable teams={teams} />
+    <TeamsTable teams={teams} playerIdsToPlayer={playerIdsToPlayer} />
 
 
     <h2>Player Standings</h2>

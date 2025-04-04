@@ -11,7 +11,7 @@ function indexToABC(index: number) {
 
 export function PlayerStandingsTable({ standings }: { standings: PlayerStandings }) {
   return <div>
-    <table border={1}>
+    <table className="w-full" border={1}>
       <thead>
         <tr>
           <th>Games</th>
