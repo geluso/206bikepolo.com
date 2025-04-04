@@ -42,7 +42,7 @@ export default function Home() {
           Talk to everyone on <a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg">Slack</a>
         </li>
         <li>
-          Rules? Don't be a dick. Also <a href="/docs/2022-nah-ruleset.pdf">official NAH rules</a> and the <a href="/docs/polo_bible.pdf">polo bible</a>.
+          Rules? Don&apos;t be a dick. Also <a href="/docs/2022-nah-ruleset.pdf">official NAH rules</a> and the <a href="/docs/polo_bible.pdf">polo bible</a>.
         </li>
         <li>Edit this website on <a href="">GitHub</a>. FTP and GitHub access avaialble upon request.</li>
       </ul>

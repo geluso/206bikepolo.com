@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+
 "use server"
 
 import useTeamIdsToTeams from "@/app/hooks/useTeamIdsToTeams"

@@ -61,7 +61,7 @@ export default function GamesTable({ games, teams, playerIdsToPlayer }: {
       const team2Player2 = playerIdsToPlayer[team2.player2Id].player
       const team2Player3 = playerIdsToPlayer[team2.player3Id].player
 
-      return <div>
+      return <div key={game.id}>
         <h4>Game {game.gameNumber}</h4>
         <table key={game.id} className="w-full" border={1}>
           <thead>

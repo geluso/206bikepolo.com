@@ -29,7 +29,7 @@ export function PlayerUploadForm() {
     <h2>Create New Player Set</h2>
     <p>
       Using a unique version tag allows us to swap datasets in the app non
-      destructively, like "trial-test-friday-evening."
+      destructively, like &ldquot;trial-test-friday-evening.&rdquot;
     </p>
 
     <form onSubmit={handleSubmit} encType="multipart/form-data">
