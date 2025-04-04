@@ -3,7 +3,6 @@
 import { useState } from "react"
 import { createTag, setTournamentState } from "./actions"
 import { RoyalRumbleTagSettings } from "@prisma/client"
-import { saveCurrentTagSettings } from "../../util/getTags"
 
 export function ManageTournamentState({ tags, currentTag, currentTagSettings }: { tags: RoyalRumbleTagSettings[], currentTag: string, currentTagSettings: RoyalRumbleTagSettings }) {
   const [newTag, setNewTag] = useState('')
