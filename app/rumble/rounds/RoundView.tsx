@@ -8,7 +8,7 @@ export default async function RoundView({displayName, series}: { displayName: st
   const teamIdsToTeam = await useTeamIdsToTeams(series)
   const games = await useGames(series)
   return <div>
-    <h1>{displayName}</h1>
+    <h2>{displayName}</h2>
     {games.length === 0 && <p>Round not created yet.</p>}
     {games.length > 0 && games.map(game => {
       return <GameScoreCard key={game.id} game={game} playerIdsToPlayer={playerIdsToPlayer} teamIdsToTeam={teamIdsToTeam} />
