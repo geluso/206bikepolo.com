@@ -1,10 +1,10 @@
 "use server"
 
 import prisma from "@/lib/prisma"
-import useCurrentTag from "./useCurrentTag"
+import getCurrentTag from "./getCurrentTag"
 
-export default async function usePlayers() {
-  const tag = await useCurrentTag()
+export default async function getPlayers() {
+  const tag = await getCurrentTag()
   const players = await prisma.royalRumblePlayer.findMany({ where: { tag }})
   return players
 }

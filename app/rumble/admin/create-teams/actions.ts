@@ -1,6 +1,6 @@
 "use server"
 
-import { PlayerStandings } from "@/app/hooks/usePlayerStandings";
+import { PlayerStandings } from "@/app/rumble/util/getPlayerStandings";
 import prisma from "@/lib/prisma";
 
 export async function createTeams(tag: string, series: string, standings: PlayerStandings) {

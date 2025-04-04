@@ -1,6 +1,6 @@
 import prisma from "@/lib/prisma"
 
-export default async function useCurrentTag() {
+export default async function getCurrentTag() {
   const tournamentState = await prisma.royalRumbleTournamentState.findFirst()
   let tag = tournamentState?.currentTag
   if (!tag) {

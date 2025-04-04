@@ -1,4 +1,4 @@
-import { PlayerStandings } from "@/app/hooks/usePlayerStandings"
+import { PlayerStandings } from "@/app/rumble/util/getPlayerStandings"
 
 function indexToABC(index: number) {
   if (index < 20) {

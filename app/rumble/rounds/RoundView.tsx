@@ -1,12 +1,12 @@
-import useGames from "@/app/hooks/useGames"
-import usePlayerIdsToPlayers from "@/app/hooks/usePlayerIdsToPlayers"
-import useTeamIdsToTeams from "@/app/hooks/useTeamIdsToTeams"
+import getGames from "@/app/rumble/util/getGames"
+import getPlayerIdsToPlayers from "@/app/rumble/util/getPlayerIdsToPlayers"
+import getTeamIdsToTeams from "@/app/rumble/util/getTeamIdsToTeams"
 import GameScoreCard from "./GameScoreCard"
 
 export default async function RoundView({displayName, series}: { displayName: string, series: string }) {
-  const playerIdsToPlayer = await usePlayerIdsToPlayers()
-  const teamIdsToTeam = await useTeamIdsToTeams(series)
-  const games = await useGames(series)
+  const playerIdsToPlayer = await getPlayerIdsToPlayers()
+  const teamIdsToTeam = await getTeamIdsToTeams(series)
+  const games = await getGames(series)
   return <div>
     <h2>{displayName}</h2>
     {games.length === 0 && <p>Round not created yet.</p>}

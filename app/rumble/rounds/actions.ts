@@ -2,8 +2,8 @@
 
 "use server"
 
-import useTeamIdsToTeams from "@/app/hooks/useTeamIdsToTeams"
 import prisma from "@/lib/prisma"
+import getTeamIdsToTeams from "../util/getTeamIdsToTeams";
 
 export async function toggleComplete(gameId: string) {
   const game = await prisma.royalRumbleGame.findFirst({ where: { id: gameId } })
@@ -23,7 +23,7 @@ export async function updateScore(gameId: string, playerId: string, delta: numbe
   }
 
   const series = game?.series
-  const teamIdsToTeams = await useTeamIdsToTeams(series)
+  const teamIdsToTeams = await getTeamIdsToTeams(series)
   const team1 = teamIdsToTeams[game.team1Id]
   const team2 = teamIdsToTeams[game.team2Id]
 

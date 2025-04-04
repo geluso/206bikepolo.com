@@ -1,10 +1,10 @@
 "use server"
 
 import { RoyalRumbleTeam } from "@prisma/client";
-import useTeams from "./useTeams";
+import getTeams from "./getTeams";
 
-export default async function useTeamIdsToTeams(series: string) {
-  const teams = await useTeams(series)
+export default async function getTeamIdsToTeams(series: string) {
+  const teams = await getTeams(series)
   const teamIdsToTeam: Record<string, RoyalRumbleTeam> = {}
   teams.forEach(team => teamIdsToTeam[team.id] = team)
   return teamIdsToTeam
