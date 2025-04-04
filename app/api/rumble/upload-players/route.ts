@@ -6,29 +6,29 @@ import { setTournamentState } from '@/app/rumble/admin/manage-tournament-state/a
 
 export async function POST(request: NextRequest) {
   const data = await request.formData();
-  const file = data.get('file');
-  const tag = data.get('tag') as string;
-  console.log('Creating players with tag', tag)
+  return await new Promise(async (resolve, reject) => {
+    const file = data.get('file');
+    const tag = data.get('tag') as string;
+    console.log('Creating players with tag', tag)
 
-  if (!file) {
-    return NextResponse.json({ error: 'No file uploaded' }, { status: 400 });
-  }
+    if (!file) {
+      return resolve(NextResponse.json({ error: 'No file uploaded' }, { status: 400 }));
+    }
 
-  const playerWithTag = await prisma.royalRumblePlayer.findFirst({ where: { tag }})
-  if (playerWithTag) {
-    return NextResponse.json({ error: `Tag '${tag}' already exists. Choose a unique tag.` }, { status: 400 });
-  }
+    const playerWithTag = await prisma.royalRumblePlayer.findFirst({ where: { tag }})
+    if (playerWithTag) {
+      return resolve(NextResponse.json({ error: `Tag '${tag}' already exists. Choose a unique tag.` }, { status: 400 }));
+    }
 
-  const text = await file.text();
-  const records: RoyalRumblePlayer[] = [];
+    const text = await file.text();
+    const records: RoyalRumblePlayer[] = [];
 
-  return await new Promise((resolve, reject) => {
     parse(text, {
       columns: true,
       skip_empty_lines: true
     }, async (err, output) => {
       if (err) {
-        return NextResponse.json({ error: 'Error parsing CSV' }, { status: 500 });
+        return resolve(NextResponse.json({ error: 'Error parsing CSV' }, { status: 500 }));
       }
 
       for (const record of output) {
