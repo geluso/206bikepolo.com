@@ -11,12 +11,12 @@ export async function createTeams(tag: string, series: string, standings: Player
 
   const sortedTeams = []
   for (let i = 0; i < 20; i++) {
-    let teamNumber = i + 1
+    const teamNumber = i + 1
+    let twoDigitTeamNumber = '' + teamNumber
     if (teamNumber < 10) {
-      // @ts-ignore
-      teamNumber = '0' + teamNumber
+      twoDigitTeamNumber = '0' + teamNumber
     }
-    const name = 'Team ' + teamNumber
+    const name = 'Team ' + twoDigitTeamNumber
     const player1Id = standings.sortedPlayers[i].id
     const player2Id = standings.sortedPlayers[i + 20].id
     const player3Id = standings.sortedPlayers[i + 40].id
