@@ -45,7 +45,6 @@ export function ManageTournamentState({ tags, currentTag, currentSeries, current
       </p>
       <select value={series} onChange={(ev) => setSeries(ev.currentTarget.value)}>
         <option value={"day1"}>Day 1</option>
-        <option value={"day2"}>Day 2</option>
         <option value={"finals"}>Finals</option>
       </select>
     </div>
