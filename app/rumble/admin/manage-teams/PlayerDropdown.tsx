@@ -1,13 +1,20 @@
 "use client"
 
 import { RoyalRumblePlayer } from "@prisma/client";
-import { useState } from "react";
+import { ChangeEvent } from "react";
 
-export function PlayerDropdown({ player, players }: {
-  player: RoyalRumblePlayer, players: RoyalRumblePlayer[]
+export function PlayerDropdown({ currentPlayer, players, playerIdsToPlayer, onSet }: {
+  currentPlayer: RoyalRumblePlayer,
+  players: RoyalRumblePlayer[],
+  playerIdsToPlayer: Record<string, RoyalRumblePlayer>,
+  onSet: (player: RoyalRumblePlayer) => void
 }) {
-  const [currentPlayerId, setCurrentPlayer] = useState(player.id)
-  return <select value={currentPlayerId} onChange={(ev) => setCurrentPlayer(ev.currentTarget.value)}>
+  const handleSetPlayer = (ev: ChangeEvent<HTMLSelectElement>) => {
+    const player = playerIdsToPlayer[ev.currentTarget.value]
+    onSet(player)
+  }
+
+  return <select value={currentPlayer.id} onChange={handleSetPlayer}>
     {players.map(player => {
       return <option key={player.id} value={player.id}>{player.player}</option>
     })}

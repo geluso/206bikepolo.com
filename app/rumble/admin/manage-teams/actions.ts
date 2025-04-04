@@ -52,3 +52,9 @@ export async function createTeams(tag: string, series: string, standings: Player
 
   return { createdTeams, createdGames }
 }
+
+export async function saveTeam(teamId: string, player1Id: string, player2Id: string, player3Id: string) {
+  console.log('saveTeam', {teamId, player1Id, player2Id, player3Id})
+  const saved = await prisma.royalRumbleTeam.update({ where: { id: teamId }, data: { player1Id, player2Id, player3Id } })
+  return saved
+}

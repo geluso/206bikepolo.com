@@ -5,8 +5,7 @@ import getPlayerIdsToPlayers from "../../util/getPlayerIdsToPlayers"
 import getPlayers from "../../util/getPlayers"
 import { getPlayerStandings } from "../../util/getPlayerStandings"
 import getTeams from "../../util/getTeams";
-import { CreateTeams } from "./CreateTeams"
-import TeamsTable from "./TeamsTable";
+import EditableTeamsTable from "./EditableTeamsTable";
 
 export default async function Page() {
   const tag = await getCurrentTag()
@@ -23,18 +22,18 @@ export default async function Page() {
   return <div>
     <h3>Manage Teams</h3>
     <h4>Round 1 Teams</h4>
-    <TeamsTable players={players} teams={round1Teams} playerIdsToPlayer={playerIdsToPlayer} />
+    <EditableTeamsTable players={players} teams={round1Teams} playerIdsToPlayer={playerIdsToPlayer} playerStandings={playerStandings} />
 
     <h4>Round 2 Teams</h4>
-    <TeamsTable players={players} teams={round2Teams} playerIdsToPlayer={playerIdsToPlayer} />
+    <EditableTeamsTable players={players} teams={round2Teams} playerIdsToPlayer={playerIdsToPlayer} playerStandings={playerStandings} />
 
     <h4>Round 3 Teams</h4>
-    <TeamsTable players={players} teams={round3Teams} playerIdsToPlayer={playerIdsToPlayer} />
+    <EditableTeamsTable players={players} teams={round3Teams} playerIdsToPlayer={playerIdsToPlayer} playerStandings={playerStandings} />
 
     <h4>Round 4 Teams</h4>
-    <TeamsTable players={players} teams={round4Teams} playerIdsToPlayer={playerIdsToPlayer} />
+    <EditableTeamsTable players={players} teams={round4Teams} playerIdsToPlayer={playerIdsToPlayer} playerStandings={playerStandings} />
 
     <h4>Round 5 Teams</h4>
-    <TeamsTable players={players} teams={round5Teams} playerIdsToPlayer={playerIdsToPlayer} />
+    <EditableTeamsTable players={players} teams={round5Teams} playerIdsToPlayer={playerIdsToPlayer} playerStandings={playerStandings} />
   </div>
 }
