@@ -29,8 +29,26 @@ export async function POST(request: NextRequest) {
   const records: {tag: string, spreadsheetPlayerId: string, player: string, wrestlerName: string }[] = [];
   json.forEach(row => {
     const spreadsheetPlayerId = row['PID'].trim()
-    const player = row['PLAYER'].trim()
-    const wrestlerName = row['WRESTLER NAME'].trim()
+    let player = row['PLAYER'].trim()
+    let wrestlerName = row['WRESTLER NAME'].trim()
+
+    // Random hard-coded UTF-8 overrides
+    if (player === "Fred Marshall") {
+      wrestlerName = "Señor frog"
+    }
+
+    if (player === "Annika Garman") {
+      wrestlerName = "Whīnika the Champ"
+    }
+
+    if (wrestlerName === "The Relentless Magpie") {
+      player = "Mike O’Brien"
+    }
+
+    if (wrestlerName === "Sweaty D") {
+      player = "Diego Arévalo"
+    }
+
     records.push({
       tag,
       spreadsheetPlayerId,
