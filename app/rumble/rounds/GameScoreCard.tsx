@@ -2,6 +2,16 @@
 
 import { RoyalRumbleGame } from "@prisma/client"
 
+function team1TotalPoints(game: RoyalRumbleGame) {
+  const { team1Player1Points, team1Player2Points, team1Player3Points } = game
+  return team1Player1Points + team1Player2Points + team1Player3Points
+}
+
+function team2TotalPoints(game: RoyalRumbleGame) {
+  const { team2Player1Points, team2Player2Points, team2Player3Points } = game
+  return team2Player1Points + team2Player2Points + team2Player3Points
+}
+
 export default function GameScoreCard({game, playerIdsToPlayer, teamIdsToTeam}: {
   game: RoyalRumbleGame,
   playerIdsToPlayer: any,
@@ -41,40 +51,40 @@ export default function GameScoreCard({game, playerIdsToPlayer, teamIdsToTeam}: 
       </thead>
       <tbody>
           <tr>
-            <td><button>-</button></td>
-            <td>{team1Player1Points}</td>
-            <td><button>+</button></td>
+            <td className="text-center"><button>-</button></td>
+            <td className="text-center">{team1Player1Points}</td>
+            <td className="text-center"><button>+</button></td>
             <td className="pl-1">{team1Player1}</td>
             <td className="pl-1">{team2Player1}</td>
-            <td><button>-</button></td>
-            <td>{team2Player1Points}</td>
-            <td><button>+</button></td>
+            <td className="text-center"><button>-</button></td>
+            <td className="text-center">{team2Player1Points}</td>
+            <td className="text-center"><button>+</button></td>
           </tr>
           <tr>
-            <td><button>-</button></td>
-            <td>{team1Player2Points}</td>
-            <td><button>+</button></td>
+            <td className="text-center"><button>-</button></td>
+            <td className="text-center">{team1Player2Points}</td>
+            <td className="text-center"><button>+</button></td>
             <td className="pl-1">{team1Player2}</td>
             <td className="pl-1">{team2Player2}</td>
-            <td><button>-</button></td>
-            <td>{team2Player2Points}</td>
-            <td><button>+</button></td>
+            <td className="text-center"><button>-</button></td>
+            <td className="text-center">{team2Player2Points}</td>
+            <td className="text-center"><button>+</button></td>
           </tr>
           <tr>
-            <td><button>-</button></td>
-            <td>{team1Player3Points}</td>
-            <td><button>+</button></td>
+            <td className="text-center"><button>-</button></td>
+            <td className="text-center">{team1Player3Points}</td>
+            <td className="text-center"><button>+</button></td>
             <td className="pl-1">{team1Player3}</td>
             <td className="pl-1">{team2Player3}</td>
-            <td><button>-</button></td>
-            <td>{team2Player3Points}</td>
-            <td><button>+</button></td>
+            <td className="text-center"><button>-</button></td>
+            <td className="text-center">{team2Player3Points}</td>
+            <td className="text-center"><button>+</button></td>
           </tr>
           <tr>
-            <td>0</td>
+            <td className="text-center" colSpan={3}>{team1TotalPoints(game)}</td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td className="text-center" colSpan={3}>{team2TotalPoints(game)}</td>
           </tr>
       </tbody>
     </table>

@@ -5,6 +5,6 @@ import useCurrentTag from "./useCurrentTag"
 
 export default async function usePlayers() {
   const tag = await useCurrentTag()
-  const players = await prisma.royalRumblePlayer.findMany({ where: { tag: tag }})
+  const players = await prisma.royalRumblePlayer.findMany({ where: { tag }})
   return players
 }
