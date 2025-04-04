@@ -1,6 +1,8 @@
 "use client"
 
 import { RoyalRumblePlayer, RoyalRumbleTeam } from "@prisma/client";
+import { PlayerDropdown } from "./PlayerDropdown";
+import { useState } from "react";
 
 function toCSV(teams: RoyalRumbleTeam[], playerIdsToPlayer: Record<string, RoyalRumblePlayer>) {
   let prefix = "data:text/csv;charset=utf-8,";
@@ -18,14 +20,17 @@ function toCSV(teams: RoyalRumbleTeam[], playerIdsToPlayer: Record<string, Royal
   return encodedUri
 }
 
-export default function TeamsTable({ teams, playerIdsToPlayer }: {
+export default function TeamsTable({ players, teams, playerIdsToPlayer }: {
+  players: RoyalRumblePlayer[],
   teams: RoyalRumbleTeam[],
   playerIdsToPlayer: Record<string, RoyalRumblePlayer>
 }) {
   if (!teams || teams.length === 0) {
     return null
   }
+
   return <div>
+    <h3>Teams</h3>
     <table className="w-full" border={1}>
       <thead>
         <tr>
@@ -37,14 +42,20 @@ export default function TeamsTable({ teams, playerIdsToPlayer }: {
       </thead>
       <tbody>
         {teams.map(team => {
-          const player1Name = playerIdsToPlayer[team.player1Id]
-          const player2Name = playerIdsToPlayer[team.player2Id]
-          const player3Name = playerIdsToPlayer[team.player3Id]
+          const player1 = playerIdsToPlayer[team.player1Id]
+          const player2 = playerIdsToPlayer[team.player2Id]
+          const player3 = playerIdsToPlayer[team.player3Id]
           return <tr key={team.id}>
             <td className="pl-1">{team.name}</td>
-            <td className="pl-1">{player1Name.player}</td>
-            <td className="pl-1">{player2Name.player}</td>
-            <td className="pl-1">{player3Name.player}</td>
+            <td className="pl-1">
+              <PlayerDropdown player={player1} players={players} />
+            </td>
+            <td className="pl-1">
+              <PlayerDropdown player={player2} players={players} />
+            </td>
+            <td className="pl-1">
+              <PlayerDropdown player={player3} players={players} />
+            </td>
           </tr>
         })}
       </tbody>

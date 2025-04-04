@@ -41,8 +41,7 @@ model RoyalRumbleGame {
 
   isComplete Boolean @default(false)
 
-  series String // day1, day2, finals
-  roundNumber Int // 1-5 rounds
+  series String // day1, finals
   gameNumber Int // 1-10 games per round
 
   team1Id String

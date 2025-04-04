@@ -1,9 +1,8 @@
 "use server"
 
-import { PlayerStandings } from "../player-standings/actions";
 import prisma from "@/lib/prisma";
 
-export async function createTeams(standings: PlayerStandings, series="day1") {
+export async function createTeams(standings: PlayerStandings, series: string) {
   const sortedTeams = []
   for (let i = 0; i < 20; i++) {
     let teamNumber = i + 1
@@ -26,5 +25,21 @@ export async function createTeams(standings: PlayerStandings, series="day1") {
   }
 
   const createdTeams = await prisma.royalRumbleTeam.createManyAndReturn({ data: sortedTeams, skipDuplicates: true })
-  return createdTeams
+  const createdGames = []
+  for (let i = 0; i < 20; i += 2) {
+    const gameNumber = (i / 2) + 1
+    const team1Id = createdTeams[i].id
+    const team2Id = createdTeams[i + 1].id
+
+    const game = await prisma.royalRumbleGame.create({ data: {
+      series,
+      gameNumber,
+      team1Id,
+      team2Id
+    }})
+    console.log(game)
+    createdGames.push(game)
+  }
+
+  return { createdTeams, createdGames }
 }
