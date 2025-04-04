@@ -41,6 +41,9 @@ export async function usePlayerStandings(): Promise<PlayerStandings> {
   })
 
   games.forEach(game => {
+    if (!game.isComplete) {
+      return
+    }
     console.log('TEAMS', game.team1Id, game.team2Id)
     console.log('GAME', game.series, game.gameNumber, game.team1Player1Points, game.team1Player2Points, game.team1Player3Points, game.team2Player1Points, game.team2Player2Points, game.team2Player3Points)
 

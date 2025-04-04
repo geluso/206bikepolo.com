@@ -3,6 +3,17 @@
 import useTeamIdsToTeams from "@/app/hooks/useTeamIdsToTeams"
 import prisma from "@/lib/prisma"
 
+export async function toggleComplete(gameId: string) {
+  const game = await prisma.royalRumbleGame.findFirst({ where: { id: gameId } })
+  if (!game) {
+    return false;
+  }
+
+  let newIsComplete = !game.isComplete
+  const updated = await prisma.royalRumbleGame.update({ where: { id: gameId }, data: { isComplete: newIsComplete } })
+  return updated
+}
+
 export async function updateScore(gameId: string, playerId: string, delta: number) {
   const game = await prisma.royalRumbleGame.findFirst({ where: { id: gameId } })
   if (!game) {

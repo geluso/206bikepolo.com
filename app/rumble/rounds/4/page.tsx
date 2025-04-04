@@ -1,6 +1,5 @@
-export default function Page() {
-  return <div>
-    <h1>Round 4</h1>
-    <p>Round not created yet.</p>
-  </div>
+import RoundView from "../RoundView"
+
+export default async function Page() {
+  return <RoundView displayName="Round 5" series="round5" />
 }

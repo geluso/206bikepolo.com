@@ -2,7 +2,7 @@
 
 import { RoyalRumbleGame } from "@prisma/client"
 import { useState } from "react"
-import { updateScore } from "./actions"
+import { toggleComplete, updateScore } from "./actions"
 
 function team1TotalPoints(game: RoyalRumbleGame) {
   const { team1Player1Points, team1Player2Points, team1Player3Points } = game
@@ -36,6 +36,13 @@ export default function GameScoreCard({game, playerIdsToPlayer, teamIdsToTeam}: 
     }
   }
 
+  async function handleToggleComplete(game: RoyalRumbleGame) {
+    const updatedGame = await toggleComplete(game.id)
+    if (updatedGame) {
+      setCurrentGame(updatedGame)
+    }
+  }
+
   const team1 = teamIdsToTeam[currentGame.team1Id]
   const team2 = teamIdsToTeam[currentGame.team2Id]
 
@@ -53,7 +60,11 @@ export default function GameScoreCard({game, playerIdsToPlayer, teamIdsToTeam}: 
   } = currentGame
 
   return <div>
-    <h4>{currentGame.series} Game {currentGame.gameNumber}</h4>
+    <h4>
+      Game {currentGame.gameNumber}{' '}
+      <button onClick={() => handleToggleComplete(currentGame)}>mark {currentGame.isComplete ? 'incomplete' : 'complete'}</button>{' '}
+      {currentGame.isComplete ? <>✅</> : null }
+    </h4>
     <table key={currentGame.id} className="w-full" border={1}>
       <thead>
         <tr>
