@@ -2,6 +2,7 @@
 
 import prisma from "@/lib/prisma"
 import { RoyalRumblePlayer, RoyalRumbleTeam } from "@prisma/client"
+import usePlayers from "./usePlayers"
 
 export type PlayerStandings = {
   playerWins: Record<string, number>
@@ -13,9 +14,7 @@ export type PlayerStandings = {
 }
 
 export async function usePlayerStandings(): Promise<PlayerStandings> {
-  const tournamentState = await prisma.royalRumbleTournamentState.findFirst()
-  const tag = tournamentState?.currentTag ?? "live"
-  const players = (await prisma.royalRumblePlayer.findMany({ where: { tag } }))
+  const players = await usePlayers()
   const teams = (await prisma.royalRumbleTeam.findMany())
   const games = (await prisma.royalRumbleGame.findMany())
   
@@ -51,8 +50,9 @@ export async function usePlayerStandings(): Promise<PlayerStandings> {
     return diff
   })
 
-  return {
+  const standings: PlayerStandings = {
     playerWins, playerTies, playerLosses, playerGoals, playerPoints,
     sortedPlayers
   }
+  return standings
 }

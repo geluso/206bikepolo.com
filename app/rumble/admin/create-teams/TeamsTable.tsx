@@ -2,12 +2,16 @@
 
 import { RoyalRumblePlayer, RoyalRumbleTeam } from "@prisma/client";
 
-function toCSV(teams: RoyalRumbleTeam[]) {
+function toCSV(teams: RoyalRumbleTeam[], playerIdsToPlayer: Record<string, RoyalRumblePlayer>) {
   let prefix = "data:text/csv;charset=utf-8,";
   let header = "Name, Player 1, Player 2, Player 3";
   let csvContent = header + "\r\n";
+  
   teams.forEach(team => {
-    csvContent += team.name + ", " + team.player1Id + ", " + team.player2Id + ", " + team.player3Id + "\r\n"
+    let player1Name = playerIdsToPlayer[team.player1Id].player
+    let player2Name = playerIdsToPlayer[team.player2Id].player
+    let player3Name = playerIdsToPlayer[team.player3Id].player
+    csvContent += team.name + ", " + player1Name + ", " + player2Name + ", " + player3Name + "\r\n"
   })
 
   var encodedUri = prefix + encodeURIComponent(csvContent);
@@ -47,7 +51,7 @@ export default function TeamsTable({ teams, playerIdsToPlayer }: {
     </table>
 
     <p>
-      <a href={toCSV(teams)} download={"teams.csv"}>⬇️ Download CSV</a>
+      <a href={toCSV(teams, playerIdsToPlayer)} download={"teams.csv"}>⬇️ Download CSV</a>
     </p>
   </div>
 }
