@@ -3,7 +3,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { parse } from 'csv-parse';
 import prisma from '@/lib/prisma';
-import { RoyalRumblePlayer } from '@prisma/client';
 import { setTournamentState } from '@/app/rumble/admin/manage-tournament-state/actions';
 
 type ResponseBody = { error: string } | { message: string };
@@ -25,7 +24,7 @@ export async function POST(request: NextRequest) {
     }
 
     const text = await file.text();
-    const records: RoyalRumblePlayer[] = [];
+    const records: {tag: string, spreadsheetPlayerId: string, player: string, wrestlerName: string }[] = [];
 
     parse(text, {
       columns: true,
@@ -39,7 +38,6 @@ export async function POST(request: NextRequest) {
         const spreadsheetPlayerId = record['PID'].trim()
         const player = record['PLAYER'].trim()
         const wrestlerName = record['WRESTLER NAME'].trim()
-        // @ts-ignore
         records.push({
           tag,
           spreadsheetPlayerId,
