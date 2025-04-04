@@ -21,6 +21,12 @@ export default function Page() {
     <p>Welcome to the Royal Rumble!!</p>
     <Link href="/rumble/players">View players</Link>
 
+    <ul>
+      <li>Friday 7PM party at Tough Luck Bar</li>
+      <li>Saturday 9AM start games at Alberta Park</li>
+      <li>Sunday 9AM start double elimination bracket</li>
+    </ul>
+
     <Image className="w-full" src={randomImage} alt="random wrestling image" />
   </div>
 }

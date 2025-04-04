@@ -6,8 +6,8 @@ export function Bracket() {
             <div className="round round-1">
                 <div className="match">
                     <div className="game-title">Game 1</div>
-                    <div className="team">Team 16 <input type="number" /></div>
-                    <div className="team">Team 17 <input type="number" /></div>
+                    <div className="team">Cooper, Tyrone, Annika <input type="number" value={0} /></div>
+                    <div className="team">Mak, Ralph, Ari <input type="number" value={0} /></div>
                 </div>
                 <div className="match">
                     <div className="game-title">Game 2</div>

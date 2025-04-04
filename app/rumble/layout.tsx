@@ -10,9 +10,8 @@ export default function Page({ children }: { children: React.ReactNode }) {
       <Link href="/rumble/rounds/3">Round 3</Link> |{' '}
       <Link href="/rumble/rounds/4">Round 4</Link> |{' '}
       <Link href="/rumble/rounds/5">Round 5</Link> |{' '}
-      <Link href="/rumble/rounds/finals">Finals</Link> |{' '}
-      <Link href="/rumble/bracket">Bracket</Link> |{' '}
-      <Link href="/rumble/admin">Admin</Link>
+      <Link href="/rumble/rounds/finals">Final Teams</Link> |{' '}
+      <Link href="/rumble/bracket">Bracket</Link>
     </div>
     <div>
       {children}
