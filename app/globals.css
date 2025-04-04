@@ -84,3 +84,121 @@ iframe {
   width: 100%;
   min-height: 80vh;
 }
+/* BRACKET  */
+.tournament-bracket {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    align-items: center;
+}
+
+.match {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+/* Game titles, teams, inputs, etc. */
+.game-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background: #ddd;
+    margin: 3px 0;
+    border-radius: 5px;
+}
+
+/* Round layout adjustments */
+.round-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 165px;  /* Increase gap between matches in Round 1 */
+    position: relative;
+    top: 35px;
+}
+.round-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 165px;  /* Increase gap between matches in Round 1 */
+    position: relative;
+    top: 35px;
+}
+.round-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative; /* Ensure relative positioning for each round */
+}
+.round-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 450px;
+    position: relative; /* Ensure relative positioning for each round */
+    top: 175px;
+}
+.round-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Ensure relative positioning for each round */
+    top: 400px;
+}
+
+.final-round {
+    display: flex;
+    justify-content: center;
+    top: 400px;
+    position: relative;
+}
+
+/* Vertical position adjustments for each match */
+.match-1 { position: relative; top: 200px; }   /* Game 1 */
+.match-2 { position: relative; top: 300px; }  /* Game 2 */
+.match-3 { position: relative; top: 400px; }  /* Game 3 */
+.match-4 { position: relative; top: 500px; }  /* Game 4 */
+
+/* Round 2 games */
+.match-5 { position: relative; top: 100px; }   /* Game 5 */
+.match-6 { position: relative; top: 200px; }   /* Game 6 */
+.match-7 { position: relative; top: 300px; }   /* Game 7 */
+.match-8 { position: relative; top: 400px; }   /* Game 8 */
+.match-9 { position: relative; top: 200px; }   /* Game 9 */
+.match-10 { position: relative; top: 300px; }  /* Game 10 */
+.match-11 { position: relative; top: 400px; }  /* Game 11 */
+.match-12 { position: relative; top: 500px; }  /* Game 12 */
+
+/* Round 3 games */
+.match-13 { position: relative; top: 300px; }  /* Game 13 */
+.match-14 { position: relative; top: 400px; }  /* Game 14 */
+
+/* Final Match (Game 36) */
+.final-match {
+    position: relative;
+    top: 500px;  /* Adjust this to position the final match */
+    left: 150px;  /* Center horizontally */
+    width: 600px;  /* Width of the final match */
+}
+
+.tournament-bracket {
+  overflow-x: scroll;
+}
