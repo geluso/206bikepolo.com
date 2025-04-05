@@ -88,7 +88,7 @@ export async function getPlayerStandings(): Promise<PlayerStandings> {
     playerGoals[t2p3Id] += game.team2Player3Points
 
     const team1TotalScore = game.team1Player1Points + game.team1Player2Points + game.team1Player3Points
-    const team2TotalScore = game.team2Player1Points + game.team2Player2Points + game.team1Player3Points
+    const team2TotalScore = game.team2Player1Points + game.team2Player2Points + game.team2Player3Points
 
     if (team1TotalScore > team2TotalScore) {
       playerWins[t1p1Id]++
