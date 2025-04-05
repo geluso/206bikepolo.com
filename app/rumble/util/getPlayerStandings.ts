@@ -44,9 +44,6 @@ export async function getPlayerStandings(): Promise<PlayerStandings> {
   })
 
   games.forEach(game => {
-    if (!game.isComplete) {
-      return
-    }
     console.log('TEAMS', game.team1Id, game.team2Id)
     console.log('GAME', game.series, game.gameNumber, game.team1Player1Points, game.team1Player2Points, game.team1Player3Points, game.team2Player1Points, game.team2Player2Points, game.team2Player3Points)
 
@@ -79,6 +76,9 @@ export async function getPlayerStandings(): Promise<PlayerStandings> {
     playerTeammates[t2p3Id].push(t2p1Id)
     playerTeammates[t2p3Id].push(t2p2Id)
 
+    if (!game.isComplete) {
+      return
+    }
 
     playerGoals[t1p1Id] += game.team1Player1Points
     playerGoals[t1p2Id] += game.team1Player2Points
