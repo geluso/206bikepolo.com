@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import Image from "next/image";
 
 import royalRumbleImg from "../../public/img/royal_rumble.jpg"
