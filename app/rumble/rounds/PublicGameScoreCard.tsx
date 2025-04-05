@@ -13,10 +13,13 @@ function team2TotalPoints(game: RoyalRumbleGame) {
   return team2Player1Points + team2Player2Points + team2Player3Points
 }
 
-export default function PublicGameScoreCard({game, playerIdsToPlayer, teamIdsToTeam}: {
+export default function PublicGameScoreCard({game, playerIdsToPlayer, teamIdsToTeam, sayings, index, completeGames}: {
   game: RoyalRumbleGame,
   playerIdsToPlayer: any,
   teamIdsToTeam: any,
+  sayings: string[],
+  index: number,
+  completeGames: number
 }) {
   const [currentGame, setCurrentGame] = useState(game)
 
@@ -39,7 +42,7 @@ export default function PublicGameScoreCard({game, playerIdsToPlayer, teamIdsToT
   return <div>
     <h4>
       Game {currentGame.gameNumber}{' '}
-      {currentGame.isComplete ? <>✅ Complete</> : null }
+      {currentGame.isComplete ? <>✅ Complete</> : <>⏰ {sayings[index - completeGames]}</> }
     </h4>
     <table key={currentGame.id} className="w-full" border={1}>
       <thead>

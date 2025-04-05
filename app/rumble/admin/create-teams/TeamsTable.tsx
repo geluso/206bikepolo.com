@@ -19,8 +19,7 @@ function toCSV(teams: RoyalRumbleTeam[], playerIdsToPlayer: Record<string, Royal
   return encodedUri
 }
 
-export default function TeamsTable({ players, teams, playerIdsToPlayer }: {
-  players: RoyalRumblePlayer[],
+export default function TeamsTable({ teams, playerIdsToPlayer }: {
   teams: RoyalRumbleTeam[],
   playerIdsToPlayer: Record<string, RoyalRumblePlayer>
 }) {
@@ -41,19 +40,19 @@ export default function TeamsTable({ players, teams, playerIdsToPlayer }: {
       </thead>
       <tbody>
         {teams.map(team => {
-          const player1 = playerIdsToPlayer[team.player1Id]
-          const player2 = playerIdsToPlayer[team.player2Id]
-          const player3 = playerIdsToPlayer[team.player3Id]
+          const player1 = playerIdsToPlayer[team.player1Id].player
+          const player2 = playerIdsToPlayer[team.player2Id].player
+          const player3 = playerIdsToPlayer[team.player3Id].player
           return <tr key={team.id}>
             <td className="pl-1">{team.name}</td>
             <td className="pl-1">
-              <PlayerDropdown player={player1} players={players} />
+              {player1}
             </td>
             <td className="pl-1">
-              <PlayerDropdown player={player2} players={players} />
+              {player2}
             </td>
             <td className="pl-1">
-              <PlayerDropdown player={player3} players={players} />
+              {player3}
             </td>
           </tr>
         })}

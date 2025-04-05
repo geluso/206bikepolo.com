@@ -8,9 +8,8 @@ import TeamsTable from "./TeamsTable"
 import GamesTable from "./GamesTables"
 import { PlayerStandings } from "../../util/getPlayerStandings"
 
-export function CreateTeams({ tag, players, playerStandings, playerIdsToPlayer }: {
+export function CreateTeams({ tag, playerStandings, playerIdsToPlayer }: {
   tag: string,
-  players: RoyalRumblePlayer[],
   playerStandings: PlayerStandings,
   playerIdsToPlayer: Record<string, RoyalRumblePlayer>
 }) {
@@ -50,7 +49,7 @@ export function CreateTeams({ tag, players, playerStandings, playerIdsToPlayer }
       <button disabled={!playerStandings} onClick={handleCreateTeams}>Create Teams</button>
     </p>
 
-    <TeamsTable players={players} teams={teams} playerIdsToPlayer={playerIdsToPlayer} />
+    <TeamsTable teams={teams} playerIdsToPlayer={playerIdsToPlayer} />
     <GamesTable games={games} teams={teams} playerIdsToPlayer={playerIdsToPlayer} />
 
     <h2>Player Standings</h2>
