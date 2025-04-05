@@ -1,7 +1,6 @@
 "use client"
 
 import { RoyalRumblePlayer, RoyalRumbleTeam } from "@prisma/client";
-import { PlayerDropdown } from "./PlayerDropdown";
 import EditableTeamRow from "./EditableTeamRow";
 import { PlayerStandings } from "../../util/getPlayerStandings";
 

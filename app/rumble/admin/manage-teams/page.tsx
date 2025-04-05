@@ -8,7 +8,6 @@ import getTeams from "../../util/getTeams";
 import EditableTeamsTable from "./EditableTeamsTable";
 
 export default async function Page() {
-  const tag = await getCurrentTag()
   const players = await getPlayers()
   const playerStandings = await getPlayerStandings()
   const playerIdsToPlayer = await getPlayerIdsToPlayers()
