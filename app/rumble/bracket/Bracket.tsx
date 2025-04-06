@@ -227,7 +227,6 @@ export function Bracket() {
                         <div className="team">Winner G28 <input className="input-field"/></div>
                         <div className="team">Winner G27<input className="input-field"/></div>
                     </div>
-                    </div>
                 </div>
 
                 {/* <!-- Round 5 --> */}
