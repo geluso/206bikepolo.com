@@ -184,8 +184,8 @@ export function Bracket() {
                     </div>
                     <div className="match">
                         <div className="game-title">Game 17</div>
-                        <div className="team">L9<input className="input-field"/></div>
-                        <div className="team">W13<input className="input-field"/></div>
+                        <div className="team">Kody/Ernie/MikeFosters<input className="input-field"/></div>
+                        <div className="team">OffVince/DeVince/Sabrina<input className="input-field"/></div>
                     </div>
                 </div>
 
