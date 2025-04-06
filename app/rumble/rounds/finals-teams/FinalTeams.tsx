@@ -42,7 +42,7 @@ export default async function FinalTeams() {
         <tr>
         <td>Team 05</td>
         <td>Arlyn Bement</td>
-        <td>Vincent Bono</td>
+        <td>Jeff Cleary</td>
         <td>Diego Arévalo</td>
         </tr>
         <tr>
@@ -127,7 +127,7 @@ export default async function FinalTeams() {
         <td>Team 19</td>
         <td>Vince Foley</td>
         <td>Sabrina Zhou</td>
-        <td>Jeff Cleary</td>
+        <td>Vincent Bono</td>
         </tr>
         <tr>
         <td>Team 20</td>
