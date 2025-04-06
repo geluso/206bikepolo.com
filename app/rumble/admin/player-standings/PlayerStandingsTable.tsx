@@ -1,4 +1,3 @@
-import { RoyalRumblePlayer } from "@prisma/client"
 import { PlayerStandings } from "../../util/getPlayerStandings"
 
 function indexToABC(index: number) {
@@ -14,6 +13,7 @@ export function PlayerStandingsTable({ playerStandings }: {
   playerStandings: PlayerStandings
 }) {
   return <div>
+    <p>Points = 4 x wins + 2 x ties.</p>
     <table className="w-full" border={1}>
       <thead>
         <tr>
