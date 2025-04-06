@@ -12,6 +12,7 @@ export default async function Page({ children }: { children: React.ReactNode }) 
       {tagSettings?.isRound3Up && <><Link href="/rumble/rounds/3">Round 3</Link> |{' '}</>}
       {tagSettings?.isRound4Up && <><Link href="/rumble/rounds/4">Round 4</Link> |{' '}</>}
       {tagSettings?.isRound5Up && <><Link href="/rumble/rounds/5">Round 5</Link> |{' '}</>}
+      <Link href="/rumble/standings">Standings</Link> |{' '}
       <Link href="/rumble/bracket">Final Teams and Bracket</Link>
     </div>
     <div>
