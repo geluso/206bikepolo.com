@@ -76,12 +76,12 @@ export function Bracket() {
                 </div>            
                 {/* <!-- Round 3 --> */}
                 <div className="round round-3">
-                    <div className="match game-current">
+                    <div className="match game-complete">
                         <div className="game-title">Game 21</div>
-                        <div className="team">JoranJones/Drew/Yachi<input className="input-field" value={" "}/></div>
-                        <div className="team">Los Lobos (Timtim/Andrea/Mayo)<input className="input-field" value={" "}/></div>
+                        <div className="team">JoranJones/Drew/Yachi<input className="input-field" value={"2"}/></div>
+                        <div className="team">Los Lobos (Timtim/Andrea/Mayo)<input className="input-field" value={"5"}/></div>
                     </div>
-                    <div className="match game-staged">
+                    <div className="match game-current">
                         <div className="game-title">Game 22</div>
                         <div className="team">Gabe/Aaron/Non<input className="input-field" value={" "}/></div>
                         <div className="team">Eggo/Nick/Mr Pickle<input className="input-field" value={" "}/></div>
@@ -102,7 +102,7 @@ export function Bracket() {
                 <div className="round round-4">
                     <div className="match game-staged">
                         <div className="game-title">Game 31</div>
-                        <div className="team">Winner G21 <input className="input-field" value={" "}/></div>
+                        <div className="team">Los Lobos (TimTim/Andreas/Mayo)<input className="input-field" value={" "}/></div>
                         <div className="team">Winner G22 <input className="input-field" value={" "}/></div>
                     </div>
                     <div className="match game-staged">
@@ -199,7 +199,7 @@ export function Bracket() {
                     </div>
                     <div className="match game-staged">
                         <div className="game-title">Game 25</div>
-                        <div className="team">Loser G21 <input className="input-field" value={" "}/></div>
+                        <div className="team">JoranJones/Drew/Yachi<input className="input-field" value={" "}/></div>
                         <div className="team">Carol/Jordan/Ani<input className="input-field" value={" "}/></div>
                     </div>
                     <div className="match game-staged">
