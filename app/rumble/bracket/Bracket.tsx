@@ -167,15 +167,15 @@ export function Bracket() {
                 {/* <!-- Round 2 --> */}
                 <div className="round round-2">
                     <div className="round-title">ROUND 2</div>
-                    <div className="match">
+                    <div className="match game-current">
                         <div className="game-title">Game 20</div>
                         <div className="team">Weston/Cap/Kai<input className="input-field"/></div>
                         <div className="team">Andrew/Coop/Jason<input className="input-field"/></div>
                     </div>
-                    <div className="match game-current">
+                    <div className="match game-complete">
                         <div className="game-title">Game 19</div>
-                        <div className="team">Kevin/Megan/ExecuSEANer<input className="input-field"/></div>
-                        <div className="team">Carol/Jordan/Ani<input className="input-field"/></div>
+                        <div className="team">Kevin/Megan/ExecuSEANer<input className="input-field" value ={"2"}/></div>
+                        <div className="team">Carol/Jordan/Ani<input className="input-field" value={"4"}/></div>
                     </div>
                     <div className="match game-complete">
                         <div className="game-title">Game 18</div>
@@ -200,7 +200,7 @@ export function Bracket() {
                     <div className="match">
                         <div className="game-title">Game 25</div>
                         <div className="team">Loser G21 <input className="input-field" value={" "}/></div>
-                        <div className="team">Winner G19<input className="input-field" value={" "}/></div>
+                        <div className="team">Carol/Jordan/Ani<input className="input-field" value={" "}/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 28</div>
