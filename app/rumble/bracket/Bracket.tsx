@@ -79,16 +79,16 @@ export function Bracket() {
                     <div className="match">
                         <div className="game-title">Game 21</div>
                         <div className="team">JoranJones/Drew/Yachi<input className="input-field"/></div>
-                        <div className="team">Winner G9 <input className="input-field"/></div>
+                        <div className="team">Time Trials (Timtim/Andrea/Mayo)<input className="input-field"/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 22</div>
                         <div className="team">Gabe/Aaron/Non<input className="input-field"/></div>
-                        <div className="team">Winner G10 <input className="input-field"/></div>
+                        <div className="team">Eggo/Nick/Mr Pickle<input className="input-field"/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 23</div>
-                        <div className="team">Winner G7 <input className="input-field"/></div>
+                        <div className="team">OG Hard Back<input className="input-field"/></div>
                         <div className="team">Josh/Phred/Ralf<input className="input-field"/></div>
                     </div>
                     <div className="match">
@@ -178,7 +178,7 @@ export function Bracket() {
                     </div>
                     <div className="match">
                         <div className="game-title">Game 18</div>
-                        <div className="team">Loser G10 <input className="input-field"/></div>
+                        <div className="team">Gavin/Ari/Geluso<input className="input-field"/></div>
                         <div className="team">Winner G14 <input className="input-field"/></div>
                     </div>
                     <div className="match">
