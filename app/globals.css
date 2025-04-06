@@ -265,3 +265,11 @@ input {
 .input-field[type="number"] {
   background-color: #e0ffe0;
 }
+
+.game-complete {
+  background-color: lightslategray;
+}
+
+.game-current {
+  background-color: darkseagreen;
+}
