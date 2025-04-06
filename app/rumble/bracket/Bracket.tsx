@@ -35,7 +35,7 @@ export function Bracket() {
                     <div className="round-title">ROUND 2</div>
                     <div className="match">
                         <div className="game-title">Game 9</div>
-                        <div className="team">Winner G1 <input className="input-field"/></div>
+                        <div className="team">Carol/Jordan/Ani<input className="input-field"/></div>
                         <div className="team">Time Trials (Timtim/Andrea/Mayo)<input className="input-field"/></div>
                     </div>
                     <div className="match game-complete">
@@ -45,27 +45,27 @@ export function Bracket() {
                     </div>
                     <div className="match">
                         <div className="game-title">Game 10</div>
-                        <div className="team">Winner G2 <input className="input-field"/></div>
+                        <div className="team">Gavin/Ari/Geluso<input className="input-field"/></div>
                         <div className="team">Eggo/Nick/Mr Pickle<input className="input-field"/></div>
                     </div>
-                    <div className="match game-current">
+                    <div className="match game-complete">
                         <div className="game-title">Game 6</div>
-                        <div className="team">Arlyn/Jeff/Diego<input className="input-field"/></div>
-                        <div className="team">Gabe/Aaron/Non<input className="input-field"/></div>
+                        <div className="team">Arlyn/Jeff/Diego<input className="input-field" value={4}/></div>
+                        <div className="team">Gabe/Aaron/Non<input className="input-field" value={2}/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 11</div>
-                        <div className="team">Winner G3 <input className="input-field"/></div>
-                        <div className="team">Kevin/Megan/ExuSEANcutioner<input className="input-field"/></div>
+                        <div className="team">Josh/Phred/Ralf<input className="input-field"/></div>
+                        <div className="team">Kevin/Megan/ExecuSEANer<input className="input-field"/></div>
                     </div>
-                    <div className="match">
+                    <div className="match game-current">
                         <div className="game-title">Game 7</div>
                         <div className="team">OG Hard Back Julian/LaRosa/Squigg<input className="input-field"/></div>
                         <div className="team">Kody/Ernie/MikeFosters<input className="input-field"/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 12</div>
-                        <div className="team">Winner G4 <input className="input-field"/></div>
+                        <div className="team">B/J/J<input className="input-field"/></div>
                         <div className="team">Weston/Cap/Kai<input className="input-field"/></div>
                     </div>
                     <div className="match">
@@ -78,12 +78,12 @@ export function Bracket() {
                 <div className="round round-3">
                     <div className="match">
                         <div className="game-title">Game 21</div>
-                        <div className="team">Winner G5 <input className="input-field"/></div>
+                        <div className="team">JoranJones/Drew/Yachi<input className="input-field"/></div>
                         <div className="team">Winner G9 <input className="input-field"/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 22</div>
-                        <div className="team">Winner G6 <input className="input-field"/></div>
+                        <div className="team">Arlyn/Jeff/Diego<input className="input-field"/></div>
                         <div className="team">Winner G10 <input className="input-field"/></div>
                     </div>
                     <div className="match">
@@ -145,22 +145,22 @@ export function Bracket() {
                     <div className="match">
                         <div className="game-title">Game 16</div>
                         <div className="team">Loser G8<input className="input-field"/></div>
-                        <div className="team">Loser G1<input className="input-field"/></div>
+                        <div className="team">Sergio/Jacq/Adam<input className="input-field"/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 15</div>
                         <div className="team">Loser G7<input className="input-field"/></div>
-                        <div className="team">Loser G2<input className="input-field"/></div>
+                        <div className="team">Isaac/Kenny/Eric<input className="input-field"/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 14</div>
-                        <div className="team">Loser G6 <input className="input-field"/></div>
-                        <div className="team">Loser G3 <input className="input-field"/></div>
+                        <div className="team">Gabe/Aaron/Non<input className="input-field"/></div>
+                        <div className="team">Darryl/Mike/Krista<input className="input-field"/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 13</div>
-                        <div className="team">Loser G5<input className="input-field"/></div>
-                        <div className="team">Loser G4 <input className="input-field"/></div>
+                        <div className="team">Sam/Tern/Mak<input className="input-field"/></div>
+                        <div className="team">OffVince/DeVince/Sabrina<input className="input-field"/></div>
                     </div>
                 </div>
                 {/* <!-- Round 2 --> */}
