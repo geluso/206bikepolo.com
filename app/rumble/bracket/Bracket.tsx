@@ -205,7 +205,7 @@ export function Bracket() {
                     <div className="match">
                         <div className="game-title">Game 28</div>
                         <div className="team">Loser G24 <input className="input-field" value={" "}/></div>
-                        <div className="team">Winner G18 <input className="input-field" value={" "}/></div>
+                        <div className="team">Gavin/Ari/Geluso <input className="input-field" value={" "}/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 27</div>
