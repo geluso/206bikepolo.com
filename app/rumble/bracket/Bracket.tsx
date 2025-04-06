@@ -36,7 +36,7 @@ export function Bracket() {
                     <div className="match game-complete">
                         <div className="game-title">Game 9</div>
                         <div className="team">Carol/Jordan/Ani<input className="input-field" value={0} /></div>
-                        <div className="team">Time Trials (Timtim/Andrea/Mayo)<input className="input-field" value={0}/></div>
+                        <div className="team">Time Trials (Timtim/Andrea/Mayo)<input className="input-field" value={1}/></div>
                     </div>
                     <div className="match game-complete">
                         <div className="game-title">Game 5</div>
