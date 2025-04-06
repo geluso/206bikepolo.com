@@ -76,22 +76,22 @@ export function Bracket() {
                 </div>            
                 {/* <!-- Round 3 --> */}
                 <div className="round round-3">
-                    <div className="match">
+                    <div className="match game-current">
                         <div className="game-title">Game 21</div>
                         <div className="team">JoranJones/Drew/Yachi<input className="input-field" value={" "}/></div>
                         <div className="team">Los Lobos (Timtim/Andrea/Mayo)<input className="input-field" value={" "}/></div>
                     </div>
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 22</div>
                         <div className="team">Gabe/Aaron/Non<input className="input-field" value={" "}/></div>
                         <div className="team">Eggo/Nick/Mr Pickle<input className="input-field" value={" "}/></div>
                     </div>
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 23</div>
                         <div className="team">OG Hard Back Julian/LaRosa/Squigg<input className="input-field" value={" "}/></div>
                         <div className="team">Josh/Phred/Ralf<input className="input-field" value={" "}/></div>
                     </div>
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 24</div>
                         <div className="team">Ty/J/Jillia<input className="input-field" value={" "}/></div>
                         <div className="team">B/J/J<input className="input-field" value={" "}/></div>
@@ -100,12 +100,12 @@ export function Bracket() {
                 </div>    
                 {/* <!-- Round 4 --> */}
                 <div className="round round-4">
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 31</div>
                         <div className="team">Winner G21 <input className="input-field" value={" "}/></div>
                         <div className="team">Winner G22 <input className="input-field" value={" "}/></div>
                     </div>
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 32</div>
                         <div className="team">Winner G23 <input className="input-field" value={" "}/></div>
                         <div className="team">Winner G24 <input className="input-field" value={" "}/></div>
@@ -113,7 +113,7 @@ export function Bracket() {
                 </div>
                 {/* <!-- Round 5 --> */}
                 <div className="round round-5">
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 36</div>
                         <div className="team">Winner G31 <input className="input-field" value={" "}/></div>
                         <div className="team">Winner G32 <input className="input-field" value={" "}/></div>
@@ -122,7 +122,7 @@ export function Bracket() {
                 
                 {/* <!-- Final Round --> */}
                 <div className="round final-round">
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Final</div>
                         <div className="team">Winner G36 <input className="input-field" value={" "}/></div>
                         <div className="team">Winner G37 <input className="input-field" value={" "}/></div>
@@ -130,7 +130,7 @@ export function Bracket() {
                 </div>
                 {/* <!-- Second Final --> */}
                 <div className="round final-round">
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Second Final - IF NEEDED</div>
                         <div className="team">Winner G38 <input className="input-field" value={" "}/></div>
                         <div className="team">Loser G38 <input className="input-field" value={" "}/></div>
@@ -167,10 +167,10 @@ export function Bracket() {
                 {/* <!-- Round 2 --> */}
                 <div className="round round-2">
                     <div className="round-title">ROUND 2</div>
-                    <div className="match game-current">
+                    <div className="match game-complete">
                         <div className="game-title">Game 20</div>
-                        <div className="team">Weston/Cap/Kai<input className="input-field"/></div>
-                        <div className="team">Andrew/Coop/Jason<input className="input-field"/></div>
+                        <div className="team">Weston/Cap/Kai<input className="input-field" value={"4"}/></div>
+                        <div className="team">Andrew/Coop/Jason<input className="input-field" value={"1"}/></div>
                     </div>
                     <div className="match game-complete">
                         <div className="game-title">Game 19</div>
@@ -192,22 +192,22 @@ export function Bracket() {
                 {/* <!-- Round 3 --> */}
                 <div className="round round-3">
                     <div className="round-title">ROUND 3</div>
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 26</div>
                         <div className="team">Loser G22 <input className="input-field" value={" "}/></div>
-                        <div className="team">Winner G20<input className="input-field" value={" "}/></div>
+                        <div className="team">Weston/Cap/Kai<input className="input-field" value={" "}/></div>
                     </div>
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 25</div>
                         <div className="team">Loser G21 <input className="input-field" value={" "}/></div>
                         <div className="team">Carol/Jordan/Ani<input className="input-field" value={" "}/></div>
                     </div>
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 28</div>
                         <div className="team">Loser G24 <input className="input-field" value={" "}/></div>
                         <div className="team">Gavin/Ari/Geluso <input className="input-field" value={" "}/></div>
                     </div>
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 27</div>
                         <div className="team">Loser G23 <input className="input-field" value={" "}/></div>
                         <div className="team">Kody/Ernie/MikeFosters<input className="input-field" value={" "}/></div>
@@ -217,12 +217,12 @@ export function Bracket() {
                 {/* <!-- Round 4 --> */}
                 <div className="round round-4">
                     <div className="round-title">ROUND 4</div>
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 29</div>
                         <div className="team">Winner G26<input className="input-field" value={" "}/></div>
                         <div className="team">Winner G25<input className="input-field" value={" "}/></div>
                     </div>
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 30</div>
                         <div className="team">Winner G28 <input className="input-field" value={" "}/></div>
                         <div className="team">Winner G27<input className="input-field" value={" "}/></div>
@@ -232,12 +232,12 @@ export function Bracket() {
                 {/* <!-- Round 5 --> */}
                 <div className="round round-5">
                     <div className="round-title">ROUND 5</div>
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 34</div>
                         <div className="team">Loser G32 <input className="input-field" value={" "}/></div>
                         <div className="team">Winner G29 <input className="input-field" value={" "}/></div>
                     </div>
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 33</div>
                         <div className="team">Loser G31 <input className="input-field" value={" "}/></div>
                         <div className="team">Winner G30 <input className="input-field" value={" "}/></div>
@@ -247,7 +247,7 @@ export function Bracket() {
                 {/* <!-- Round 6 --> */}
                 <div className="round round-6">
                     <div className="round-title">Round 6</div>
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 35</div>
                         <div className="team">Winner G34 <input className="input-field" value={" "}/></div>
                         <div className="team">Winner G33 <input className="input-field" value={" "}/></div>
@@ -257,7 +257,7 @@ export function Bracket() {
                 {/* <!-- Round 7 --> */}
                 <div className="round round-5">
                     <div className="round-title">Round 7</div>
-                    <div className="match">
+                    <div className="match game-staged">
                         <div className="game-title">Game 37</div>
                         <div className="team">Loser G36 <input className="input-field" value={" "}/></div>
                         <div className="team">Winner G35 <input className="input-field" value={" "}/></div>
