@@ -17,7 +17,7 @@ export function PlayerStandingsTable({ playerStandings }: {
     <table className="w-full" border={1}>
       <thead>
         <tr>
-          <th>Games</th>
+          <th>Rank</th>
           <th>Player</th>
           <th>Wrestler Name</th>
           <th>Wins</th>
@@ -31,7 +31,7 @@ export function PlayerStandingsTable({ playerStandings }: {
       <tbody>
         {playerStandings.sortedPlayers.map((player, index) => {
           return <tr key={player.id}>
-            <th>{playerStandings.playerWins[player.id] + playerStandings.playerTies[player.id] + playerStandings.playerLosses[player.id]}</th>
+            <th>{index + 1}</th>
             <td className="p-1">{player.player}</td>
             <td className="p-1">{player.wrestlerName}</td>
             <td className="text-center">{playerStandings.playerWins[player.id]}</td>
