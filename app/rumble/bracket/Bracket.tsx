@@ -202,10 +202,10 @@ export function Bracket() {
                         <div className="team">JoranJones/Drew/Yachi<input className="input-field" value={"3"}/></div>
                         <div className="team">Carol/Jordan/Ani<input className="input-field" value={"4"}/></div>
                     </div>
-                    <div className="match game-current">
+                    <div className="match game-complete">
                         <div className="game-title">Game 28</div>
-                        <div className="team">Ty/J/Jillian<input className="input-field" value={" "}/></div>
-                        <div className="team">Gavin/Ari/Geluso <input className="input-field" value={" "}/></div>
+                        <div className="team">Ty/J/Jillian<input className="input-field" value={"2"}/></div>
+                        <div className="team">Gavin/Ari/Geluso <input className="input-field" value={"1"}/></div>
                     </div>
                     <div className="match game-complete">
                         <div className="game-title">Game 27</div>
@@ -217,15 +217,15 @@ export function Bracket() {
                 {/* <!-- Round 4 --> */}
                 <div className="round round-4">
                     <div className="round-title">ROUND 4</div>
-                    <div className="match game-staged">
+                    <div className="match game-current">
                         <div className="game-title">Game 29</div>
                         <div className="team">Weston/Cap/Kai<input className="input-field" value={" "}/></div>
                         <div className="team">Carol/Jordan/Ani<input className="input-field" value={" "}/></div>
                     </div>
                     <div className="match game-staged">
                         <div className="game-title">Game 30</div>
-                        <div className="team">Winner G28 <input className="input-field" value={" "}/></div>
-                        <div className="team">Winner G27<input className="input-field" value={" "}/></div>
+                        <div className="team">Ty/J/Jillian<input className="input-field" value={" "}/></div>
+                        <div className="team">Kody/Ernie/MikeFosters<input className="input-field" value={" "}/></div>
                     </div>
                 </div>
 
