@@ -33,7 +33,7 @@ export function Bracket() {
                 {/* <!-- Round 2 --> */}
                 <div className="round round-2">
                     <div className="round-title">ROUND 2</div>
-                    <div className="match">
+                    <div className="match game-current">
                         <div className="game-title">Game 9</div>
                         <div className="team">Carol/Jordan/Ani<input className="input-field"/></div>
                         <div className="team">Time Trials (Timtim/Andrea/Mayo)<input className="input-field"/></div>
@@ -50,15 +50,15 @@ export function Bracket() {
                     </div>
                     <div className="match game-complete">
                         <div className="game-title">Game 6</div>
-                        <div className="team">Arlyn/Jeff/Diego<input className="input-field" value={4}/></div>
-                        <div className="team">Gabe/Aaron/Non<input className="input-field" value={2}/></div>
+                        <div className="team">Arlyn/Jeff/Diego<input className="input-field" value={2}/></div>
+                        <div className="team">Gabe/Aaron/Non<input className="input-field" value={4}/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 11</div>
                         <div className="team">Josh/Phred/Ralf<input className="input-field"/></div>
                         <div className="team">Kevin/Megan/ExecuSEANer<input className="input-field"/></div>
                     </div>
-                    <div className="match game-current">
+                    <div className="match game-complete">
                         <div className="game-title">Game 7</div>
                         <div className="team">OG Hard Back Julian/LaRosa/Squigg<input className="input-field" value={3}/></div>
                         <div className="team">Kody/Ernie/MikeFosters<input className="input-field" value={2}/></div>
@@ -68,10 +68,10 @@ export function Bracket() {
                         <div className="team">B/J/J<input className="input-field"/></div>
                         <div className="team">Weston/Cap/Kai<input className="input-field"/></div>
                     </div>
-                    <div className="match">
+                    <div className="match game-complete">
                         <div className="game-title">Game 8</div>
-                        <div className="team">Andrew/Coop/Jason<input className="input-field"/></div>
-                        <div className="team">Ty/J/Jo-e<input className="input-field"/></div>
+                        <div className="team">Andrew/Coop/Jason<input className="input-field" value={1}/></div>
+                        <div className="team">Ty/J/Jillian<input className="input-field" value={3}/></div>
                     </div>
                 </div>            
                 {/* <!-- Round 3 --> */}
@@ -93,7 +93,7 @@ export function Bracket() {
                     </div>
                     <div className="match">
                         <div className="game-title">Game 24</div>
-                        <div className="team">Winner G8 <input className="input-field"/></div>
+                        <div className="team">Ty/J/Jillia<input className="input-field"/></div>
                         <div className="team">Winner G12 <input className="input-field"/></div>
                         
                     </div>
@@ -144,7 +144,7 @@ export function Bracket() {
                     <div className="round-title">ROUND 1</div>
                     <div className="match">
                         <div className="game-title">Game 16</div>
-                        <div className="team">Loser G8<input className="input-field"/></div>
+                        <div className="team">Andrew/Coop/Jason<input className="input-field"/></div>
                         <div className="team">Sergio/Jacq/Adam<input className="input-field"/></div>
                     </div>
                     <div className="match">
