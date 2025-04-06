@@ -1,7 +1,10 @@
+import FinalTeams from "../rounds/finals-teams/FinalTeams"
+
 export function Bracket() {
     return <div>
         <div className="container">
-            <h1>Winners Bracket</h1>
+            <FinalTeams />
+            <h2>Winners Bracket</h2>
             <div className="tournament-bracket">
                 {/* <!-- Round 1 --> */}
                 <div className="round round-1">
