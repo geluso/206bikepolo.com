@@ -172,15 +172,15 @@ export function Bracket() {
                         <div className="team">Weston/Cap/Kai<input className="input-field"/></div>
                         <div className="team">Andrew/Coop/Jason<input className="input-field"/></div>
                     </div>
-                    <div className="match">
+                    <div className="match game-current">
                         <div className="game-title">Game 19</div>
                         <div className="team">Kevin/Megan/ExecuSEANer<input className="input-field"/></div>
                         <div className="team">Carol/Jordan/Ani<input className="input-field"/></div>
                     </div>
-                    <div className="match game-current">
+                    <div className="match game-complete">
                         <div className="game-title">Game 18</div>
-                        <div className="team">Gavin/Ari/Geluso<input className="input-field"/></div>
-                        <div className="team">Darryl/Mike/Krista<input className="input-field"/></div>
+                        <div className="team">Gavin/Ari/Geluso<input className="input-field" value={"3"}/></div>
+                        <div className="team">Darryl/Mike/Krista<input className="input-field" value={"1"}/></div>
                     </div>
                     <div className="match game-complete">
                         <div className="game-title">Game 17</div>
