@@ -33,17 +33,17 @@ export function Bracket() {
                 {/* <!-- Round 2 --> */}
                 <div className="round round-2">
                     <div className="round-title">ROUND 2</div>
-                    <div className="match game-current">
+                    <div className="match game-complete">
                         <div className="game-title">Game 9</div>
-                        <div className="team">Carol/Jordan/Ani<input className="input-field"/></div>
-                        <div className="team">Time Trials (Timtim/Andrea/Mayo)<input className="input-field"/></div>
+                        <div className="team">Carol/Jordan/Ani<input className="input-field" value={0} /></div>
+                        <div className="team">Time Trials (Timtim/Andrea/Mayo)<input className="input-field" value={0}/></div>
                     </div>
                     <div className="match game-complete">
                         <div className="game-title">Game 5</div>
                         <div className="team">Sam/Tern/Mak<input className="input-field" value={1}/></div>
                         <div className="team">JoranJones/Drew/Yachi<input className="input-field" value={3}/></div>
                     </div>
-                    <div className="match">
+                    <div className="match game-current">
                         <div className="game-title">Game 10</div>
                         <div className="team">Gavin/Ari/Geluso<input className="input-field"/></div>
                         <div className="team">Eggo/Nick/Mr Pickle<input className="input-field"/></div>
