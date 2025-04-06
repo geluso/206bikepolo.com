@@ -66,7 +66,7 @@ export default async function FinalTeams() {
         <tr>
         <td>Team 09</td>
         <td>Jordan Jones</td>
-        <td>Drew td</td>
+        <td>Drew Thomas</td>
         <td>Yachi Yang</td>
         </tr>
         <tr>

@@ -11,7 +11,7 @@ export function Bracket() {
                     <div className="round-title">ROUND 1</div>
                     <div className="match">
                         <div className="game-title">Game 1</div>
-                        <div className="team">Team 16 <input className="input-field" value={"~0"}/></div>
+                        <div className="team">Team 16 <input className="input-field" value={"0"}/></div>
                         <div className="team">Team 17 <input className="input-field" value={"5"}/></div>
                     </div>
                     <div className="match">
@@ -26,8 +26,8 @@ export function Bracket() {
                     </div>
                     <div className="match">
                         <div className="game-title">Game 4</div>
-                        <div className="team">Team 14 <input className="input-field"/></div>
-                        <div className="team">Team 19 <input className="input-field"/></div>
+                        <div className="team">Team 14 <input className="input-field" value={3}/></div>
+                        <div className="team">Team 19 <input className="input-field" value={0}/></div>
                     </div>
                 </div>
                 {/* <!-- Round 2 --> */}
@@ -40,8 +40,8 @@ export function Bracket() {
                     </div>
                     <div className="match">
                         <div className="game-title">Game 5</div>
-                        <div className="team">Team 8 <input className="input-field"/></div>
-                        <div className="team">Team 9 <input className="input-field"/></div>
+                        <div className="team">Team 8 <input className="input-field" value={1}/></div>
+                        <div className="team">Team 9 <input className="input-field" value={3}/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 10</div>
@@ -140,99 +140,100 @@ export function Bracket() {
             <h1>Losers Bracket</h1>
             <div className="tournament-bracket">
                 {/* <!-- Round 1 --> */}
-                <div class="round-title">ROUND 1</div>
-                <div class="match">
-                    <div class="game-title">Game 16</div>
-                    <div class="team">Loser G8<input class="input-field"></div>
-                    <div class="team">Loser G1<input class="input-field"></div>
+                <div className="round round-1">
+                    <div className="round-title">ROUND 1</div>
+                    <div className="match">
+                        <div className="game-title">Game 16</div>
+                        <div className="team">Loser G8<input className="input-field"/></div>
+                        <div className="team">Loser G1<input className="input-field"/></div>
+                    </div>
+                    <div className="match">
+                        <div className="game-title">Game 15</div>
+                        <div className="team">Loser G7<input className="input-field"/></div>
+                        <div className="team">Loser G2<input className="input-field"/></div>
+                    </div>
+                    <div className="match">
+                        <div className="game-title">Game 14</div>
+                        <div className="team">Loser G6 <input className="input-field"/></div>
+                        <div className="team">Loser G3 <input className="input-field"/></div>
+                    </div>
+                    <div className="match">
+                        <div className="game-title">Game 13</div>
+                        <div className="team">Loser G5<input className="input-field"/></div>
+                        <div className="team">Loser G4 <input className="input-field"/></div>
+                    </div>
                 </div>
-                <div class="match">
-                    <div class="game-title">Game 15</div>
-                    <div class="team">Loser G7<input class="input-field"></div>
-                    <div class="team">Loser G2<input class="input-field"></div>
-                </div>
-                <div class="match">
-                    <div class="game-title">Game 14</div>
-                    <div class="team">Loser G6 <input class="input-field"></div>
-                    <div class="team">Loser G3 <input class="input-field"></div>
-                </div>
-                <div class="match">
-                    <div class="game-title">Game 13</div>
-                    <div class="team">Loser G5<input class="input-field"></div>
-                    <div class="team">Loser G4 <input class="input-field"></div>
-                </div>
-            </div>   
                 {/* <!-- Round 2 --> */}
                 <div className="round round-2">
-                    <div class="round round-2">
-                <div class="round-title">ROUND 2</div>
-                <div class="match">
-                    <div class="game-title">Game 20</div>
-                    <div class="team">Loser G12 <input class="input-field"></div>
-                    <div class="team">Winner G16 <input class="input-field"></div>
-                </div>
-                <div class="match">
-                    <div class="game-title">Game 19</div>
-                    <div class="team">Loser G11<input class="input-field"></div>
-                    <div class="team">Winner G15<input class="input-field"></div>
-                </div>
-                <div class="match">
-                    <div class="game-title">Game 18</div>
-                    <div class="team">Loser G10 <input class="input-field"></div>
-                    <div class="team">Winner G14 <input class="input-field"></div>
-                </div>
-                <div class="match">
-                    <div class="game-title">Game 26</div>
-                    <div class="team">Loser G22 <input class="input-field"></div>
-                    <div class="team">Winner G20<input class="input-field"></div>
-                </div>
-                <div class="match">
-                    <div class="game-title">Game 25</div>
-                    <div class="team">Loser G21 <input class="input-field"></div>
-                    <div class="team">Winner G29<input class="input-field"></div>
-                </div>
-                <div class="match">
-                    <div class="game-title">Game 28</div>
-                    <div class="team">Loser G24 <input class="input-field"></div>
-                    <div class="team">Winner G18 <input class="input-field"></div>
-                </div>
-                <div class="match">
-                    <div class="game-title">Game 27</div>
-                    <div class="team">Loser G23 <input class="input-field"></div>
-                    <div class="team">Winner G17 <input class="input-field"></div>
-                </div>
-            </div>                   
+                    <div className="round-title">ROUND 2</div>
+                    <div className="match">
+                        <div className="game-title">Game 20</div>
+                        <div className="team">Loser G12 <input className="input-field"/></div>
+                        <div className="team">Winner G16 <input className="input-field"/></div>
+                    </div>
+                    <div className="match">
+                        <div className="game-title">Game 19</div>
+                        <div className="team">Loser G11<input className="input-field"/></div>
+                        <div className="team">Winner G15<input className="input-field"/></div>
+                    </div>
+                    <div className="match">
+                        <div className="game-title">Game 18</div>
+                        <div className="team">Loser G10 <input className="input-field"/></div>
+                        <div className="team">Winner G14 <input className="input-field"/></div>
+                    </div>
+                    <div className="match">
+                        <div className="game-title">Game 26</div>
+                        <div className="team">Loser G22 <input className="input-field"/></div>
+                        <div className="team">Winner G20<input className="input-field"/></div>
+                    </div>
+                    <div className="match">
+                        <div className="game-title">Game 25</div>
+                        <div className="team">Loser G21 <input className="input-field"/></div>
+                        <div className="team">Winner G29<input className="input-field"/></div>
+                    </div>
+                    <div className="match">
+                        <div className="game-title">Game 28</div>
+                        <div className="team">Loser G24 <input className="input-field"/></div>
+                        <div className="team">Winner G18 <input className="input-field"/></div>
+                    </div>
+                    <div className="match">
+                        <div className="game-title">Game 27</div>
+                        <div className="team">Loser G23 <input className="input-field"/></div>
+                        <div className="team">Winner G17 <input className="input-field"/></div>
+                    </div>
+                </div>                   
                 {/* <!-- Round 3 --> */}
-                <div class="round round-3">
-                <div class="round-title">ROUND 3</div>
-                <div class="match">
-                    <div class="game-title">Game 34</div>
-                    <div class="team">Loser G32 <input class="input-field"></div>
-                    <div class="team">Winner G29 <input class="input-field"></div>
-                </div>
-                <div class="match">
-                    <div class="game-title">Game 33</div>
-                    <div class="team">Loser G31 <input class="input-field"></div>
-                    <div class="team">Winner G30 <input class="input-field"></div>
-                </div>
-            </div>    
-                {/* <!-- Round 4 -->
-                <div class="round round-4">
-                <div class="round-title">LOSERS BRACKET SEMI-FINAL</div>
-                <div class="match">
-                    <div class="game-title">Game 35</div>
-                    <div class="team">Winner G34 <input class="input-field"></div>
-                    <div class="team">Winner G33 <input class="input-field"></div>
-                </div>
-            </div>    
+                <div className="round round-3">
+                    <div className="round-title">ROUND 3</div>
+                    <div className="match">
+                        <div className="game-title">Game 34</div>
+                        <div className="team">Loser G32 <input className="input-field"/></div>
+                        <div className="team">Winner G29 <input className="input-field"/></div>
+                    </div>
+                    <div className="match">
+                        <div className="game-title">Game 33</div>
+                        <div className="team">Loser G31 <input className="input-field"/></div>
+                        <div className="team">Winner G30 <input className="input-field"/></div>
+                    </div>
+                </div>    
+                <div className="round round-4">
+                    <div className="round-title">LOSERS BRACKET SEMI-FINAL</div>
+                    <div className="match">
+                        <div className="game-title">Game 35</div>
+                        <div className="team">Winner G34 <input className="input-field"/></div>
+                        <div className="team">Winner G33 <input className="input-field"/></div>
+                    </div>
+                </div>    
                 {/* <!-- Round 5 --> */}
-                 <div class="round round-5">
-                <div class="round-title">LOSERS BRACKET FINAL</div>
-                <div class="match">
-                    <div class="game-title">Game 37</div>
-                    <div class="team">Loser G36 <input class="input-field"></div>
-                    <div class="team">Winner G35 <input class="input-field"></div>
+                <div className="round round-5">
+                    <div className="round-title">LOSERS BRACKET FINAL</div>
+                    <div className="match">
+                        <div className="game-title">Game 37</div>
+                        <div className="team">Loser G36 <input className="input-field"/></div>
+                        <div className="team">Winner G35 <input className="input-field"/></div>
+                    </div>
                 </div>
+            </div>
         </div>
     </div>
 }
