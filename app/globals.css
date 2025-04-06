@@ -118,7 +118,7 @@ h1 {
   border-radius: 8px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 300px;
+  width: 350px;
   position: relative; /* Make sure matches have relative positioning */
 }
 
