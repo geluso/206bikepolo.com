@@ -21,8 +21,8 @@ export function Bracket() {
                     </div>
                     <div className="match">
                         <div className="game-title">Game 3</div>
-                        <div className="team">Team 15 <input className="input-field"/></div>
-                        <div className="team">Team 18 <input className="input-field"/></div>
+                        <div className="team">Team 15 <input className="input-field" value={4}/></div>
+                        <div className="team">Team 18 <input className="input-field" value={1}/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 4</div>
