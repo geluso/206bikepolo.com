@@ -114,7 +114,7 @@ export function Bracket() {
                 {/* <!-- Round 5 --> */}
                 <div className="round round-5">
                     <div className="match game-staged">
-                        <div className="game-title">Game 36</div>
+                        <div className="game-title">Game 35</div>
                         <div className="team">Winner G31 <input className="input-field" value={" "}/></div>
                         <div className="team">Winner G32 <input className="input-field" value={" "}/></div>
                     </div>
@@ -124,7 +124,7 @@ export function Bracket() {
                 <div className="round final-round">
                     <div className="match game-staged">
                         <div className="game-title">Final</div>
-                        <div className="team">Winner G36 <input className="input-field" value={" "}/></div>
+                        <div className="team">Winner G35 <input className="input-field" value={" "}/></div>
                         <div className="team">Winner G37 <input className="input-field" value={" "}/></div>
                     </div>
                 </div>
@@ -248,7 +248,7 @@ export function Bracket() {
                 <div className="round round-6">
                     <div className="round-title">Round 6</div>
                     <div className="match game-staged">
-                        <div className="game-title">Game 35</div>
+                        <div className="game-title">Game 36</div>
                         <div className="team">Winner G34 <input className="input-field" value={" "}/></div>
                         <div className="team">Winner G33 <input className="input-field" value={" "}/></div>
                     </div>
@@ -259,8 +259,8 @@ export function Bracket() {
                     <div className="round-title">Round 7</div>
                     <div className="match game-staged">
                         <div className="game-title">Game 37</div>
-                        <div className="team">Loser G36 <input className="input-field" value={" "}/></div>
-                        <div className="team">Winner G35 <input className="input-field" value={" "}/></div>
+                        <div className="team">Loser G35 <input className="input-field" value={" "}/></div>
+                        <div className="team">Winner G36 <input className="input-field" value={" "}/></div>
                     </div>
                 </div>
             </div>
