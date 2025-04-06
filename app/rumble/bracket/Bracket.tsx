@@ -11,13 +11,13 @@ export function Bracket() {
                     <div className="round-title">ROUND 1</div>
                     <div className="match">
                         <div className="game-title">Game 1</div>
-                        <div className="team">Team 16 <input className="input-field"/></div>
-                        <div className="team">Team 17 <input className="input-field"/></div>
+                        <div className="team">Team 16 <input className="input-field" value={"~0"}/></div>
+                        <div className="team">Team 17 <input className="input-field" value={"~1"}/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 2</div>
-                        <div className="team">Team 13 <input className="input-field"/></div>
-                        <div className="team">Team 20 <input className="input-field"/></div>
+                        <div className="team">Team 13 <input className="input-field" value={"1"}/></div>
+                        <div className="team">Team 20 <input className="input-field" value={"2"}/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 3</div>
@@ -56,7 +56,7 @@ export function Bracket() {
                     <div className="match">
                         <div className="game-title">Game 11</div>
                         <div className="team">Winner G3 <input className="input-field"/></div>
-                        <div className="team">Team 4 <input className="input-field"/></div>
+                        <div className="team">Team 2 <input className="input-field"/></div>
                     </div>
                     <div className="match">
                         <div className="game-title">Game 7</div>
