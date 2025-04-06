@@ -97,7 +97,7 @@ export default async function FinalTeams() {
         <td>Team 14</td>
         <td>B Lashua</td>
         <td>Jennifer Haliewicz</td>
-        <td>Jonatd McKinnon</td>
+        <td>Jonathan McKinnon</td>
         </tr>
         <tr>
         <td>Team 15</td>
@@ -133,7 +133,7 @@ export default async function FinalTeams() {
         <td>Team 20</td>
         <td>Steve Geluso</td>
         <td>Ari McGnarly</td>
-        <td>Gavin td</td>
+        <td>Gavin Turd</td>
         </tr>
       </tbody>
     </table>
