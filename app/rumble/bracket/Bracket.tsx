@@ -182,7 +182,7 @@ export function Bracket() {
                         <div className="team">Gavin/Ari/Geluso<input className="input-field"/></div>
                         <div className="team">Darryl/Mike/Krista<input className="input-field"/></div>
                     </div>
-                    <div className="match game-completed">
+                    <div className="match game-complete">
                         <div className="game-title">Game 17</div>
                         <div className="team">Kody/Ernie/MikeFosters<input className="input-field" value={"4"}/></div>
                         <div className="team">OffVince/DeVince/Sabrina<input className="input-field" value={"1"}/></div>
