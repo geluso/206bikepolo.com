@@ -84,96 +84,120 @@ iframe {
   width: 100%;
   min-height: 80vh;
 }
-/* BRACKET  */
+
+/* bracket */
+
+.container {
+  max-width: 900px;
+  overflow-x: scroll;
+}
+
+h1 {
+  color: #333;
+}
+
 .tournament-bracket {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    gap: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 75px;
+  overflow: visible;
 }
 
 .round {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    position: relative;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  align-items: center;
 }
 
 .match {
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 250px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  position: relative; /* Make sure matches have relative positioning */
 }
 
 /* Game titles, teams, inputs, etc. */
 .game-title {
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.round-title {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background: #ddd;
+  margin: 3px 0;
+  border-radius: 5px;
 }
 
-.team {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    background: #ddd;
-    margin: 3px 0;
-    border-radius: 5px;
+input {
+  width: 50px;
+  text-align: center;
 }
 
 /* Round layout adjustments */
 .round-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 165px;  /* Increase gap between matches in Round 1 */
-    position: relative;
-    top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 135px;  /* Increase gap between matches in Round 1 */
+  position: relative;
+  top: 25px;
 }
 .round-3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 165px;  /* Increase gap between matches in Round 1 */
-    position: relative;
-    top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;  /* Increase gap between matches in Round 1 */
+  position: relative;
+  top: 105px;
 }
 .round-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    position: relative; /* Ensure relative positioning for each round */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  position: relative; /* Ensure relative positioning for each round */
 }
 .round-4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 450px;
-    position: relative; /* Ensure relative positioning for each round */
-    top: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 525px;
+  position: relative; /* Ensure relative positioning for each round */
+  top: 250px;
 }
 .round-5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative; /* Ensure relative positioning for each round */
-    top: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Ensure relative positioning for each round */
+  top: 550px;
 }
 
 .final-round {
-    display: flex;
-    justify-content: center;
-    top: 400px;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  top: 550px;
+  position: relative;
 }
 
 /* Vertical position adjustments for each match */
-.match-1 { position: relative; top: 200px; }   /* Game 1 */
-.match-2 { position: relative; top: 300px; }  /* Game 2 */
+.match-1 { position: relative; top: 200px; z-index: 1;}   /* Game 1 */
+.match-2 { position: relative; top: 400px; }  /* Game 2 */
 .match-3 { position: relative; top: 400px; }  /* Game 3 */
 .match-4 { position: relative; top: 500px; }  /* Game 4 */
 
@@ -193,12 +217,51 @@ iframe {
 
 /* Final Match (Game 36) */
 .final-match {
-    position: relative;
-    top: 500px;  /* Adjust this to position the final match */
-    left: 150px;  /* Center horizontally */
-    width: 600px;  /* Width of the final match */
+  position: relative;
+  top: 500px;  /* Adjust this to position the final match */
+  left: 150px;  /* Center horizontally */
+  width: 600px;  /* Width of the final match */
 }
 
-.tournament-bracket {
-  overflow-x: scroll;
+/* Use ::after to create a horizontal line */
+.line {
+  position: relative;
+}
+
+.line::after {
+  content: '';
+  position: absolute;
+  left: 0;            /* Start from the left edge */
+  top: 100%;           /* Position the line vertically */
+  width: 50%;        /* Full width of the parent */
+  height: 4px;        /* Line thickness */
+  background-color: #333; /* Line color */
+}
+/* Use ::after to create a line */
+.line {
+  position: relative;
+}
+
+.line::after {
+  content: '';
+  position: absolute;
+  left: 50%;         /* Horizontal position */
+  top: 50px;            /* Adjust the starting position */
+  width: 4px;        /* Line thickness */
+  height: 50px;     /* Line height */
+  background-color: #333; /* Line color */
+  transform: translateX(-50%); /* Center the line horizontally */
+}
+
+/* Style all inputs with the class 'input-field' */
+.input-field {
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
+  width: 100px;
+}
+
+.input-field[type="number"] {
+  background-color: #e0ffe0;
 }
