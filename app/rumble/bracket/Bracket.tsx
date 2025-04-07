@@ -247,20 +247,20 @@ export function Bracket() {
                 {/* <!-- Round 6 --> */}
                 <div className="round round-6">
                     <div className="round-title">Round 6</div>
-                    <div className="match game-current">
+                    <div className="match game-complete">
                         <div className="game-title">Game 36</div>
-                        <div className="team">Weston/Cap/Kai<input className="input-field" value={" "}/></div>
-                        <div className="team">Los Lobos (TimTim/Andreas/Mayo) <input className="input-field" value={" "}/></div>
+                        <div className="team">Weston/Cap/Kai<input className="input-field" value={"1"}/></div>
+                        <div className="team">Los Lobos (TimTim/Andreas/Mayo) <input className="input-field" value={"2"}/></div>
                     </div>
                 </div>
 
                 {/* <!-- Round 7 --> */}
                 <div className="round round-5">
                     <div className="round-title">Round 7</div>
-                    <div className="match game-staged">
+                    <div className="match game-current">
                         <div className="game-title">Game 37</div>
                         <div className="team">OG Hard Back Julian/LaRosa/Squigg <input className="input-field" value={" "}/></div>
-                        <div className="team">Winner G36 <input className="input-field" value={" "}/></div>
+                        <div className="team">Los Lobos (TimTime/Andreas/Mayo) <input className="input-field" value={" "}/></div>
                     </div>
                 </div>
             </div>
