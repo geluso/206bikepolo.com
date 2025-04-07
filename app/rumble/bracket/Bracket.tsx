@@ -122,10 +122,10 @@ export function Bracket() {
                 
                 {/* <!-- Final Round --> */}
                 <div className="round final-round">
-                    <div className="match game-staged">
-                        <div className="game-title">Final</div>
+                    <div className="match game-current">
+                        <div className="game-title">Final (Game 38)</div>
                         <div className="team">Gabe/Aaron/Non <input className="input-field" value={" "}/></div>
-                        <div className="team">Winner G37 <input className="input-field" value={" "}/></div>
+                        <div className="team">Los Lobos (TimTim/Andreas/Mayo)<input className="input-field" value={" "}/></div>
                     </div>
                 </div>
                 {/* <!-- Second Final --> */}
@@ -257,10 +257,10 @@ export function Bracket() {
                 {/* <!-- Round 7 --> */}
                 <div className="round round-5">
                     <div className="round-title">Round 7</div>
-                    <div className="match game-current">
+                    <div className="match game-complete">
                         <div className="game-title">Game 37</div>
-                        <div className="team">OG Hard Back Julian/LaRosa/Squigg <input className="input-field" value={" "}/></div>
-                        <div className="team">Los Lobos (TimTime/Andreas/Mayo) <input className="input-field" value={" "}/></div>
+                        <div className="team">OG Hard Back Julian/LaRosa/Squigg <input className="input-field" value={"3"}/></div>
+                        <div className="team">Los Lobos (TimTime/Andreas/Mayo) <input className="input-field" value={"5"}/></div>
                     </div>
                 </div>
             </div>
