@@ -219,8 +219,8 @@ export function Bracket() {
                     <div className="round-title">ROUND 4</div>
                     <div className="match game-current">
                         <div className="game-title">Game 29</div>
-                        <div className="team">Weston/Cap/Kai<input className="input-field" value={" "}/></div>
-                        <div className="team">Carol/Jordan/Ani<input className="input-field" value={" "}/></div>
+                        <div className="team">Weston/Cap/Kai<input className="input-field" value={"3"}/></div>
+                        <div className="team">Carol/Jordan/Ani<input className="input-field" value={"1"}/></div>
                     </div>
                     <div className="match game-staged">
                         <div className="game-title">Game 30</div>
@@ -235,7 +235,7 @@ export function Bracket() {
                     <div className="match game-staged">
                         <div className="game-title">Game 34</div>
                         <div className="team">Loser G32 <input className="input-field" value={" "}/></div>
-                        <div className="team">Winner G29 <input className="input-field" value={" "}/></div>
+                        <div className="team">Weston/Cap/Kai<input className="input-field" value={" "}/></div>
                     </div>
                     <div className="match game-staged">
                         <div className="game-title">Game 33</div>
