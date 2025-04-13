@@ -9,6 +9,15 @@ Let's have some fun here.
 # Setup
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Installation
+
+Since we using Next.js to convert your code to something readable by your browser...
+
+We will need something to read this compiled code (in addition to executing the compilation), and that is our lovely, node.js:
+
+Please install it first: 
+- https://nodejs.org/en
+
 ## Getting Started
 
 First, run the development server:
