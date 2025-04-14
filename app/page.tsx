@@ -8,12 +8,30 @@ export default function Home() {
     <div className="logo">
       <img src="./img/206_seattle_bike_polo_logo.png" />
     </div>
-    
+
     <h1>Seattle Bike Polo</h1>
 
-    <h1>
-      <a href="/rumble">🌹 2025 Rose City Royal Rumble 🥀</a>
-    </h1>
+    <h2>New Players</h2>
+      <div>
+        We meet Wednesday evenings around 5pm until sundown, specifcally for newbies!
+      </div>
+      <div>
+        We have extra mallets and bicycles to borrow!
+      </div>
+      <div>
+        Feel free to stop by with your everyday rider and we can get you in a couple games that day!
+      </div>
+      <p>
+        When ready, we can help you pick out components to build up a single speed, flat bar polo bike!
+      </p>
+
+
+    <h2>  Tournaments </h2>
+
+
+    <h3>
+      <a href="/rumble">🌹 2025 Rose City Royal Rumble 🥀</a> [April 5-6, 2025]
+    </h3>
 
     <h2>News</h2>
     <ul>
