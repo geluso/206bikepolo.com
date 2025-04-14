@@ -14,19 +14,22 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Since we using **Next.js** to convert your code to something readable by your browser...
 
+## via node:
 We will need something to read this compiled code (in addition to executing the compilation), and that is our lovely, **node.js**:
 
 Please install it first: 
 - https://nodejs.org/en
 - And install the corresponding package manager you want 4 running deployment server
 
-Install the packages for this repo:
+Install the packages for this repo: (includeing Next.js)
 ```
 $ npm install
 ```
 This will install all dependencies listed in your package.json, including **Next.js** if it's listed.
 
+--- 
 
+Currently no documentation on install via yarn, pnpm, or bun here. But feel free to write some and add it to README !!!
 
 ## Getting Started
 
