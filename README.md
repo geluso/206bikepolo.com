@@ -7,16 +7,26 @@ If you want to help create anything here just reach out to Steve or anyone on th
 Let's have some fun here.
 
 # Setup
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 # Installation
 
-Since we using Next.js to convert your code to something readable by your browser...
+Since we using **Next.js** to convert your code to something readable by your browser...
 
-We will need something to read this compiled code (in addition to executing the compilation), and that is our lovely, node.js:
+We will need something to read this compiled code (in addition to executing the compilation), and that is our lovely, **node.js**:
 
 Please install it first: 
 - https://nodejs.org/en
+- And install the corresponding package manager you want 4 running deployment server
+
+Install the packages for this repo:
+```
+$ npm install
+```
+This will install all dependencies listed in your package.json, including **Next.js** if it's listed.
+
+
 
 ## Getting Started
 
