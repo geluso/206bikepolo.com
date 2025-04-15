@@ -11,7 +11,20 @@ export default function Home() {
 
     <h1>Seattle Bike Polo</h1>
 
+    <ul>
+      <li>We play at Judkins Park <a href="https://maps.app.goo.gl/UxkWUMPTLsNPhg5WA">47.591401,-122.302915</a></li>
+      <ul>
+        <li>Saturdays 2PM till dark</li>
+        <li>Sundays 11AM till dark</li>
+        <li>Wednesdays 6PM till dark</li>
+      </ul>
+      <li><a href="https://www.instagram.com/206bikepolo/">@206bikepolo</a> on Instagram</li>
+      <li>Talk to everyone on <a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg">Slack</a></li>
+      <li>Rules? Don&apos;t be a dick. Also <a href="/docs/2022-nah-ruleset.pdf">official NAH rules</a> and the <a href="/docs/polo_bible.pdf">polo bible</a>.</li>
+    </ul>
+
     <h2>New Players</h2>
+    <p>We love new players! Come hang out.</p>
     <ul>
       <li>
         We meet Wednesday evenings around 5pm until sundown, specifically for newbies!
@@ -28,41 +41,21 @@ export default function Home() {
     </p>
 
     <h2>  Tournaments </h2>
-    <h3>
-      <a href="/rumble">🌹 2025 Rose City Royal Rumble 🥀</a> [April 5-6, 2025]
-    </h3>
-
-    <h2>News</h2>
     <ul>
+      <li>See tournaments on <a href="https://bikepolocalendar.com/event/the-cascadia-triple-crown-emerald-city-open">bikepolocalendar.com</a></li>
+      <li><a href="/rumble">🌹 2025 Rose City Royal Rumble 🥀</a> [April 5-6, 2025]</li>
       <li>Come out October 26th and 27th 2024 for the <a
           href="https://bikepolocalendar.com/event/the-cascadia-triple-crown-emerald-city-open">Emerald City Open: Cascadia Triple Crown</a>
       </li>
-      <li>Tournament information <a href="/tournaments/2024-emerald-city-open-cascadia-triple-crown">here</a></li>
-      <li>Register for ECO <a href="https://forms.gle/6z6ba3aCkqtqJS416">here</a></li>
-      <li><a href="https://bikepolocalendar.com/event/the-cascadia-triple-crown-emerald-city-open">Bike Polo Calendar Page</a></li>
+      <ul>
+        <li>Tournament information <a href="/tournaments/2024-emerald-city-open-cascadia-triple-crown">here</a></li>
+        <li>Register for ECO <a href="https://forms.gle/6z6ba3aCkqtqJS416">here</a></li>
+      </ul>
+      <li>Come out June 1st and 2nd 2024 for the <a
+          href="https://bikepolocalendar.com/event/nah-cascadia-qualifier">Cascadia Qualifier</a></li>
     </ul>
 
-    <h2>Olds</h2>
-    <div>
-      <ul>
-        <li>We play at Judkins Park <a href="https://maps.app.goo.gl/UxkWUMPTLsNPhg5WA">47.591401,-122.302915</a></li>
-        <ul>
-          <li>Saturdays 2PM till dark</li>
-          <li>Sundays 11AM till dark</li>
-          <li>Wednesdays 6PM till dark</li>
-        </ul>
-        <li><a href="https://www.instagram.com/206bikepolo/">@206bikepolo</a> on Instagram</li>
-        <li>Come out June 1st and 2nd 2024 for the <a
-            href="https://bikepolocalendar.com/event/nah-cascadia-qualifier">Cascadia Qualifier</a></li>
-        <li>
-          Talk to everyone on <a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg">Slack</a>
-        </li>
-        <li>
-          Rules? Don&apos;t be a dick. Also <a href="/docs/2022-nah-ruleset.pdf">official NAH rules</a> and the <a href="/docs/polo_bible.pdf">polo bible</a>.
-        </li>
-        <li>Edit this website on <a href="">GitHub</a>. FTP and GitHub access avaialble upon request.</li>
-      </ul>
-    </div>
+    <p>Edit this website on <a href="https://github.com/geluso/206bikepolo.com">GitHub</a>.</p>
 
     <div>
       <a href="http://localhost:3001/tournaments/2024-emerald-city-open-cascadia-triple-crown">
