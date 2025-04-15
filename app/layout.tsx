@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import NavigationTabs from "./components/NavigationTabs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -8,6 +9,13 @@ export const metadata: Metadata = {
   title: "206 Seattle Bike Polo",
   description: "206 Seattle Bike Polo",
 };
+
+const NAV_TABS = [
+  { label: "Home", href: "/" },
+  { label: "Rumble", href: "/rumble" },
+  { label: "Tournaments", href: "/tournaments" },
+  { label: "History", href: "/history" },
+];
 
 export default function RootLayout({
   children,
@@ -22,23 +30,8 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <div id="main">
-          <div className="tournament-nav-container">
-            <a href="/">
-              <button>Home</button>
-            </a>
-            <a href="/rumble">
-              <button>🌹🏙️👑 Rumble</button>
-            </a>
-            <a href="/tournaments">
-              <button>🏆 Tournaments</button>
-            </a>
-            <a href="/history">
-              <button>⏳ History</button>
-            </a>
-          </div>
-          <div>
-            {children}
-          </div>
+          <NavigationTabs tabs={NAV_TABS} />
+          <div>{children}</div>
         </div>
       </body>
     </html>

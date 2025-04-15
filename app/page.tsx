@@ -9,7 +9,7 @@ export default function Home() {
       <img src="./img/206_seattle_bike_polo_logo.png" />
     </div>
 
-    <h1>Seattle Bike Polo</h1>
+    <h1 className="mb-2 text-2xl font-extrabold">Seattle Bike Polo</h1>
 
     <ul>
       <li>We play at Judkins Park <a href="https://maps.app.goo.gl/UxkWUMPTLsNPhg5WA">47.591401,-122.302915</a></li>
