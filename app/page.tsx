@@ -12,23 +12,22 @@ export default function Home() {
     <h1>Seattle Bike Polo</h1>
 
     <h2>New Players</h2>
-      <div>
-        We meet Wednesday evenings around 5pm until sundown, specifcally for newbies!
-      </div>
-      <div>
+    <ul>
+      <li>
+        We meet Wednesday evenings around 5pm until sundown, specifically for newbies!
+      </li>
+      <li>
         We have extra mallets and bicycles to borrow!
-      </div>
-      <div>
+      </li>
+      <li>
         Feel free to stop by with your everyday rider and we can get you in a couple games that day!
-      </div>
-      <p>
-        When ready, we can help you pick out components to build up a single speed, flat bar polo bike!
-      </p>
-
+      </li>
+    </ul>
+    <p>
+      When ready, we can help you pick out components to build up a single speed, flat bar polo bike!
+    </p>
 
     <h2>  Tournaments </h2>
-
-
     <h3>
       <a href="/rumble">🌹 2025 Rose City Royal Rumble 🥀</a> [April 5-6, 2025]
     </h3>
@@ -55,7 +54,6 @@ export default function Home() {
         <li><a href="https://www.instagram.com/206bikepolo/">@206bikepolo</a> on Instagram</li>
         <li>Come out June 1st and 2nd 2024 for the <a
             href="https://bikepolocalendar.com/event/nah-cascadia-qualifier">Cascadia Qualifier</a></li>
-        <li><a href="https://www.instagram.com/206bikepolo/">@206bikepolo</a> on Instagram</li>
         <li>
           Talk to everyone on <a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg">Slack</a>
         </li>
