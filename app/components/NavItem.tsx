@@ -8,12 +8,10 @@ interface NavItemProps {
 }
 
 const NavItem: React.FC<NavItemProps> = ({ href, label }) => {
-  const isActive = true;
-
   return (
     <Link
       href={href}
-      className="px-4 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100"
+      className="block py-2 px-3 text-white"
     >
       {label}
     </Link>

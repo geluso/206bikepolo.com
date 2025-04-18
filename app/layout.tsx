@@ -29,9 +29,9 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
-        <div id="main">
+        <div className="min-h-screen" id="main">
           <NavigationTabs tabs={NAV_TABS} />
-          <div>{children}</div>
+          <div className="px-4 mt-8">{children}</div>
         </div>
       </body>
     </html>
