@@ -20,7 +20,7 @@ const NavigationTabs: React.FC<NavigationTabsProps> = ({ tabs }) => {
           </span>
         </a>
         <div className="flex w-auto">
-          <ul className="flex space-x-2 md:space-x-8 ">
+          <ul className="flex space-x-2 md:space-x-8">
             {tabs.map((tab, index) => (
               <li className="mb-px mr-1" key={index}>
                 <NavItem label={tab.label} href={tab.href} />

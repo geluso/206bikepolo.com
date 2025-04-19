@@ -26,11 +26,7 @@ body {
 
 #main {
   width: 800px;
-  margin: auto;
-  border: solid black 1px;
-  background-color: white;
   font-family: monospace;
-  position: relative;
 }
 
 #main h1 .center {
