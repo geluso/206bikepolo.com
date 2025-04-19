@@ -1,5 +1,7 @@
+'use client';
 import React from "react";
 import NavItem from "./NavItem";
+import HamburgerMenu from "./HamburgerMenu";
 
 interface Tab {
   label: string;
@@ -19,7 +21,8 @@ const NavigationTabs: React.FC<NavigationTabsProps> = ({ tabs }) => {
             Seattle Bike Polo
           </span>
         </a>
-        <div className="flex w-auto">
+        <HamburgerMenu tabs={tabs}/>
+        <div className="hidden sm:flex sm:w-auto">
           <ul className="flex space-x-2 md:space-x-8">
             {tabs.map((tab, index) => (
               <li className="mb-px mr-1" key={index}>
