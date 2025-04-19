@@ -15,7 +15,7 @@ interface NavigationTabsProps {
 const NavigationTabs: React.FC<NavigationTabsProps> = ({ tabs }) => {
   return (
     <nav className="bg-gray-900 sticky w-full z-20 top-0 start-0">
-      <div className="max-w-screen-xl flex flex-wrap items-center md:justify-between justify-evenly mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3">
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
             Seattle Bike Polo
