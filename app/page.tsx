@@ -2,6 +2,7 @@ import Image from "next/image";
 import judkinsPlayTimes from "../public/img/judkins_play_times.png";
 import cascadiaQualifier2024 from "../public/img/cascadia_qualifier_2024.png";
 import aprilNewbieDay from "../public/img/april_newbie_day.png";
+import NAs2025Winners from "../public/img/NAs_2025_winners_first_place_gulls.jpg"
 
 export default function Home() {
   return (
@@ -65,8 +66,19 @@ export default function Home() {
           </a>
         </li>
         <li>
-          <a href="/rumble">🌹 2025 Rose City Royal Rumble 🥀</a> [April 5-6,
-          2025]
+          <a href="https://bikepolocalendar.com/event/whbpc-2025">🌏🏆 World Champs, Taiwan</a> [November 13-16 2025]
+        </li>
+        <li>
+          <a href="https://www.bikereg.com/bellingham-bike-polo?fbclid=PAZXh0bgNhZW0CMTEAAafZI_pj6p5WiBrtLm7j5O0RLiVvia0DRi_pXLIYTj3vprsL8hNcCubCq7oOXQ_aem_nH1Hi9f6v1X8ZCUcui5Opw">🎃👻 Freakoween, Bellingham, WA</a> [October 31-November 2 2025]
+        </li>
+        <li>
+          <a href="https://bikepolocalendar.com/event/soft-serve-swirl-iv">🍦🌀 Soft Swerve Swirl, Vancouver BC</a> [October 4-5, 2025]
+        </li>
+        <li>
+          <a href="https://bikepolocalendar.com/event/no-fun-city-9">🚫🎉 No Fun City 9, Vancouver BC</a> [September 20-21, 2025]
+        </li>
+        <li>
+          <a href="/rumble">🌹 2025 Rose City Royal Rumble 🥀</a> [April 5-6, 2025]
         </li>
         <li>
           Come out October 26th and 27th 2024 for the{" "}
@@ -99,8 +111,12 @@ export default function Home() {
         <a href="https://github.com/geluso/206bikepolo.com">GitHub</a>.
       </p>
 
+      <h2 className="my-2 text-2xl font-extrabold">2025 North Americans Champions!!</h2>
+      <p>Congratulations to Gulls winning 1st place bringing home glory to Seattle and Cascadia. Carol, Bronco, Julian, and Hamms bring home the gold emblazing SEA back on the trophy forever.</p>
+      <Image src={NAs2025Winners} alt="Sign showing Judkins play times" />
+
       <div>
-        <a href="http://localhost:3001/tournaments/2024-emerald-city-open-cascadia-triple-crown">
+        <a href="/tournaments/2024-emerald-city-open-cascadia-triple-crown">
           <img src="/img/2024_eco_3xcrown1.png" />
         </a>
       </div>
