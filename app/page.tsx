@@ -38,6 +38,10 @@ export default function Home() {
           <a href="/docs/2022-nah-ruleset.pdf">official NAH rules</a> and the{" "}
           <a href="/docs/polo_bible.pdf">polo bible</a>.
         </li>
+        <li>
+          What is bike polo?{" "}
+          <a href="https://www.youtube.com/watch?v=g3Fwwe0U1NY">Watch the old school 2015 era video</a>
+        </li>
       </ul>
 
       <h2 className="my-2 text-2xl font-extrabold">New Players</h2>
