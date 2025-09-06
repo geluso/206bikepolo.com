@@ -70,6 +70,21 @@ export default function Home() {
         When ready, we can help you pick out components to build up a single
         speed, flat bar polo bike!
       </p>
+      <br></br>
+      <h2 className="my-2 text-2xl font-extrabold">Getting your own Gear</h2>
+      <p>
+        Bike polo gear is generally purchased through <a href="hecklersalley.com">hecklersalley.com</a> maintained out in Portland. 
+        <ul className="ps-6 my-2 list-disc list-inside">
+            <li>But our local seattle club generally has old equipment to sell/give away.</li>
+            <li>We often do group orders to save on shipping</li>
+        </ul>
+        General bike specs
+        <ul className="ps-6 my-2 list-disc list-inside">
+            <li>Single speeds with gear ratios of 1.5 to 1.8</li>
+            <li>Break on nondominant hand for front wheel</li>
+            <li>Flat bar</li>
+        </ul>
+      </p>
       <h2 className="my-2 text-2xl font-extrabold">Tournaments</h2>
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
