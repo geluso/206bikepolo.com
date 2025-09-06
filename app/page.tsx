@@ -11,6 +11,12 @@ export default function Home() {
         <img src="./img/206_seattle_bike_polo_logo.png" />
       </div>
       <h2 className="my-2 text-2xl font-extrabold">General Info</h2>
+
+      <p>
+        Bike polo is a team sport, similar to traditional polo, except that bicycles are used instead of horses.
+      </p>
+      <br>
+      </br>
       <p>
         We play at Judkins Park{" "}
         <a href="https://maps.app.goo.gl/UxkWUMPTLsNPhg5WA">
