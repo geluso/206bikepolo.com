@@ -19,7 +19,7 @@ export default function Home() {
       </br>
       <p>
         We play at Judkins Park{" "}
-        <a href="https://maps.app.goo.gl/UxkWUMPTLsNPhg5WA">
+        <a href="https://maps.app.goo.gl/KcbNeoC6srRq2T8r7">
           47.591401,-122.302915
         </a>
       </p>
