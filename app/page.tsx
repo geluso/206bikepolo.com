@@ -13,7 +13,7 @@ export default function Home() {
       <h2 className="my-2 text-2xl font-extrabold">General Info</h2>
 
       <p>
-        Bike polo is a team sport, similar to traditional polo, except that bicycles are used instead of horses.
+        Bike polo is a 3v3 team sport, similar to traditional horse polo, except we ride bicycles. 
       </p>
       <br>
       </br>
@@ -23,38 +23,34 @@ export default function Home() {
           47.591401,-122.302915
         </a>
       </p>
-      <ul>
         <ul className="ps-6 my-2 list-disc list-inside">
           <li>Saturdays 2PM till dark</li>
           <li>Sundays 11AM till dark</li>
-          <li>Wednesdays 6PM till dark</li>
-        </ul>
+          <li>Wednesdays 6PM till dark or later w/ lights</li>
       </ul>
       <p>
-        Social media pages
+          Talk to everyone on{" "}
+<a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg">
+            Slack
+          </a>
       </p>
-      <ul>
-        <ul className="ps-6 my-2 list-disc list-inside">
+      <ul className="ps-6 my-2 list-disc list-inside">
         <li>
           <a href="https://www.instagram.com/206bikepolo/">@206bikepolo</a> on
           Instagram
         </li>
         <li>
-          Talk to everyone on{" "}
-          <a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg">
-            Slack
-          </a>
-        </li>
-        <li>
-          Rules? Don&apos;t be a dick. Also{" "}
-          <a href="/docs/2022-nah-ruleset.pdf">official NAH rules</a> and the{" "}
-          <a href="/docs/polo_bible.pdf">polo bible</a>.
+          Rules? Don&apos;t be a dick. 
+          <ul className="ps-6 list-disc">
+            <li>Also{" "} <a href="/docs/2022-nah-ruleset.pdf">official NAH rules</a> and <a href="/docs/polo_bible.pdf">polo bible</a></li>
+          </ul>
         </li>
         <li>
           What is bike polo?{" "}
-          <a href="https://www.youtube.com/watch?v=g3Fwwe0U1NY">Watch the old school 2015 era video</a>
+          <ul className="ps-6 list-disc">
+            <li><a href="https://www.youtube.com/watch?v=g3Fwwe0U1NY">Watch the old school 2015 era video</a></li>
+          </ul>
         </li>
-        </ul>
       </ul>
 
       <h2 className="my-2 text-2xl font-extrabold">New Players</h2>
@@ -64,7 +60,7 @@ export default function Home() {
           We meet Wednesday evenings around 5pm until sundown, specifically for
           newbies!
         </li>
-        <li>We have extra mallets and bicycles to borrow!</li>
+        <li>We have <b>extra mallets and bicycles to borrow!</b></li>
         <li>
           Feel free to stop by with your everyday rider and we can get you in a
           couple games that day!
