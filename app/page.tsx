@@ -23,6 +23,12 @@ export default function Home() {
           <li>Sundays 11AM till dark</li>
           <li>Wednesdays 6PM till dark</li>
         </ul>
+      </ul>
+      <p>
+        Social media pages
+      </p>
+      <ul>
+        <ul className="ps-6 my-2 list-disc list-inside">
         <li>
           <a href="https://www.instagram.com/206bikepolo/">@206bikepolo</a> on
           Instagram
@@ -42,6 +48,7 @@ export default function Home() {
           What is bike polo?{" "}
           <a href="https://www.youtube.com/watch?v=g3Fwwe0U1NY">Watch the old school 2015 era video</a>
         </li>
+        </ul>
       </ul>
 
       <h2 className="my-2 text-2xl font-extrabold">New Players</h2>
