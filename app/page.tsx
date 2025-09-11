@@ -11,36 +11,45 @@ export default function Home() {
         <img src="./img/206_seattle_bike_polo_logo.png" />
       </div>
       <h2 className="my-2 text-2xl font-extrabold">General Info</h2>
+
+      <p>
+        Bike polo is a 3v3 team sport, similar to traditional horse polo, except we ride bicycles. 
+      </p>
+      <br>
+      </br>
       <p>
         We play at Judkins Park{" "}
-        <a href="https://maps.app.goo.gl/UxkWUMPTLsNPhg5WA">
+        <a href="https://maps.app.goo.gl/KcbNeoC6srRq2T8r7">
           47.591401,-122.302915
         </a>
       </p>
-      <ul>
         <ul className="ps-6 my-2 list-disc list-inside">
           <li>Saturdays 2PM till dark</li>
           <li>Sundays 11AM till dark</li>
-          <li>Wednesdays 6PM till dark</li>
-        </ul>
+          <li>Wednesdays 6PM till dark or later w/ lights</li>
+      </ul>
+      <p>
+          Talk to everyone on{" "}
+<a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg">
+            Slack
+          </a>
+      </p>
+      <ul className="ps-6 my-2 list-disc list-inside">
         <li>
           <a href="https://www.instagram.com/206bikepolo/">@206bikepolo</a> on
           Instagram
         </li>
         <li>
-          Talk to everyone on{" "}
-          <a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg">
-            Slack
-          </a>
-        </li>
-        <li>
-          Rules? Don&apos;t be a dick. Also{" "}
-          <a href="/docs/2022-nah-ruleset.pdf">official NAH rules</a> and the{" "}
-          <a href="/docs/polo_bible.pdf">polo bible</a>.
+          Rules? Don&apos;t be a dick. 
+          <ul className="ps-6 list-disc">
+            <li>Also{" "} <a href="/docs/2022-nah-ruleset.pdf">official NAH rules</a> and <a href="/docs/polo_bible.pdf">polo bible</a></li>
+          </ul>
         </li>
         <li>
           What is bike polo?{" "}
-          <a href="https://www.youtube.com/watch?v=g3Fwwe0U1NY">Watch the old school 2015 era video</a>
+          <ul className="ps-6 list-disc">
+            <li><a href="https://www.youtube.com/watch?v=g3Fwwe0U1NY">Watch the old school 2015 era video</a></li>
+          </ul>
         </li>
       </ul>
 
@@ -51,7 +60,7 @@ export default function Home() {
           We meet Wednesday evenings around 5pm until sundown, specifically for
           newbies!
         </li>
-        <li>We have extra mallets and bicycles to borrow!</li>
+        <li>We have <b>extra mallets and bicycles to borrow!</b></li>
         <li>
           Feel free to stop by with your everyday rider and we can get you in a
           couple games that day!
@@ -60,6 +69,21 @@ export default function Home() {
       <p className="mt-2">
         When ready, we can help you pick out components to build up a single
         speed, flat bar polo bike!
+      </p>
+      <br></br>
+      <h2 className="my-2 text-2xl font-extrabold">Getting your own Gear</h2>
+      <p>
+        Bike polo gear is generally purchased through <a href="hecklersalley.com">hecklersalley.com</a> maintained out in Portland. 
+        <ul className="ps-6 my-2 list-disc list-inside">
+            <li>But our local seattle club generally has old equipment to sell/give away.</li>
+            <li>We often do group orders to save on shipping</li>
+        </ul>
+        General bike specs
+        <ul className="ps-6 my-2 list-disc list-inside">
+            <li>Single speeds with gear ratios of 1.5 to 1.8</li>
+            <li>Break on nondominant hand for front wheel</li>
+            <li>Flat bar</li>
+        </ul>
       </p>
       <h2 className="my-2 text-2xl font-extrabold">Tournaments</h2>
       <ul className="ps-6 my-2 list-disc list-inside">
