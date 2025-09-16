@@ -19,7 +19,7 @@ export default function Home() {
       </br>
       <p>
         We play at Judkins Park{" "}
-        <a href="https://maps.app.goo.gl/KcbNeoC6srRq2T8r7">
+        <a href="https://maps.app.goo.gl/KcbNeoC6srRq2T8r7" target="_blank">
           47.591401,-122.302915
         </a>
       </p>
@@ -30,25 +30,25 @@ export default function Home() {
       </ul>
       <p>
           Talk to everyone on{" "}
-<a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg">
+<a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg" target="_blank">
             Slack
           </a>
       </p>
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
-          <a href="https://www.instagram.com/206bikepolo/">@206bikepolo</a> on
+          <a href="https://www.instagram.com/206bikepolo/" target="_blank">@206bikepolo</a> on
           Instagram
         </li>
         <li>
           Rules? Don&apos;t be a dick. 
           <ul className="ps-6 list-disc">
-            <li>Also{" "} <a href="/docs/2022-nah-ruleset.pdf">official NAH rules</a> and <a href="/docs/polo_bible.pdf">polo bible</a></li>
+            <li>Also{" "} <a href="/docs/2022-nah-ruleset.pdf" target="_blank">official NAH rules</a> and <a href="/docs/polo_bible.pdf" target="_blank">polo bible</a></li>
           </ul>
         </li>
         <li>
           What is bike polo?{" "}
           <ul className="ps-6 list-disc">
-            <li><a href="https://www.youtube.com/watch?v=g3Fwwe0U1NY">Watch the old school 2015 era video</a></li>
+            <li><a href="https://www.youtube.com/watch?v=g3Fwwe0U1NY" target="_blank">Watch the old school 2015 era video</a></li>
           </ul>
         </li>
       </ul>
@@ -73,7 +73,7 @@ export default function Home() {
       <br></br>
       <h2 className="my-2 text-2xl font-extrabold">Getting your own Gear</h2>
       <p>
-        Bike polo gear is generally purchased through <a href="hecklersalley.com">hecklersalley.com</a> maintained out in Portland. 
+        Bike polo gear is generally purchased through <a href="https://hecklersalley.com/" target="_blank">hecklersalley.com</a> maintained out in Portland. 
         <ul className="ps-6 my-2 list-disc list-inside">
             <li>But our local seattle club generally has old equipment to sell/give away.</li>
             <li>We often do group orders to save on shipping</li>
@@ -89,55 +89,26 @@ export default function Home() {
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
           See tournaments on{" "}
-          <a href="https://bikepolocalendar.com/event/the-cascadia-triple-crown-emerald-city-open">
+          <a href="https://bikepolocalendar.com/event/the-cascadia-triple-crown-emerald-city-open" target="_blank">
             bikepolocalendar.com
           </a>
         </li>
         <li>
-          <a href="https://bikepolocalendar.com/event/whbpc-2025">🌏🏆 World Champs, Taiwan</a> [November 13-16 2025]
+          <a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">🌏🏆 World Champs, Taiwan</a> [November 13-16 2025]
         </li>
         <li>
-          <a href="https://www.bikereg.com/bellingham-bike-polo?fbclid=PAZXh0bgNhZW0CMTEAAafZI_pj6p5WiBrtLm7j5O0RLiVvia0DRi_pXLIYTj3vprsL8hNcCubCq7oOXQ_aem_nH1Hi9f6v1X8ZCUcui5Opw">🎃👻 Freakoween, Bellingham, WA</a> [October 31-November 2 2025]
+          <a href="https://www.bikereg.com/bellingham-bike-polo?fbclid=PAZXh0bgNhZW0CMTEAAafZI_pj6p5WiBrtLm7j5O0RLiVvia0DRi_pXLIYTj3vprsL8hNcCubCq7oOXQ_aem_nH1Hi9f6v1X8ZCUcui5Opw" target="_blank">🎃👻 Freakoween, Bellingham, WA</a> [October 31-November 2 2025]
         </li>
         <li>
-          <a href="https://bikepolocalendar.com/event/soft-serve-swirl-iv">🍦🌀 Soft Swerve Swirl, Vancouver BC</a> [October 4-5, 2025]
+          <a href="https://bikepolocalendar.com/event/soft-serve-swirl-iv" target="_blank">🍦🌀 Soft Swerve Swirl, Vancouver BC</a> [October 4-5, 2025]
         </li>
         <li>
-          <a href="https://bikepolocalendar.com/event/no-fun-city-9">🚫🎉 No Fun City 9, Vancouver BC</a> [September 20-21, 2025]
+          <a href="https://bikepolocalendar.com/event/no-fun-city-9" target="_blank">🚫🎉 No Fun City 9, Vancouver BC</a> [September 20-21, 2025]
         </li>
         <li>
           <a href="/rumble">🌹 2025 Rose City Royal Rumble 🥀</a> [April 5-6, 2025]
         </li>
-        <li>
-          Come out October 26th and 27th 2024 for the{" "}
-          <a href="https://bikepolocalendar.com/event/the-cascadia-triple-crown-emerald-city-open">
-            Emerald City Open: Cascadia Triple Crown
-          </a>
-        </li>
-        <ul className="list-disc list-inside">
-          <li>
-            Tournament information{" "}
-            <a href="/tournaments/2024-emerald-city-open-cascadia-triple-crown">
-              here
-            </a>
-          </li>
-          <li>
-            Register for ECO{" "}
-            <a href="https://forms.gle/6z6ba3aCkqtqJS416">here</a>
-          </li>
-        </ul>
-        <li>
-          Come out June 1st and 2nd 2024 for the{" "}
-          <a href="https://bikepolocalendar.com/event/nah-cascadia-qualifier">
-            Cascadia Qualifier
-          </a>
-        </li>
       </ul>
-
-      <p className="mt-2">
-        Edit this website on{" "}
-        <a href="https://github.com/geluso/206bikepolo.com">GitHub</a>.
-      </p>
 
       <h2 className="my-2 text-2xl font-extrabold">2025 North Americans Champions!!</h2>
       <p>Congratulations to Gulls winning 1st place bringing home glory to Seattle and Cascadia. Carol, Bronco, Julian, and Hamms bring home the gold emblazing SEA back on the trophy forever.</p>
@@ -155,6 +126,10 @@ export default function Home() {
         alt="Cascadia Qualifiers 2024 poster"
       />
       <Image src={aprilNewbieDay} alt="Poster for April Newbie Day" />
+      <p className="mt-2">
+        Edit this website on{" "}
+        <a href="https://github.com/geluso/206bikepolo.com" target="_blank">GitHub</a>.
+      </p>
     </div>
   );
 }
