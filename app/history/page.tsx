@@ -4,8 +4,12 @@ import judkinsPoloHistory from '../../public/img/judkins_polo_history.jpg'
 
 export default function Page() {
   return <div>
-    <h1>206 Bike Polo History</h1>
-    <p>Some 206 Bike Polo history, and good talking points if you ever find yourself at a community meeting.</p>
+    <h2 className="my-2 text-2xl font-extrabold">206 Bike Polo History</h2>
+    <p className="mb-2">
+      Some 206 Bike Polo history, and good talking points 
+      if you ever find yourself at a community meeting.
+    </p>
+
     <ul>
       <li>Hard court bike polo was invented in Seattle in 2000. It is now a competitive sport with a global presence.</li>
       <li>The boards on both courts have been built, maintained, and paid for by the polo club since 2010.</li>
@@ -17,5 +21,11 @@ export default function Page() {
     <div>
       <Image src={judkinsPoloHistory} alt="Judkins Park Bike Polo history community meeting poster timeline" />
     </div>
+
+    <h2 className="my-2 text-2xl font-extrabold">Other Clubs</h2>
+
+    
+
+
   </div>
 }
