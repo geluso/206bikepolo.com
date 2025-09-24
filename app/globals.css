@@ -27,7 +27,8 @@ body {
 #main {
   max-width: 800px;
   font-family: monospace;
-}
+  background-color: #b0ccd7;
+e1e7e4
 
 #main h1 .center {
   text-align: center;
