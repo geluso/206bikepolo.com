@@ -7,7 +7,7 @@ import NAs2025Winners from "../public/img/NAs_2025_winners_first_place_gulls.jpg
 export default function Home() {
   return (
     <div>
-      <div className="logo">
+      <div className="logo -mt-6 text-center max-w-md mx-auto">
         <img src="./img/206_seattle_bike_polo_logo.png" />
       </div>
       <h2 className="my-2 text-2xl font-extrabold">General Info</h2>
