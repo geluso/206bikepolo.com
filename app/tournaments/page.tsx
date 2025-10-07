@@ -53,7 +53,7 @@ export default function Page() {
   <ul className="ps-6 my-2 list-disc list-inside">
     <li>
       <a href="https://bikepolocalendar.com/event/valentines-polo" target="_blank">
-        Valentine's Polo
+        Valentine{"'"}s Polo
       </a>{" "}
     </li>
     <ul className="ps-6 list-disc list-inside">
