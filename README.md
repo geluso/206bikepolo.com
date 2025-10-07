@@ -78,6 +78,6 @@ Instagram `seattlebikepolo`
 
 Instagram `seattlewtfbikepolo`
 
-- b*****m@m*****.edu
+- `b*****m@m*****.edu`
 - idk who that is lol
 
