@@ -84,7 +84,7 @@ export default function Home() {
         Bike polo gear is generally purchased through{" "}
         <a href="https://hecklersalley.com/" target="_blank">
           hecklersalley.com
-        </a> maintained out in Portland.
+        </a> maintained out in Portland by Jordan
       </p>
 
       <ul className="ps-6 my-2 list-disc list-inside">
@@ -92,41 +92,24 @@ export default function Home() {
           <li>We often do group orders to save on shipping</li>
       </ul>
 
-      <p>
-        General bike specs
+      <p className="mb-2 mt-2">
+        See <a href="/gear">/gear</a> page for more information.
       </p>
 
-      <ul className="ps-6 my-2 list-disc list-inside">
-          <li>Single speeds with gear ratios of 1.5 to 1.8</li>
-          <li>Break on nondominant hand for front wheel</li>
-          <li>Flat bar</li>
-      </ul>
 
       <h2 className="my-2 text-2xl font-extrabold">Tournaments</h2>
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
-          See tournaments on{" "}
-          <a href="https://bikepolocalendar.com/event/the-cascadia-triple-crown-emerald-city-open" target="_blank">
-            bikepolocalendar.com
+          See tourney page - {" "}
+          <a href="/tournaments" target="_blank">
+            /tournaments
           </a>
         </li>
         <li>
-          <a href="https://forms.gle/kx5W8DUjQ2HPyNiS6" target="_blank">🌸💀 Day of the Deadbeats, Seattle</a> [October 31-11/1 2025]
-        </li>
-        <li>
-          <a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">🏆 World Champs, Taiwan</a> [November 13-16 2025]
-        </li>
-        <li>
-          <a href="https://www.bikereg.com/bellingham-bike-polo?fbclid=PAZXh0bgNhZW0CMTEAAafZI_pj6p5WiBrtLm7j5O0RLiVvia0DRi_pXLIYTj3vprsL8hNcCubCq7oOXQ_aem_nH1Hi9f6v1X8ZCUcui5Opw" target="_blank">🎃👻 Freakoween, Bellingham, WA</a> [October 31-November 2 2025]
-        </li>
-        <li>
-          <a href="https://bikepolocalendar.com/event/soft-serve-swirl-iv" target="_blank">🍦🌀 Soft Swerve Swirl, Vancouver BC</a> [October 4-5, 2025]
-        </li>
-        <li>
-          <a href="https://bikepolocalendar.com/event/no-fun-city-9" target="_blank">🚫🎉 No Fun City 9, Vancouver BC</a> [September 20-21, 2025]
-        </li>
-        <li>
-          <a href="/rumble">🌹 2025 Rose City Royal Rumble 🥀</a> [April 5-6, 2025]
+          For global tournaments see{" "}
+          <a href="https://bikepolocalendar.com/event/the-cascadia-triple-crown-emerald-city-open" target="_blank">
+            bikepolocalendar.com
+          </a>
         </li>
       </ul>
 
