@@ -34,20 +34,6 @@ body {
   text-align: center;
 }
 
-img {
-  max-width: 95%;
-  margin: 1em;
-}
-
-.logo {
-  text-align: center;
-}
-
-.logo img {
-  margin: auto;
-  max-width: 60%;
-}
-
 .tournament-nav-container {
   position: absolute;
   top: -43px;
