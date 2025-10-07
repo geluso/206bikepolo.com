@@ -11,31 +11,31 @@ export default function Page() {
 
   <h2 className="my-2 text-2xl font-extrabold">Major in 2025 </h2>
   <ul className="ps-6 my-2 list-disc list-inside">
-    <li><a href="https://bikepolocalendar.com/event/nahbpc-2025" target="_blank">
-        2025 North American Hardcourt Championships (NAHC)
+    <li><a href="https://bikepolocalendar.com/event/asianhbpc-2025" target="_blank">
+        2025 Asian Hardcourt Championships (AHC)
       </a></li>
-    <ul className="ps-6 list-disc list-inside"> 
-        <li>August 14-15</li>
-        <li>Grand Rapids, MI</li>
+    <ul className="ps-6 list-disc list-inside">
+        <li>May 3-4</li>
+        <li>Bangkok, Thailand</li>
     </ul>
     <li><a href="https://bikepolocalendar.com/event/ehbpc-2025" target="_blank">
         2025 European Hardcourt Championships (EHC)
       </a></li>
-    <ul className="ps-6 list-disc list-inside"> 
+    <ul className="ps-6 list-disc list-inside">
         <li>July 4-6</li>
         <li>Perpignan, France</li>
     </ul>
-    <li><a href="https://bikepolocalendar.com/event/asianhbpc-2025" target="_blank">
-        2025 Asian Hardcourt Championships (AHC)
+    <li><a href="https://bikepolocalendar.com/event/nahbpc-2025" target="_blank">
+        2025 North American Hardcourt Championships (NAHC)
       </a></li>
-    <ul className="ps-6 list-disc list-inside"> 
-        <li>May 3-4</li>
-        <li>Bankock, Thailand</li>
+    <ul className="ps-6 list-disc list-inside">
+        <li>August 14-15</li>
+        <li>Grand Rapids, MI</li>
     </ul>
     <li><a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">
         2025 World Hardcourt Bike Polo Championships (WHBPC)
       </a></li>
-    <ul className="ps-6 list-disc list-inside"> 
+    <ul className="ps-6 list-disc list-inside">
         <li>November 13-16</li>
         <li>Taiwan</li>
     </ul>
@@ -52,19 +52,28 @@ export default function Page() {
 
   <ul className="ps-6 my-2 list-disc list-inside">
     <li>
-      <a href="https://bikepolocalendar.com/event/valentines-polo" target="_blank">
-        Valentine{"'"}s Polo
+      <a href="https://bikepolocalendar.com/event/valentines-2v2-mixer" target="_blank">
+        Kiss to Make it Count 2v2
       </a>{" "}
     </li>
     <ul className="ps-6 list-disc list-inside">
-      <li>February </li>
-      <li>Portland, OR</li>
+      <li>February</li>
+      <li>Vancouver, BC</li>
+    </ul>
+    <li>
+      <a href="https://bikepolocalendar.com/event/tropiclassic-2023" target="_blank">
+        Tropiclassic
+      </a>{" "}
+    </li>
+    <ul className="ps-6 list-disc list-inside">
+      <li>February</li>
+      <li>San Juan, Puerto Rico</li>
     </ul>
     <li>
       <a href="https://bikepolocalendar.com/event/rose-city-royal-rumble" target="_blank">
         Rose City Royal Rumble
       </a>{" "}
-    </li> 
+    </li>
     <ul className="ps-6 list-disc list-inside">
       <li>March/April</li>
       <li>Portland, OR</li>
@@ -106,15 +115,6 @@ export default function Page() {
       <li>Seattle, WA</li>
     </ul>
     <li>
-      <a href="https://bikepolocalendar.com/event/bellingham-halloween-tournament" target="_blank">
-        Bellingham Halloween
-      </a>{" "}
-    </li>
-    <ul className="ps-6 list-disc list-inside">
-      <li>October</li>
-      <li>Bellingham, WA</li>
-    </ul>
-    <li>
       <a href="https://bikepolocalendar.com/event/no-fun-city-9" target="_blank">
         No Fun City
       </a>{" "}
@@ -131,6 +131,15 @@ export default function Page() {
     <ul className="ps-6 list-disc list-inside">
       <li>October</li>
       <li>Vancouver, BC</li>
+    </ul>
+    <li>
+      <a href="https://bikepolocalendar.com/event/bellingham-halloween-tournament" target="_blank">
+        Bellingham Halloween
+      </a>{" "}
+    </li>
+    <ul className="ps-6 list-disc list-inside">
+      <li>October</li>
+      <li>Bellingham, WA</li>
     </ul>
   </ul>
 
@@ -183,42 +192,48 @@ export default function Page() {
     </a></li>
   </ul>
 
-  <p className="font-bold my-2">British Columbia</p>
+  <p className="font-bold my-2">Canada</p>
 
   <ul className="ps-6 my-2 list-disc list-inside">
     <li><a href="https://www.instagram.com/vancouverbcbikepolo/" target="_blank">
-      Vancouver
+      Vancouver, BC
+    </a></li>
+    <li><a href="https://www.instagram.com/vancouverbcbikepolo/" target="_blank">
+      Victoria, BC
     </a></li>
     <li><a href="https://www.instagram.com/ferniebikepolo/" target="_blank">
-      Fernie
+      Fernie, BC
     </a>
-    </li>
-    <li><a href="https://www.instagram.com/calgarybikepolo/" target="_blank">
-      Calgary
-    </a></li>
-    <li><a href="https://www.instagram.com/whitehorsebikeclub/" target="_blank">
-      White Horse
-    </a></li>
     <li><a href="https://www.instagram.com/nelsonbcpolo/" target="_blank">
       Nelson, BC, Canada
+    </a></li>
+    </li>
+    <li><a href="https://www.instagram.com/calgarybikepolo/" target="_blank">
+      Calgary, AB
+    </a></li>
+    <li><a href="https://www.instagram.com/whitehorsebikeclub/" target="_blank">
+      White Horse, YT
     </a></li>
   </ul>
 
   <h2 className="my-2 text-2xl font-extrabold">Popular US Clubs</h2>
   <ul className="ps-6 my-2 list-disc list-inside">
-    <li><a href="https://www.nycbikepolo.com/" target="_blank">
-        NYC, NY
+    <li><a href="https://www.instagram.com/beehivebikepolo/" target="_blank">
+        Salt Lake City, UT
       </a></li>
     <li><a href="https://www.facebook.com/groups/bikepolosf" target="_blank">
         San Francisco, CA
       </a></li>
-    <li><a href="https://www.bostonbikepolo.com/" target="_blank">
-        Boston, MA
-      </a></li>
     <li><a href="https://www.instagram.com/labikepolo/" target="_blank">
         LA, CA
       </a></li>
-  </ul> 
+    <li><a href="https://www.bostonbikepolo.com/" target="_blank">
+        Boston, MA
+      </a></li>
+    <li><a href="https://www.nycbikepolo.com/" target="_blank">
+        NYC, NY
+      </a></li>
+  </ul>
 
   <h2 className="my-2 text-2xl font-extrabold">Popular Global Clubs</h2>
   <ul className="ps-6 my-2 list-disc list-inside">
