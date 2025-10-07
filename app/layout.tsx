@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 const NAV_TABS = [
   { label: "Home", href: "/" },
   { label: "Rumble", href: "/rumble" },
+  { label: "Gear", href: "/gear" },
   { label: "Tournaments", href: "/tournaments" },
   { label: "History", href: "/history" },
 ];
@@ -29,7 +30,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
-        <div className="min-h-screen bg-white m-auto" id="main">
+        <div className="min-h-screen bg-[#b0ccd7] m-auto" id="main">
           <NavigationTabs tabs={NAV_TABS} />
           <div className="px-4 mt-8">{children}</div>
         </div>

@@ -11,7 +11,7 @@ const NavItem: React.FC<NavItemProps> = ({ href, label }) => {
   return (
     <Link
       href={href}
-      className="block py-2 px-3 text-white"
+      className="block py-2 px-3 text-[#b0ccd7]"
     >
       {label}
     </Link>

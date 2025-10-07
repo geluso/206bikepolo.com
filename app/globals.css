@@ -27,6 +27,7 @@ body {
 #main {
   max-width: 800px;
   font-family: monospace;
+  background-color: #b0ccd7;
 }
 
 #main h1 .center {
@@ -41,7 +42,7 @@ body {
   border-radius: 6px 6px 0 0;
 
   a {
-    background-color: white;
+    background-color: #b0ccd7;
   }
 
   button {
@@ -49,7 +50,7 @@ body {
     padding: 1em;
     cursor: pointer;
     border-width: 1px 1px 0;
-    background-color: white;
+    background-color: #b0ccd7;
     border-radius: 6px 6px 0 0;
     min-width: 15em;
     max-height: 43px;
@@ -97,7 +98,7 @@ h1 {
 }
 
 .match {
-  background: white;
+  background: #b0ccd7;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);

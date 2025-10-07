@@ -3,52 +3,63 @@ import judkinsPlayTimes from "../public/img/judkins_play_times.png";
 import cascadiaQualifier2024 from "../public/img/cascadia_qualifier_2024.png";
 import aprilNewbieDay from "../public/img/april_newbie_day.png";
 import NAs2025Winners from "../public/img/NAs_2025_winners_first_place_gulls.jpg"
+import seattleLogoImage from "../public/img/206_seattle_bike_polo_logo.png";
+import crown from "../public/img/2024_eco_3xcrown1.png";
+
 
 export default function Home() {
   return (
     <div>
-      <div className="logo -mt-6 text-center max-w-md mx-auto">
-        <img src="./img/206_seattle_bike_polo_logo.png" />
+      <div className="logo">
+        <Image src={seattleLogoImage} alt="206 Seattle Bike Polo Logo" />
       </div>
+
       <h2 className="my-2 text-2xl font-extrabold">General Info</h2>
+      <p className="mb-2">
+        Bike polo is a 3v3 team sport, similar to traditional horse polo, except we ride bicycles.
+      </p>
+
+      <p className="mb-2">
+        We play at{" "}
+        <a href="https://maps.app.goo.gl/KcbNeoC6srRq2T8r7" target="_blank">
+          Judkins Park
+        </a> in Central District, Seattle || near i90 Rainier Ave exit
+      </p>
+
+      <ul className="ps-6 my-2 list-disc list-inside">
+        <li>Saturdays 2PM till dark</li>
+        <li>Sundays 11AM till dark</li>
+        <li>Wednesdays 5PM till dark or later w/ lights</li>
+      </ul>
 
       <p>
-        Bike polo is a 3v3 team sport, similar to traditional horse polo, except we ride bicycles. 
-      </p>
-      <br>
-      </br>
-      <p>
-        We play at Judkins Park{" "}
-        <a href="https://maps.app.goo.gl/KcbNeoC6srRq2T8r7" target="_blank">
-          47.591401,-122.302915
+        Talk to everyone on{" "}
+        <a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg" target="_blank">
+          Slack
+        </a>{" "}
+        and follow us on Instagram{" "}
+        <a href="https://www.instagram.com/206bikepolo/" target="_blank">
+          @206bikepolo
         </a>
       </p>
-        <ul className="ps-6 my-2 list-disc list-inside">
-          <li>Saturdays 2PM till dark</li>
-          <li>Sundays 11AM till dark</li>
-          <li>Wednesdays 6PM till dark or later w/ lights</li>
-      </ul>
-      <p>
-          Talk to everyone on{" "}
-<a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg" target="_blank">
-            Slack
-          </a>
-      </p>
+
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
-          <a href="https://www.instagram.com/206bikepolo/" target="_blank">@206bikepolo</a> on
-          Instagram
-        </li>
-        <li>
-          Rules? Don&apos;t be a dick. 
-          <ul className="ps-6 list-disc">
-            <li>Also{" "} <a href="/docs/2022-nah-ruleset.pdf" target="_blank">official NAH rules</a> and <a href="/docs/polo_bible.pdf" target="_blank">polo bible</a></li>
+          Rules? Don&apos;t be a dick.
+          <ul className="ps-6 list-disc list-inside">
+            <li>Also{" "} <a href="/docs/2022-nah-ruleset.pdf" target="_blank">official NAH rules</a> and{" "}
+            <a href="/docs/polo_bible.pdf" target="_blank">
+              polo bible
+            </a></li>
           </ul>
         </li>
         <li>
           What is bike polo?{" "}
-          <ul className="ps-6 list-disc">
-            <li><a href="https://www.youtube.com/watch?v=g3Fwwe0U1NY" target="_blank">Watch the old school 2015 era video</a></li>
+          <ul className="ps-6 list-disc list-inside">
+            <li>
+              <a href="https://www.youtube.com/watch?v=g3Fwwe0U1NY" target="_blank">
+                Watch the old school 2015 era video
+              </a></li>
           </ul>
         </li>
       </ul>
@@ -57,79 +68,68 @@ export default function Home() {
       <p className="mb-2">We love new players! Come hang out.</p>
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
-          We meet Wednesday evenings around 5pm until sundown, specifically for
+          We meet Wednesday & Saturday until sundown, specifically for
           newbies!
         </li>
         <li>We have <b>extra mallets and bicycles to borrow!</b></li>
-        <li>
-          Feel free to stop by with your everyday rider and we can get you in a
-          couple games that day!
-        </li>
       </ul>
-      <p className="mt-2">
+
+      <p className="mb-2 mt-2">
         When ready, we can help you pick out components to build up a single
         speed, flat bar polo bike!
       </p>
-      <br></br>
+
       <h2 className="my-2 text-2xl font-extrabold">Getting your own Gear</h2>
       <p>
-        Bike polo gear is generally purchased through <a href="https://hecklersalley.com/" target="_blank">hecklersalley.com</a> maintained out in Portland. 
-        <ul className="ps-6 my-2 list-disc list-inside">
-            <li>But our local seattle club generally has old equipment to sell/give away.</li>
-            <li>We often do group orders to save on shipping</li>
-        </ul>
-        General bike specs
-        <ul className="ps-6 my-2 list-disc list-inside">
-            <li>Single speeds with gear ratios of 1.5 to 1.8</li>
-            <li>Break on nondominant hand for front wheel</li>
-            <li>Flat bar</li>
-        </ul>
+        Bike polo gear is generally purchased through{" "}
+        <a href="https://hecklersalley.com/" target="_blank">
+          hecklersalley.com
+        </a> maintained out in Portland by Jordan
       </p>
+
+      <ul className="ps-6 my-2 list-disc list-inside">
+          <li>But our local seattle club generally has old equipment to sell/give away.</li>
+          <li>We often do group orders to save on shipping</li>
+      </ul>
+
+      <p className="mb-2 mt-2">
+        See <a href="/gear">/gear</a> page for more information.
+      </p>
+
+
       <h2 className="my-2 text-2xl font-extrabold">Tournaments</h2>
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
-          See tournaments on{" "}
+          See tourney page - {" "}
+          <a href="/tournaments" target="_blank">
+            /tournaments
+          </a>
+        </li>
+        <li>
+          For global tournaments see{" "}
           <a href="https://bikepolocalendar.com/event/the-cascadia-triple-crown-emerald-city-open" target="_blank">
             bikepolocalendar.com
           </a>
         </li>
-        <li>
-          <a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">🌏🏆 World Champs, Taiwan</a> [November 13-16 2025]
-        </li>
-        <li>
-          <a href="https://www.bikereg.com/bellingham-bike-polo?fbclid=PAZXh0bgNhZW0CMTEAAafZI_pj6p5WiBrtLm7j5O0RLiVvia0DRi_pXLIYTj3vprsL8hNcCubCq7oOXQ_aem_nH1Hi9f6v1X8ZCUcui5Opw" target="_blank">🎃👻 Freakoween, Bellingham, WA</a> [October 31-November 2 2025]
-        </li>
-        <li>
-          <a href="https://bikepolocalendar.com/event/soft-serve-swirl-iv" target="_blank">🍦🌀 Soft Swerve Swirl, Vancouver BC</a> [October 4-5, 2025]
-        </li>
-        <li>
-          <a href="https://bikepolocalendar.com/event/no-fun-city-9" target="_blank">🚫🎉 No Fun City 9, Vancouver BC</a> [September 20-21, 2025]
-        </li>
-        <li>
-          <a href="/rumble">🌹 2025 Rose City Royal Rumble 🥀</a> [April 5-6, 2025]
-        </li>
       </ul>
 
       <h2 className="my-2 text-2xl font-extrabold">2025 North Americans Champions!!</h2>
-      <p>Congratulations to Gulls winning 1st place bringing home glory to Seattle and Cascadia. Carol, Bronco, Julian, and Hamms bring home the gold emblazing SEA back on the trophy forever.</p>
-      <Image src={NAs2025Winners} alt="Sign showing Judkins play times" />
+      <p>
+        Congratulations to <strong>Gulls winning 1st place</strong> bringing home glory to Seattle and Cascadia.
+        Carol, Bronco, Julian, and Hamms bring home the gold emblazing SEA back on the trophy forever.
+      </p>
 
-      <div>
-        <a href="/tournaments/2024-emerald-city-open-cascadia-triple-crown">
-          <img src="/img/2024_eco_3xcrown1.png" />
-        </a>
-      </div>
-
-      <Image src={judkinsPlayTimes} alt="Sign showing Judkins play times" />
-      <Image
-        src={cascadiaQualifier2024}
-        alt="Cascadia Qualifiers 2024 poster"
-      />
-      <Image src={aprilNewbieDay} alt="Poster for April Newbie Day" />
       <p className="mt-2">
         Edit this website on{" "}
         <a href="https://github.com/geluso/206bikepolo.com" target="_blank">GitHub</a>.
       </p>
+
+      <Image src={NAs2025Winners} alt="Sign showing Judkins play times"  />
+      <Image src={crown} alt="..." />
+      <Image src={judkinsPlayTimes} alt="Sign showing Judkins play times" />
+      <Image src={cascadiaQualifier2024} alt="Cascadia Qualifiers 2024 poster" />
+      <Image src={aprilNewbieDay} alt="Poster for April Newbie Day" />
+
     </div>
   );
 }

@@ -41,7 +41,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ tabs }) => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg">
+        <div className="absolute right-0 mt-2 w-48 bg-[#b0ccd7] shadow-lg rounded-lg">
           <ul className="flex flex-col p-2 space-y-2">
             {tabs.map((tab, index) => (
               <li key={index}>
