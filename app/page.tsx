@@ -16,12 +16,12 @@ export default function Home() {
 
       <h2 className="my-2 text-2xl font-extrabold">General Info</h2>
       <p className="mb-2">
-        Bike polo is a 3v3 team sport, similar to traditional horse polo, except we ride bicycles. 
+        Bike polo is a 3v3 team sport, similar to traditional horse polo, except we ride bicycles.
       </p>
 
       <p className="mb-2">
         We play at{" "}
-        <a href="https://maps.app.goo.gl/KcbNeoC6srRq2T8r7" target="_blank"> 
+        <a href="https://maps.app.goo.gl/KcbNeoC6srRq2T8r7" target="_blank">
           Judkins Park
         </a> in Central District, Seattle || near i90 Rainier Ave exit
       </p>
@@ -34,8 +34,8 @@ export default function Home() {
 
       <p>
         Talk to everyone on{" "}
-        <a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg" target="_blank"> 
-          Slack 
+        <a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg" target="_blank">
+          Slack
         </a>{" "}
         and follow us on Instagram{" "}
         <a href="https://www.instagram.com/206bikepolo/" target="_blank">
@@ -45,7 +45,7 @@ export default function Home() {
 
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
-          Rules? Don&apos;t be a dick. 
+          Rules? Don&apos;t be a dick.
           <ul className="ps-6 list-disc list-inside">
             <li>Also{" "} <a href="/docs/2022-nah-ruleset.pdf" target="_blank">official NAH rules</a> and{" "}
             <a href="/docs/polo_bible.pdf" target="_blank">
@@ -111,7 +111,10 @@ export default function Home() {
           </a>
         </li>
         <li>
-          <a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">�🏆 World Champs, Taiwan</a> [November 13-16 2025]
+          <a href="https://forms.gle/kx5W8DUjQ2HPyNiS6" target="_blank">🌸💀 Day of the Deadbeats, Seattle</a> [October 31-11/1 2025]
+        </li>
+        <li>
+          <a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">🏆 World Champs, Taiwan</a> [November 13-16 2025]
         </li>
         <li>
           <a href="https://www.bikereg.com/bellingham-bike-polo?fbclid=PAZXh0bgNhZW0CMTEAAafZI_pj6p5WiBrtLm7j5O0RLiVvia0DRi_pXLIYTj3vprsL8hNcCubCq7oOXQ_aem_nH1Hi9f6v1X8ZCUcui5Opw" target="_blank">🎃👻 Freakoween, Bellingham, WA</a> [October 31-November 2 2025]
@@ -129,7 +132,7 @@ export default function Home() {
 
       <h2 className="my-2 text-2xl font-extrabold">2025 North Americans Champions!!</h2>
       <p>
-        Congratulations to <strong>Gulls winning 1st place</strong> bringing home glory to Seattle and Cascadia. 
+        Congratulations to <strong>Gulls winning 1st place</strong> bringing home glory to Seattle and Cascadia.
         Carol, Bronco, Julian, and Hamms bring home the gold emblazing SEA back on the trophy forever.
       </p>
 
@@ -137,7 +140,7 @@ export default function Home() {
         Edit this website on{" "}
         <a href="https://github.com/geluso/206bikepolo.com" target="_blank">GitHub</a>.
       </p>
-      
+
       <Image src={NAs2025Winners} alt="Sign showing Judkins play times"  />
       <Image src={crown} alt="..." />
       <Image src={judkinsPlayTimes} alt="Sign showing Judkins play times" />
