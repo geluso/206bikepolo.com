@@ -152,6 +152,15 @@ export default function Home() {
           <li>Rim brakes are good to start, but doesn't provide enough stopping power (especially in wet conditions)</li>
         </ul>
 
+      5. Pedals
+
+        <ul className="ps-6 my-2 list-disc list-inside">
+          <li>Flat pedals to start</li>
+          <li>Plastic pedals because metal might cause injury to yourself</li>
+          <li>Clipless once better</li>
+          <li>Some people who are used to straps, run straps (rare/dangerous due to hard to remove feet)</li>
+        </ul>
+
       6. Safety Equipment
 
         <ul className="ps-6 my-2 list-disc list-inside">
@@ -161,7 +170,7 @@ export default function Home() {
           <li>Elbow pads (optional, not common)</li>
           <li>Wrist guards (optional, not common)</li>
           <li>Mouth guard</li>
-          <li>Eye protection (optional, not common)</li>
+          <li>Eye protection (common)</li>
           <li>Face shield (optional, not common)</li>
         </ul>
 
