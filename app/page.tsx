@@ -72,10 +72,6 @@ export default function Home() {
           newbies!
         </li>
         <li>We have <b>extra mallets and bicycles to borrow!</b></li>
-        <li>
-          Feel free to stop by with your everyday rider and we can get you in a
-          couple games that day!
-        </li>
       </ul>
 
       <p className="mb-2 mt-2">
