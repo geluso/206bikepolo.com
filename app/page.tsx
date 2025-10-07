@@ -142,13 +142,30 @@ export default function Home() {
           <li>Any rim width (generally 19mm-30mm)</li>
           <li>Any tire width (generally 28mm-40mm)</li>
       </ul>
+
       4. Breaks and Handlebars
+
         <ul className="ps-6 my-2 list-disc list-inside">
           <li>Break on nondominant hand for front wheel (no need for back brakes)</li>
           <li>Flat bar</li>
           <li>Disc brakes</li>
           <li>Rim brakes are good to start, but doesn't provide enough stopping power (especially in wet conditions)</li>
         </ul>
+
+      6. Safety Equipment
+
+        <ul className="ps-6 my-2 list-disc list-inside">
+          <li>Gloves (something with knuckle protection. Generally ppl use lacross gloves (rather than hockey gloves) due to more thumb mobility)</li>
+          <li>Helmet (required in tournaments)</li>
+          <li>Knee pads (optional, common)</li>
+          <li>Elbow pads (optional, not common)</li>
+          <li>Wrist guards (optional, not common)</li>
+          <li>Mouth guard</li>
+          <li>Eye protection (optional, not common)</li>
+          <li>Face shield (optional, not common)</li>
+        </ul>
+
+
 
       <h2 className="my-2 text-2xl font-extrabold">Tournaments</h2>
       <ul className="ps-6 my-2 list-disc list-inside">
