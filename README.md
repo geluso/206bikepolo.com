@@ -57,3 +57,27 @@ Just run build locally first to check if successfull and debug errors:
 ```bash
 npm run build
 ```
+
+## Social Media Platforms
+
+Slack
+
+- [https://join.slack.com/t/seattlebikepolo/](https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg))
+- idk who runs it, but jake has admin access
+
+Instagram `206bikepolo`
+
+- idk who it is, but active as of July 2025
+
+### Archiv
+
+Instagram `seattlebikepolo`
+
+- Under seattlebikepolo@gmail.com 
+- Run by Messman
+
+Instagram `seattlewtfbikepolo`
+
+- `b*****m@m*****.edu`
+- idk who that is lol
+
