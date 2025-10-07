@@ -67,7 +67,8 @@ Slack
 
 Instagram `206bikepolo`
 
-- idk who it is, but active as of July 2025
+- active as of July 2025
+- Steve Geluso & Phillip have access
 
 ### Archiv
 
@@ -80,4 +81,6 @@ Instagram `seattlewtfbikepolo`
 
 - `b*****m@m*****.edu`
 - idk who that is lol
+- phillip has access
+  - said it's connected to Tony's facebook
 
