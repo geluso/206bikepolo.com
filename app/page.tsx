@@ -72,10 +72,6 @@ export default function Home() {
           newbies!
         </li>
         <li>We have <b>extra mallets and bicycles to borrow!</b></li>
-        <li>
-          Feel free to stop by with your everyday rider and we can get you in a
-          couple games that day!
-        </li>
       </ul>
 
       <p className="mb-2 mt-2">
@@ -88,7 +84,7 @@ export default function Home() {
         Bike polo gear is generally purchased through{" "}
         <a href="https://hecklersalley.com/" target="_blank">
           hecklersalley.com
-        </a> maintained out in Portland.
+        </a> maintained out in Portland by Jordan
       </p>
 
       <ul className="ps-6 my-2 list-disc list-inside">
@@ -96,38 +92,77 @@ export default function Home() {
           <li>We often do group orders to save on shipping</li>
       </ul>
 
-      <p>
-        General bike specs
+      <p className="mb-2 mt-2">
+        Can buy a starter frame from FB marketplace for ~$100
       </p>
 
       <ul className="ps-6 my-2 list-disc list-inside">
-          <li>Single speeds with gear ratios of 1.5 to 1.8</li>
-          <li>Break on nondominant hand for front wheel</li>
-          <li>Flat bar</li>
+        <li>A great deal is to buy an enforcer frame </li>
+        <li>Runs at $300 for new aluminum frame from Portland</li>
+        <li>Built out in Peru</li>
+        <li>Made 4 polo</li>
       </ul>
+
+      <h2 className="my-2 text-2xl font-extrabold">General bike specs</h2>
+
+      1. Gear Ratio
+
+      <ul className="ps-6 my-2 list-disc list-inside">
+          <li><b>Single speeds with gear ratios of 1.5 to 1.8</b></li>
+          <ul className="ps-6 list-disc list-inside">
+            <li>So the gear on back wheel would have around 15 teeth</li>
+            <ul className="ps-6 list-disc list-inside">
+              <li>multiply that by 1.5 to 1.8 to get front chainring size</li>
+              <li>so then the front chain ring will be around 22-27 teeth</li>
+            </ul>
+            <li>Smaller gears will make bike a little lighter too</li>
+          </ul>
+      </ul>
+
+      2. Frame
+      <ul className="ps-6 my-2 list-disc list-inside">
+          <li>Strong frame (<b>steel or aluminum</b>)</li>
+          <li>Single speed/track frame</li>
+          <li>Smaller frame sizes (49-54cm)</li>
+          <li><b>Compact geometry</b></li>
+          <li>Short chainstays (15-16 inches)</li>
+          <li>Short bike trail</li>
+
+      </ul>
+      3. Wheels
+      <ul className="ps-6 my-2 list-disc list-inside">
+          <li>Strong wheels (>32 spokes, double walled rims)</li>
+          <li><b>Cover for front wheel </b>(and optional back wheel)</li>
+          <ul className="ps-6 list-disc list-inside">
+            <li>Prevents ball from going between spokes when playin as goalie</li>
+            <li>Also can prevent spokes from breaking</li>
+          </ul>
+          <li>Any size diameter of wheel (doesn't matter much)</li>
+          <li>bigger wheel makes it slightly better as a goalie</li>
+          <li>Any rim width (generally 19mm-30mm)</li>
+          <li>Any tire width (generally 28mm-40mm)</li>
+      </ul>
+      4. Breaks and Handlebars
+        <ul className="ps-6 my-2 list-disc list-inside">
+          <li>Break on nondominant hand for front wheel (no need for back brakes)</li>
+          <li>Flat bar</li>
+          <li>Disc brakes</li>
+          <li>Rim brakes are good to start, but doesn't provide enough stopping power (especially in wet conditions)</li>
+        </ul>
 
       <h2 className="my-2 text-2xl font-extrabold">Tournaments</h2>
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
-          See tournaments on{" "}
-          <a href="https://bikepolocalendar.com/event/the-cascadia-triple-crown-emerald-city-open" target="_blank">
-            bikepolocalendar.com
+          See tourney page - {" "}
+          <a href="/tournaments" target="_blank">
+            /tournaments
           </a>
         </li>
         <li>
-          <a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">�🏆 World Champs, Taiwan</a> [November 13-16 2025]
-        </li>
-        <li>
-          <a href="https://www.bikereg.com/bellingham-bike-polo?fbclid=PAZXh0bgNhZW0CMTEAAafZI_pj6p5WiBrtLm7j5O0RLiVvia0DRi_pXLIYTj3vprsL8hNcCubCq7oOXQ_aem_nH1Hi9f6v1X8ZCUcui5Opw" target="_blank">🎃👻 Freakoween, Bellingham, WA</a> [October 31-November 2 2025]
-        </li>
-        <li>
-          <a href="https://bikepolocalendar.com/event/soft-serve-swirl-iv" target="_blank">🍦🌀 Soft Swerve Swirl, Vancouver BC</a> [October 4-5, 2025]
-        </li>
-        <li>
-          <a href="https://bikepolocalendar.com/event/no-fun-city-9" target="_blank">🚫🎉 No Fun City 9, Vancouver BC</a> [September 20-21, 2025]
-        </li>
-        <li>
-          <a href="/rumble">🌹 2025 Rose City Royal Rumble 🥀</a> [April 5-6, 2025]
+          For global tournaments see{" "}
+          <a href="https://bikepolocalendar.com/event/the-cascadia-triple-crown-emerald-city-open" target="_blank">
+            bikepolocalendar.com
+          </a>
         </li>
       </ul>
 
