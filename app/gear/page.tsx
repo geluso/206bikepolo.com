@@ -42,7 +42,7 @@ export default function Page() {
       </ul>
       3. Wheels
       <ul className="ps-6 my-2 list-disc list-inside">
-          <li>Strong wheels (>32 spokes, double walled rims)</li>
+          <li>Strong wheels ({">"}32 spokes, double walled rims)</li>
           <li><b>Cover for front wheel </b>(and optional back wheel)</li>
           <ul className="ps-6 list-disc list-inside">
             <li>Prevents ball from going between spokes when playin as goalie</li>
