@@ -48,7 +48,7 @@ export default function Page() {
             <li>Prevents ball from going between spokes when playin as goalie</li>
             <li>Also can prevent spokes from breaking</li>
           </ul>
-          <li>Any size diameter of wheel (doesn't matter much)</li>
+          <li>Any size diameter of wheel (does not matter much)</li>
           <li>bigger wheel makes it slightly better as a goalie</li>
           <li>Any rim width (generally 19mm-30mm)</li>
           <li>Any tire width (generally 28mm-40mm)</li>
@@ -60,7 +60,7 @@ export default function Page() {
           <li>Break on nondominant hand for front wheel (no need for back brakes)</li>
           <li>Flat bar</li>
           <li>Disc brakes</li>
-          <li>Rim brakes are good to start, but doesn't provide enough stopping power (especially in wet conditions)</li>
+          <li>Rim brakes are good to start, but does not provide enough stopping power (especially in wet conditions)</li>
         </ul>
 
       5. Pedals
@@ -112,7 +112,7 @@ export default function Page() {
             
             <h2 className="my-2 text-2xl font-extrabold">Where to Buy</h2>
             <p className="mb-2">
-                You can purchase bike polo gear from various online retailers such as Heckler's Alley or local bike shops that specialize in bike polo equipment.
+                You can purchase bike polo gear from various online retailers such as Heckler{"'"}s Alley or local bike shops that specialize in bike polo equipment.
             </p>
 
             <h2 className="my-2 text-2xl font-extrabold">Maintenance</h2>
