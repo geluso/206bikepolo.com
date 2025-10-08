@@ -84,52 +84,6 @@ export default function Page() {
           <li>Eye protection (common)</li>
           <li>Face shield (optional, not common)</li>
         </ul>
-
-
-        <h1 className="my-2 text-3xl font-extrabold">BELOW GENERATED FROM CHATGPT</h1>
-            
-            <h1 className="my-2 text-3xl font-extrabold">Gear</h1>
-            <p className="mb-2">
-                Interested in getting into bike polo? Here is some information on gear to get you started.
-            </p>
-            
-            <h2 className="my-2 text-2xl font-extrabold">Bikes</h2>
-            <p className="mb-2">
-                You can play bike polo on almost any bike, but most people use a single speed or fixed gear bike.
-                A flat handlebar is preferred for better control. Avoid bikes with drop bars or multiple gears as they can be cumbersome during play.
-            </p>
-
-            <h2 className="my-2 text-2xl font-extrabold">Mallets</h2>
-            <p className="mb-2">
-                Mallets are essential for playing bike polo. They typically consist of a wooden or composite head attached to a long handle.
-                You can find mallets at specialized bike polo shops or online retailers.
-            </p>
-            
-            <h2 className="my-2 text-2xl font-extrabold">Protective Gear</h2>   
-            <p className="mb-2">
-                Safety is important in bike polo. Consider wearing a helmet, gloves, and knee pads to protect yourself during play.
-            </p>
-            
-            <h2 className="my-2 text-2xl font-extrabold">Where to Buy</h2>
-            <p className="mb-2">
-                You can purchase bike polo gear from various online retailers such as Heckler{"'"}s Alley or local bike shops that specialize in bike polo equipment.
-            </p>
-
-            <h2 className="my-2 text-2xl font-extrabold">Maintenance</h2>
-            <p className="mb-2">
-                Regular maintenance of your bike and mallet is crucial for optimal performance. Keep your bike clean, check tire pressure, and ensure that all components are in good working order.
-            </p>
-            <p className="mb-2">
-                For mallets, inspect the head and handle for any damage and replace them as needed.
-            </p>
-            
-            <h2 className="my-2 text-2xl font-extrabold">Community</h2>
-            <p className="mb-2">
-                Joining a local bike polo club can provide you with access to gear, advice, and a community of players. Check out local meetups or online forums to connect with other bike polo enthusiasts.
-            </p>
-            <p className="mb-2">
-                Happy riding and enjoy the game!
-            </p>
-        </div>
+      </div>
     );
 }
