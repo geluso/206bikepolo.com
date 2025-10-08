@@ -93,12 +93,19 @@ export default function Page() {
       </a>{" "}
     </li>
     <ul className="ps-6 list-disc list-inside">
-      <li>May/June</li>
-      <li>British Columbia, Canada</li>
+      <li>End of May</li>
+      <li>Hedley, BC</li>
+    </ul>
+    <a href="https://bikepolocalendar.com/event/polo-trolls" target="_blank">
+      Polo Trolls
+    </a>{" "}
+    <ul className="ps-6 list-disc list-inside">
+      <li>June</li>
+      <li>Eugene, OR</li>
     </ul>
     <li>
       <a href="https://bikepolocalendar.com/event/battle-point" target="_blank">
-        Battle Royale Bremerton
+        Battle Point
       </a>{" "}
     </li>
     <ul className="ps-6 list-disc list-inside">
