@@ -1,89 +1,123 @@
 export default function Page() {
     return (
-        <div>
+      <div className="mb-32">
       <h2 className="my-2 text-2xl font-extrabold">Start by buying a bike frame</h2>
 
       <p className="mb-2 mt-2">
-        Can buy a starter frame from FB marketplace for ~$100
+        Can buy a starter frame from <a href="https://www.facebook.com/marketplace/">FB marketplace</a> for ~$100
       </p>
 
+      <p className="mb-2 mt-2">
+        A great deal is to buy an <a href="https://www.enforcerbikes.com/">Enforcer frame</a>
+      </p>
       <ul className="ps-6 my-2 list-disc list-inside">
-        <li>A great deal is to buy an <a href="https://www.enforcerbikes.com/">Enforcer frame</a> </li>
         <li>Runs at $300 for new aluminum frame from Portland</li>
-        <li>Built out in Peru</li>
+        <li>Built out in China & Peru</li>
         <li>Made 4 polo</li>
       </ul>
 
       <h2 className="my-2 text-2xl font-extrabold">General bike specs</h2>
-
-      1. Gear Ratio
-
-      <ul className="ps-6 my-2 list-disc list-inside">
+      <ol className="ps-6 list-decimal">
+      <li>Gear Ratio</li>
+      <ul className="ps-3 my-2 mt-2 list-disc ">
           <li><b>Single speeds with gear ratios of 1.5 to 1.8</b></li>
-          <ul className="ps-6 list-disc list-inside">
+          <ul className="ps-6 list-disc">
             <li>So the gear on back wheel would have around 15 teeth</li>
-            <ul className="ps-6 list-disc list-inside">
+            <ul className="ps-6 list-disc">
               <li>multiply that by 1.5 to 1.8 to get front chainring size</li>
               <li>so then the front chain ring will be around 22-27 teeth</li>
             </ul>
             <li>Smaller gears will make bike a little lighter too</li>
           </ul>
       </ul>
-
-      2. Frame
-      <ul className="ps-6 my-2 list-disc list-inside">
+      <li>Frame</li>
+      <ul className="ps-3 my-2 list-disc list-inside">
           <li>Strong frame (<b>steel or aluminum</b>)</li>
+          <ul className="ps-6 list-disc list-inside">
+            <li>I personally prefer aluminum cause it b lighter</li>
+          </ul>
           <li>Single speed/track frame</li>
-          <li>Smaller frame sizes (49-54cm)</li>
-          <li><b>Compact geometry</b></li>
-          <li>Short chainstays (15-16 inches)</li>
+          <ul className="ps-6 list-disc list-inside">
+            <li>No derailler, because its heavy and might break</li>
+            <li>So these frames have the back wheel slide horizontally into frame</li>
+            <li>Allows tensioning chain by pulling wheel backwards</li>
+          </ul>
+          <li>Effective top tube length being roughly 1 size smaller than recommended </li>
+          <li>Backwheel close to bottom bracket</li>
+          <ul className="ps-6 list-disc list-inside">
+            <li>closer wheels makes bike feel less sluggish</li>
+            <li>smaller bottom bracket gap, so better for blocking</li>
+          </ul>
           <li>Short bike trail</li>
+          <ul className="ps-6 list-disc list-inside">
+            <li>quicker handling, aka can turn more quickly</li>
+          </ul>
 
       </ul>
-      3. Wheels
-      <ul className="ps-6 my-2 list-disc list-inside">
-          <li>Strong wheels ({">"}32 spokes, double walled rims)</li>
+      <li>Wheels</li>
+      <ul className="ps-3 my-2 list-disc list-inside">
+          <li>Strong wheels ({">="}32 spokes, double walled rims)</li>
           <li><b>Cover for front wheel </b>(and optional back wheel)</li>
           <ul className="ps-6 list-disc list-inside">
             <li>Prevents ball from going between spokes when playin as goalie</li>
             <li>Also can prevent spokes from breaking</li>
           </ul>
           <li>Any size diameter of wheel (does not matter much)</li>
-          <li>bigger wheel makes it slightly better as a goalie</li>
-          <li>Any rim width (generally 19mm-30mm)</li>
-          <li>Any tire width (generally 28mm-40mm)</li>
+          <ul className="ps-6 list-disc list-inside">
+            <li>bigger wheel makes it slightly better as a goalie</li>
+          </ul>
+          <li>Any rim and tire width </li>
       </ul>
 
-      4. Brakes and Handlebars
-
-        <ul className="ps-6 my-2 list-disc list-inside">
+      <li>Brakes and Handlebars</li>
+        <ul className="ps-3 my-2 list-disc list-inside">
           <li>Brake on nondominant hand for front wheel (no need for back brakes)</li>
           <li>Flat bar</li>
           <li>Disc brakes</li>
-          <li>Rim brakes are good to start, but does not provide enough stopping power (especially in wet conditions)</li>
+          <li>Rim brakes are good to start</li> 
+          <ul className="ps-6 list-disc list-inside">
+            <li>but does not provide enough stopping power</li>
+            <li>more brake power for wet weather</li>
+            <li>and for certain tricks</li>
+          </ul>
         </ul>
 
-      5. Pedals
-
-        <ul className="ps-6 my-2 list-disc list-inside">
+      <li>Pedals</li>
+        <ul className="ps-3 my-2 list-disc list-inside">
           <li>Flat pedals to start</li>
-          <li>Plastic pedals because metal might cause injury to yourself</li>
+          <ul className="ps-6 list-disc list-inside">
+            <li>Plastic pedals because metal might cause injury to yourself</li>
+          </ul>
           <li>Clipless once better</li>
-          <li>Some people who are used to straps, run straps (rare/dangerous due to hard to remove feet)</li>
+          <ul className="ps-6 list-disc list-inside">
+            <li>Some people who are used to straps, run straps</li>
+            <li>BUT straps are rare/dangerous due to hard to remove feet</li>
+          </ul>
         </ul>
 
-      6. Safety Equipment
-
-        <ul className="ps-6 my-2 list-disc list-inside">
-          <li>Gloves (something with knuckle protection. Generally ppl use lacross gloves (rather than hockey gloves) due to more thumb mobility)</li>
-          <li>Helmet (required in tournaments)</li>
-          <li>Knee pads (optional, common)</li>
-          <li>Elbow pads (optional, not common)</li>
-          <li>Wrist guards (optional, not common)</li>
+      <li>Safety Equipment</li>
+        <ul className="ps-3 my-2 list-disc list-inside">
+          Common:
+          <ul className="ps-6 mb-2 list-disc list-inside">
+            <li>Gloves </li>
+            <ul className="ps-6 list-disc list-inside">
+              <li>something with knuckle protection</li>
+              <li>generally ppl use lacross gloves (rather than hockey gloves)</li>
+              <li>they have more thumb mobility</li>
+            </ul>
+            <li>Helmet (required in tournaments)</li>
+            <li>Knee pads </li>
+            <li>Eye protection </li>
+          </ul>
+          Less Common:
+        <ul className="ps-6 list-disc list-inside pb-5">
+          <li>Elbow pads</li>
+          <li>Wrist guards</li>
           <li>Mouth guard</li>
-          <li>Eye protection (common)</li>
-          <li>Face shield (optional, not common)</li>
+          <li>Face shield</li>
+          </ul>
         </ul>
+      </ol>
       </div>
     );
 }
