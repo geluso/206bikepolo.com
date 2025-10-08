@@ -214,7 +214,7 @@ export default function Page() {
       Fernie, BC
     </a>
     <li><a href="https://www.facebook.com/nelsonbikepolo/" target="_blank">
-      Nelson, BC, Canada
+      Nelson, BC
     </a></li>
     </li>
     <li><a href="https://www.instagram.com/calgarybikepolo/" target="_blank">
