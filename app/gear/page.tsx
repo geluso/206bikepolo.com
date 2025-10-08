@@ -54,10 +54,10 @@ export default function Page() {
           <li>Any tire width (generally 28mm-40mm)</li>
       </ul>
 
-      4. Breaks and Handlebars
+      4. Brakes and Handlebars
 
         <ul className="ps-6 my-2 list-disc list-inside">
-          <li>Break on nondominant hand for front wheel (no need for back brakes)</li>
+          <li>Brake on nondominant hand for front wheel (no need for back brakes)</li>
           <li>Flat bar</li>
           <li>Disc brakes</li>
           <li>Rim brakes are good to start, but does not provide enough stopping power (especially in wet conditions)</li>
