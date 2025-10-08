@@ -195,7 +195,7 @@ export default function Page() {
       Eugene
         </a></li>
     <li><a href="https://www.instagram.com/roguevalley.bikepolo/?hl=en" target="_blank">
-      Medford
+      Ashland
     </a></li>
   </ul>
 
