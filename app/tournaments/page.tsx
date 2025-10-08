@@ -96,9 +96,11 @@ export default function Page() {
       <li>End of May</li>
       <li>Hedley, BC</li>
     </ul>
+    <li>
     <a href="https://bikepolocalendar.com/event/polo-trolls" target="_blank">
       Polo Trolls
     </a>{" "}
+    </li>
     <ul className="ps-6 list-disc list-inside">
       <li>June</li>
       <li>Eugene, OR</li>
