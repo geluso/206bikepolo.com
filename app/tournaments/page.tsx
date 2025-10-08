@@ -104,7 +104,7 @@ export default function Page() {
       <li>Eugene, OR</li>
     </ul>
     <li>
-      <a href="https://bikepolocalendar.com/event/battle-royale-bremerton" target="_blank">
+      <a href="https://bikepolocalendar.com/event/battle-point" target="_blank">
         Battle Point
       </a>{" "}
     </li>
@@ -167,10 +167,10 @@ export default function Page() {
   <p className="font-bold my-2">Washington</p>
 
   <ul className="ps-6 my-2 list-disc list-inside">
-    <li><a href="https://www.instagram.com/kitsapbikeclub/" target="_blank">
+    <li><a href="https://www.instagram.com/kitsapbikepolo/" target="_blank">
       Kitsap
     </a></li>
-    <li><a href="https://www.instagram.com/bellinghambikepolo/" target="_blank">
+    <li><a href="https://www.instagram.com/bhambikepolo/" target="_blank">
       Bellingham
     </a></li>
   </ul>
@@ -180,10 +180,10 @@ export default function Page() {
     <li><a href="https://www.instagram.com/portlandbikepolo/" target="_blank">
       Portland
     </a></li>
-    <li><a href="https://www.instagram.com/eugenebikepolo/" target="_blank">
+    <li><a href="https://www.instagram.com/eugene_bikepolo/?hl=en" target="_blank">
       Eugene
         </a></li>
-    <li><a href="https://www.instagram.com/roguevalleybikepolo/" target="_blank">
+    <li><a href="https://www.instagram.com/roguevalley.bikepolo/?hl=en" target="_blank">
       Medford
     </a></li>
   </ul>
@@ -191,10 +191,10 @@ export default function Page() {
   <p className="font-bold my-2">Montana and Alaska</p>
 
   <ul className="ps-6 my-2 list-disc list-inside">
-    <li><a href="https://www.instagram.com/missoulabikepolo/" target="_blank">
+    <li><a href="https://www.instagram.com/missoula.bikepolo/" target="_blank">
       Missoula
     </a></li>
-    <li><a href="https://www.instagram.com/anchoragebikepolo/" target="_blank">
+    <li><a href="https://www.instagram.com/anchoragesfinestbikepolo/?hl=en" target="_blank">
       Anchorage, AK
     </a></li>
   </ul>
@@ -202,23 +202,23 @@ export default function Page() {
   <p className="font-bold my-2">Canada</p>
 
   <ul className="ps-6 my-2 list-disc list-inside">
-    <li><a href="https://www.instagram.com/vancouverbcbikepolo/" target="_blank">
+    <li><a href="https://www.instagram.com/eastvanbikepolo/?hl=en" target="_blank">
       Vancouver, BC
     </a></li>
-    <li><a href="https://www.instagram.com/vancouverbcbikepolo/" target="_blank">
+    <li><a href="https://www.instagram.com/victoriabikepolo/" target="_blank">
       Victoria, BC
     </a></li>
     <li><a href="https://www.instagram.com/ferniebikepolo/" target="_blank">
       Fernie, BC
     </a>
-    <li><a href="https://www.instagram.com/nelsonbcpolo/" target="_blank">
+    <li><a href="https://www.facebook.com/nelsonbikepolo/" target="_blank">
       Nelson, BC, Canada
     </a></li>
     </li>
     <li><a href="https://www.instagram.com/calgarybikepolo/" target="_blank">
       Calgary, AB
     </a></li>
-    <li><a href="https://www.instagram.com/whitehorsebikeclub/" target="_blank">
+    <li><a href="https://www.instagram.com/whitehorsebikepolo/" target="_blank">
       White Horse, YT
     </a></li>
   </ul>
@@ -228,16 +228,16 @@ export default function Page() {
     <li><a href="https://www.instagram.com/beehivebikepolo/" target="_blank">
         Salt Lake City, UT
       </a></li>
-    <li><a href="https://www.facebook.com/groups/bikepolosf" target="_blank">
+    <li><a href="https://www.instagram.com/sf.bike.polo/?hl=en" target="_blank">
         San Francisco, CA
       </a></li>
-    <li><a href="https://www.instagram.com/labikepolo/" target="_blank">
+    <li><a href="https://www.instagram.com/losangelesbikepolo/?hl=en" target="_blank">
         LA, CA
       </a></li>
-    <li><a href="https://www.bostonbikepolo.com/" target="_blank">
+    <li><a href="https://www.instagram.com/bostonbikepolo/?hl=en" target="_blank">
         Boston, MA
       </a></li>
-    <li><a href="https://www.nycbikepolo.com/" target="_blank">
+    <li><a href="http://www.nycbikepolo.com/" target="_blank">
         NYC, NY
       </a></li>
   </ul>
