@@ -42,17 +42,7 @@ export default function Home() {
           @206bikepolo
         </a>
       </p>
-
       <ul className="ps-6 my-2 list-disc list-inside">
-        <li>
-          Rules? Don&apos;t be a dick.
-          <ul className="ps-6 list-disc list-inside">
-            <li>Also{" "} <a href="/docs/2022-nah-ruleset.pdf" target="_blank">official NAH rules</a> and{" "}
-            <a href="/docs/polo_bible.pdf" target="_blank">
-              polo bible
-            </a></li>
-          </ul>
-        </li>
         <li>
           What is bike polo?{" "}
           <ul className="ps-6 list-disc list-inside">
@@ -62,6 +52,10 @@ export default function Home() {
               </a></li>
           </ul>
         </li>
+        <li>Official <a href="/docs/2022-nah-ruleset.pdf" target="_blank">NAH rules</a> (North America Hardcort) and{" "}
+        <a href="/docs/polo_bible.pdf" target="_blank">
+          polo bible
+        </a></li>
       </ul>
 
       <h2 className="my-2 text-2xl font-extrabold">New Players</h2>
