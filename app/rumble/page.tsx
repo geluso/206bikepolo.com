@@ -184,19 +184,21 @@ export default function Page() {
 
   const randomImage = images[Math.floor(Math.random() * images.length)]
   const randomShot = shots[Math.floor(Math.random() * shots.length)]
-  return <div>
-    <ul>
-      <li>Friday 7PM party at Tough Luck Bar</li>
-      <li>Saturday 9AM start games at Alberta Park</li>
-      <li>Sunday 9AM start double elimination bracket</li>
-    </ul>
+  return (
+    <div className="mb-32">
+      <ul className="ps-3 list-disc list-inside">
+        <li>Friday 7PM party at Tough Luck Bar</li>
+        <li>Saturday 9AM start games at Alberta Park</li>
+        <li>Sunday 9AM start double elimination bracket</li>
+      </ul>
 
-    <p>
-      <Image className="w-full" src={randomImage} alt="random wrestling image" />
-    </p>
+      <p className="my-2">
+        <Image className="w-full" src={randomImage} alt="random wrestling image" />
+      </p>
 
-    <p>
-      <Image className="w-full" src={randomShot} alt="random rumble photo" />
-    </p>
-  </div>
+      <p className="my-2 pb-5">
+        <Image className="w-full" src={randomShot} alt="random rumble photo" />
+      </p>
+    </div>
+  );
 }
