@@ -90,6 +90,11 @@ export default function Home() {
         See <a href="/gear">/gear</a> page for more information.
       </p>
 
+      <h2 className="my-2 text-2xl font-extrabold">Spectate!</h2>
+
+      <p className="mb-2 mt-2">
+        We have some bleachers at Judkins Park, so you can just come and watch!
+      </p>
 
       <h2 className="my-2 text-2xl font-extrabold">Tournaments</h2>
       <ul className="ps-6 my-2 list-disc list-inside">
