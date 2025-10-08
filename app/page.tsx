@@ -9,7 +9,7 @@ import crown from "../public/img/2024_eco_3xcrown1.png";
 
 export default function Home() {
   return (
-    <div>
+    <div className="mb-32">
       <div className="logo">
         <Image src={seattleLogoImage} alt="206 Seattle Bike Polo Logo" />
       </div>
@@ -128,25 +128,26 @@ export default function Home() {
         </li>
       </ul>
 
-
-
       <h2 className="my-2 text-2xl font-extrabold">2025 North Americans Champions!!</h2>
-      <p>
+      <p className="mb-2 mt-2">
         Congratulations to <strong>Gulls winning 1st place</strong> bringing home glory to Seattle and Cascadia.
         Carol, Bronco, Julian, and Hamms bring home the gold emblazing SEA back on the trophy forever.
       </p>
 
-      <p className="mt-2">
-        Edit this website on{" "}
-        <a href="https://github.com/geluso/206bikepolo.com" target="_blank">GitHub</a>.
-      </p>
-
       <Image src={NAs2025Winners} alt="Sign showing Judkins play times"  />
+      {/*
       <Image src={crown} alt="..." />
       <Image src={judkinsPlayTimes} alt="Sign showing Judkins play times" />
       <Image src={cascadiaQualifier2024} alt="Cascadia Qualifiers 2024 poster" />
       <Image src={aprilNewbieDay} alt="Poster for April Newbie Day" />
+      */}
 
+      <h2 className="my-2 text-2xl font-extrabold">Source Code</h2>
+
+      <p className="pb-5 mt-2">
+        Check out the source code or edit it on GitHub{" "}
+        <a href="https://github.com/geluso/206bikepolo.com" target="_blank">@geluso/206bikepolo</a>.
+      </p>
     </div>
   );
 }
