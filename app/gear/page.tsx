@@ -8,7 +8,7 @@ export default function Page() {
       </p>
 
       <ul className="ps-6 my-2 list-disc list-inside">
-        <li>A great deal is to buy an enforcer frame </li>
+        <li>A great deal is to buy an <a href="https://www.enforcerbikes.com/">Enforcer frame</a> </li>
         <li>Runs at $300 for new aluminum frame from Portland</li>
         <li>Built out in Peru</li>
         <li>Made 4 polo</li>
