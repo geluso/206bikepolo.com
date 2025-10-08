@@ -246,12 +246,7 @@ export default function Page() {
 
   <h2 className="my-2 text-2xl font-extrabold">Popular Global Clubs</h2>
   <ul className="ps-6 my-2 list-disc list-inside">
-    <li><a href="https://www.bikepolointernational.com/" target="_blank">
-        Bike Polo International
-      </a></li>
-    <li><a href="https://www.facebook.com/groups/WorldBikePolo/" target="_blank">
-        World Bike Polo
-      </a></li>
+    <li>To be added</li>
   </ul>
 
   <h2 className="my-2 text-2xl font-extrabold">Links</h2>
