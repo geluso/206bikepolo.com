@@ -20,4 +20,5 @@ export default async function Page({ children }: { children: React.ReactNode }) 
       {children}
     </div>
   </div>
+  );
 }
