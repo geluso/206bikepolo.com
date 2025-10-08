@@ -112,21 +112,23 @@ export default function Home() {
         </li>
       </ul>
 
-      <p className="mb-2 mt-2 font-bold">
-        Upcoming Tournaments:
-      </p>
+      <h4 className="my-2 text-lg font-bold">Upcoming Local Tournaments</h4>
 
-      <ul className="ps-6 my-2 list-disc list-inside">
-        <li>
-          <a href="https://forms.gle/kx5W8DUjQ2HPyNiS6" target="_blank">🌸💀 Day of the Deadbeats, Seattle</a> [October 31-11/1 2025]
-        </li>
-        <li>
-          <a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">🏆 World Champs, Taiwan</a> [November 13-16 2025]
-        </li>
-        <li>
-          <a href="https://www.bikereg.com/bellingham-bike-polo?fbclid=PAZXh0bgNhZW0CMTEAAafZI_pj6p5WiBrtLm7j5O0RLiVvia0DRi_pXLIYTj3vprsL8hNcCubCq7oOXQ_aem_nH1Hi9f6v1X8ZCUcui5Opw" target="_blank">🎃👻 Freakoween, Bellingham, WA</a> [October 31-November 2 2025]
-        </li>
-      </ul>
+        <a href="https://forms.gle/kx5W8DUjQ2HPyNiS6" target="_blank">🌸💀 Day of the Deadbeats</a> 
+        <ul className="ps-6 list-disc list-inside">
+          <li>Seattle, WA</li>
+          <li>Oct 31st - Nov 1st, 2025</li>
+        </ul>
+          <a href="https://www.bikereg.com/bellingham-bike-polo?fbclid=PAZXh0bgNhZW0CMTEAAafZI_pj6p5WiBrtLm7j5O0RLiVvia0DRi_pXLIYTj3vprsL8hNcCubCq7oOXQ_aem_nH1Hi9f6v1X8ZCUcui5Opw" target="_blank">🎃👻 Freakoween</a>
+        <ul className="ps-6 list-disc list-inside">
+          <li>Bellingham, WA</li>
+          <li>Oct 31st - Nov 2nd, 2025</li>
+        </ul>
+          <a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">🏆 World Champs, Taiwan</a>
+        <ul className="ps-6 list-disc list-inside">
+          <li>Taiwan</li>
+          <li>Nov 13-16, 2025</li>
+        </ul>
 
       <h2 className="my-2 text-2xl font-extrabold">2025 North Americans Champions!!</h2>
       <p className="mb-2 mt-2">
