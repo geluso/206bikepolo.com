@@ -6,6 +6,9 @@ import HamburgerMenu from "./HamburgerMenu";
 import Image from "next/image";
 import seattleWhitePoloLogo from '../../public/img/206_white_seattle_polo_logo.png'
 
+// Read current url path name
+import { usePathname } from 'next/navigation';
+
 interface Tab {
   label: string;
   href: string;
@@ -15,17 +18,33 @@ interface NavigationTabsProps {
   tabs: Tab[];
 }
 
+function render_logo() {
+  const pathname = usePathname();
+  if (pathname != '/') {
+    return (
+      <Image 
+        src={seattleWhitePoloLogo} 
+        alt="Judkins Park Bike Polo history community meeting poster timeline"
+        width={70}
+        height={70}
+      />
+    );
+  } else {
+    return (
+      <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
+        Seattle
+      </span>
+    )
+  }
+}
+
+
 const NavigationTabs: React.FC<NavigationTabsProps> = ({ tabs }) => {
   return (
     <nav className="bg-gray-900 sticky w-full z-20 top-0 start-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3">
-            <Image 
-              src={seattleWhitePoloLogo} 
-              alt="Judkins Park Bike Polo history community meeting poster timeline"
-              width={70}
-              height={70}
-            /> 
+          {render_logo()}
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
             Bike Polo
           </span>
