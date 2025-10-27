@@ -13,7 +13,7 @@ export default function Page() {
     </ul>
 
     <p>
-    There is also a map on these websites, but they aren't that good or up to date tbh...
+    There is also a map on these websites, but they aren{"'"}t that good or up to date tbh...
     </p>
 
       <ul className="ps-6 list-disc list-inside">
