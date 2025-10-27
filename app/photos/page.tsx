@@ -1,6 +1,7 @@
 export default function Page() {
     return (
               <div className="mb-32">
+                <h2 className="my-2 text-2xl font-extrabold">Photos</h2>
                 <p>
                     TODO: Render images from: <a href="https://www.instagram.com/206bikepolo/">https://www.instagram.com/206bikepolo/</a>
                 </p>
@@ -13,5 +14,5 @@ export default function Page() {
                 </ul>
 
               </div>
-    )
-};
+    );
+}
