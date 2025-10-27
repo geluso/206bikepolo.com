@@ -1,6 +1,22 @@
 export default function Page() {
     return (
       <div className="mb-32">
+        <h2 className="my-2 text-2xl font-extrabold">Gear</h2>
+        
+        <div className="mb-2 mt-2">
+        <b>NOTE:</b> Many people think we ride fixed. There are very few bike polo people (less than 1%) that still ride this way. Traditionally, in the early 2000s, people did indeed ride with a fixed gear 
+            <ul className="ps-6 list-disc">
+                <li>the wheel and pedals always stay rotating... aka feet always move). </li>
+            </ul>
+        </div>
+
+        <div className="mb-2 mt-2">
+            But due to fast stopping and ability to hop, people moved to single speed freewheels! 
+            <ul className="ps-6 list-disc">
+                <li>basically a normal bike with 1 gear at back that can coast)</li>
+            </ul>
+        </div>
+
       <h2 className="my-2 text-2xl font-extrabold">Start by buying a bike frame</h2>
 
       <p className="mb-2 mt-2">
@@ -18,7 +34,7 @@ export default function Page() {
 
       <h2 className="my-2 text-2xl font-extrabold">General bike specs</h2>
       <ol className="ps-6 list-decimal">
-      <li>Gear Ratio</li>
+      <li className="font-bold">Gear Ratio</li>
       <ul className="ps-3 my-2 mt-2 list-disc ">
           <li><b>Single speeds with gear ratios of 1.5 to 1.8</b></li>
           <ul className="ps-6 list-disc">
@@ -30,7 +46,7 @@ export default function Page() {
             <li>Smaller gears will make bike a little lighter too</li>
           </ul>
       </ul>
-      <li>Frame</li>
+      <li className="font-bold">Frame</li>
       <ul className="ps-3 my-2 list-disc list-inside">
           <li>Strong frame (<b>steel or aluminum</b>)</li>
           <ul className="ps-6 list-disc list-inside">
@@ -54,7 +70,7 @@ export default function Page() {
           </ul>
 
       </ul>
-      <li>Wheels</li>
+      <li className="font-bold">Wheels</li>
       <ul className="ps-3 my-2 list-disc list-inside">
           <li>Strong wheels ({">="}32 spokes, double walled rims)</li>
           <li><b>Cover for front wheel </b>(and optional back wheel)</li>
@@ -69,7 +85,7 @@ export default function Page() {
           <li>Any rim and tire width </li>
       </ul>
 
-      <li>Brakes and Handlebars</li>
+      <li className="font-bold">Brakes and Handlebars</li>
         <ul className="ps-3 my-2 list-disc list-inside">
           <li>Brake on nondominant hand for front wheel (no need for back brakes)</li>
           <li>Flat bar</li>
@@ -82,7 +98,7 @@ export default function Page() {
           </ul>
         </ul>
 
-      <li>Pedals</li>
+      <li className="font-bold">Pedals</li>
         <ul className="ps-3 my-2 list-disc list-inside">
           <li>Flat pedals to start</li>
           <ul className="ps-6 list-disc list-inside">
@@ -95,7 +111,47 @@ export default function Page() {
           </ul>
         </ul>
 
-      <li>Safety Equipment</li>
+      <li className="font-bold">Mallet</li>
+        <ul className="ps-3 my-2 list-disc list-inside">
+          <li>People have tried building mallet heads in the past but very complicated. </li>
+          <li>Most people try 3d printing the head</li>
+            <ul className="ps-6 list-disc list-inside">
+          <li>But essentially all 3d print filament (PLA, PETG, etc) is too brittle and will shatter after a couple hits</li>
+            </ul>
+          <li>Some of us have old/spare mallets to donate to newbies</li>
+          <li>But at some point just buy parts on <a href="hecklersalley.com">hecklersalley</a></li>
+          <li>Will run around $100 for parts :(</li>
+        </ul>
+
+      <li className="font-bold">Balls</li>
+        <ul className="ps-3 my-2 list-disc list-inside">
+          <li>We have dozens of balls available in the shed on the courts</li>
+          <li>No need to buy your own, just ask on slack!</li>
+          <li>The balls are color coated, because they are suited to certain temperatures</li>
+            <ul className="ps-6 list-disc list-inside">
+              <li>In hot weather, the cold weather balls become to bouncy</li>
+              <li>In cold weather, the warm weather balls become to brittle</li>
+            </ul>
+        </ul>
+
+      <li className="font-bold">Safety Equipment</li>
+        <ul className="ps-3 my-2 list-disc list-inside">
+            Manditory:
+            <ul className="ps-6 mb-2 list-disc list-inside">
+                <li>Helmet (required in tournaments)</li>
+                <li>Rotor Guard (required in tournaments)</li>
+                <ul className="ps-6 list-disc list-inside">
+                    <li>It is a sheild in front of disc break ring</li>
+                    <li>Disc break gets very hot from breaking and if someone falls on it, it can burn skin</li>
+                    <li>Many people make their own and are very unique <a href="https://www.instagram.com/no_words_just_guards/">instagram</a></li>
+                    <li>Purchasable on <a href="hecklersalley.com">hecklersalley</a></li>
+                </ul>
+                <li>Bar End Caps</li>
+                <ul className="ps-6 list-disc list-inside">
+                    <li>At each end of the handlebar, you need a cap to protect someone from landing on it</li>
+                </ul>
+            </ul>
+        </ul>
         <ul className="ps-3 my-2 list-disc list-inside">
           Common:
           <ul className="ps-6 mb-2 list-disc list-inside">
@@ -105,7 +161,6 @@ export default function Page() {
               <li>generally ppl use lacross gloves (rather than hockey gloves)</li>
               <li>they have more thumb mobility</li>
             </ul>
-            <li>Helmet (required in tournaments)</li>
             <li>Knee pads </li>
             <li>Eye protection </li>
           </ul>
@@ -115,6 +170,8 @@ export default function Page() {
           <li>Wrist guards</li>
           <li>Mouth guard</li>
           <li>Face shield</li>
+          <li>Nard Guard</li>
+          <li>Top Tube Sheath</li>
           </ul>
         </ul>
       </ol>
