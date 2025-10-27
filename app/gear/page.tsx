@@ -58,7 +58,7 @@ export default function Page() {
               <li>multiply that by 1.5 to 1.8 to get front chainring size</li>
               <li>so then the front chain ring will be around 22-27 teeth</li>
             </ul>
-            <li>Smaller gears will make bike a little lighter too</li>
+            <li>Smaller gears will make your bike a little lighter too</li>
           </ul>
       </ul>
 
