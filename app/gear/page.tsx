@@ -6,8 +6,8 @@ export default function Page() {
     const [frontGear, setFrontGear] = useState('');
     const [backGear, setBackGear] = useState('');
 
-    const changeFront = (e) => setFrontGear(e.target.value);
-    const changeBack = (e) => setBackGear(e.target.value);
+    const changeFront = (e: React.ChangeEvent<HTMLInputElement>) => setFrontGear(e.target.value);
+    const changeBack = (e: React.ChangeEvent<HTMLInputElement>) => setBackGear(e.target.value);
 
     function divide(a: number, b: number) {
         return a / b;
