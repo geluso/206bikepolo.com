@@ -1,8 +1,22 @@
+'use client';
+import { GSP_NO_RETURNED_VALUE } from "next/dist/lib/constants";
+import {useState } from "react";
+
 export default function Page() {
+    const [frontGear, setFrontGear] = useState('');
+    const [backGear, setBackGear] = useState('');
+
+    const changeFront = (e: React.ChangeEvent<HTMLInputElement>) => setFrontGear(e.target.value);
+    const changeBack = (e: React.ChangeEvent<HTMLInputElement>) => setBackGear(e.target.value);
+
+    function divide(a: number, b: number) {
+        return a / b;
+    }
+
     return (
       <div className="mb-32">
         <h2 className="my-2 text-2xl font-extrabold">Gear</h2>
-        
+
         <div className="mb-2 mt-2">
         <b>NOTE:</b> Many people think we ride fixed. There are very few bike polo people (less than 1%) that still ride this way. Traditionally, in the early 2000s, people did indeed ride with a fixed gear 
             <ul className="ps-6 list-disc">
@@ -16,6 +30,7 @@ export default function Page() {
                 <li>basically a normal bike with 1 gear at back that can coast</li>
             </ul>
         </div>
+
 
       <h2 className="my-2 text-2xl font-extrabold">Start by buying a bike frame</h2>
 
@@ -46,6 +61,31 @@ export default function Page() {
             <li>Smaller gears will make bike a little lighter too</li>
           </ul>
       </ul>
+
+
+        <div className="ml-0">
+
+          <h2 className="my-2 text-l font-extrabold">Calculate your Gear Ratio</h2>
+          <p>
+            # of Teeth on Front Gear: {" "}
+            <input type="number" value={frontGear} onChange={changeFront} id="myNumberInput" placeholder="FG" />
+          </p>
+          <p>
+            --------------------------------
+          </p>
+          <p>
+            # of Teeth on Back Gear:  {" "}
+            <input type="number" value={backGear} onChange={changeBack} id="myNumberInput" placeholder="BG" />
+          </p>
+          <p>
+            ================================
+          </p>
+          <p className="mb-4">
+            QUOTIENT: {divide(Number(frontGear), Number(backGear))}
+          </p>
+          
+        </div>
+
       <li className="font-bold">Frame</li>
       <ul className="ps-3 my-2 list-disc list-inside">
           <li>Strong frame (<b>steel or aluminum</b>)</li>
