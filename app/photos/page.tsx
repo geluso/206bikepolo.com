@@ -8,7 +8,7 @@ export default function Page() {
                 <ul className="ps-6 my-2 list-disc list-inside">
                     <li>To fetch the images from instagram, you have to produce a id/token via:</li>
                         <ul className="ps-6 list-disc list-inside">
-                            <li>this {"""}Facebook Developer App{"""} feature within ig/facebook. </li>
+                            <li>this <b>Facebook Developer App</b> feature within ig/facebook. </li>
                         </ul>
                     <li>But I do not have ig login... so waiting for someone to help out :{"("}.</li>
                 </ul>
