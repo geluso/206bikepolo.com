@@ -3,12 +3,23 @@ export default function Page() {
   <div className="mb-32">
 
   <h2 className="my-2 text-2xl font-extrabold">Tournaments</h2>
-  <p className="mb-2">
-    The bike polo tournaments around the world are listed here:{" "}
-    <a href="https://bikepolocalendar.com/" target="_blank">
-      https://bikepolocalendar.com/
-    </a>
+  <p className="">
+    The bike polo tournaments around the world are listed here:
   </p>
+    <ul className="mb-2 ps-6 list-disc list-inside">
+    <li><a href="https://bikepolocalendar.com/" target="_blank">
+      https://bikepolocalendar.com/
+    </a></li>
+    </ul>
+
+    <p>
+    There is also a map on these websites, but they aren{"'"}t that good or up to date tbh...
+    </p>
+
+      <ul className="ps-6 list-disc list-inside">
+        <li><a href="https://www.nahardcourt.com/clubs/">https://www.nahardcourt.com/clubs/</a></li>
+        <li><a href="whereispolo.com">whereispolo.com</a></li>
+      </ul>
 
   <h2 className="my-2 text-2xl font-extrabold">Major in 2025 </h2>
   <ul className="ps-6 my-2 list-disc list-inside">
@@ -103,6 +114,15 @@ export default function Page() {
       <ul className="ps-6 list-disc list-inside">
         <li>End of May</li>
         <li>Hedley, BC</li>
+      </ul>
+    </li>
+    <li>
+      <a href="https://bikepolocalendar.com/event/jefferson-joust" target="_blank">
+        Jefferson Joust
+      </a>
+      <ul className="ps-6 list-disc list-inside">
+        <li>June</li>
+        <li>Ashland, OR</li>
       </ul>
     </li>
     <li>
@@ -203,7 +223,7 @@ export default function Page() {
 
   <ul className="ps-6 my-2 list-disc list-inside">
     <li><a href="https://www.instagram.com/missoula.bikepolo/" target="_blank">
-      Missoula
+      Missoula, MT
     </a></li>
     <li><a href="https://www.instagram.com/anchoragesfinestbikepolo/?hl=en" target="_blank">
       Anchorage, AK
@@ -222,7 +242,7 @@ export default function Page() {
     <li><a href="https://www.instagram.com/ferniebikepolo/" target="_blank">
       Fernie, BC
     </a></li>
-    <li><a href="https://www.facebook.com/nelsonbikepolo/" target="_blank">
+    <li><a href="https://www.instagram.com/nelsonbc_bikepolo" target="_blank">
       Nelson, BC
     </a></li>
     <li><a href="https://www.instagram.com/calgarybikepolo/" target="_blank">
@@ -233,13 +253,43 @@ export default function Page() {
     </a></li>
   </ul>
 
+
+  <p className="font-bold my-2">California</p>
+
+  <ul className="ps-6 my-2 list-disc list-inside">
+    <li><a href="https://www.instagram.com/sf.bike.polo/" target="_blank">
+      San Francisco
+    </a></li>
+    <li><a href="https://www.instagram.com/losangelesbikepolo/" target="_blank">
+      Los Angeles
+    </a></li>
+    <li><a href="https://www.instagram.com/fresnobikepolo/" target="_blank">
+      Fresno
+    </a></li>
+    <li><a href="https://www.instagram.com/sanjosebikepolo/" target="_blank">
+      San Jose
+    </a></li>
+    <li><a href="https://www.instagram.com/sandiegobikepolo/" target="_blank">
+      San Diego
+    </a></li>
+  </ul>
+
   <h2 className="my-2 text-2xl font-extrabold">Popular US Clubs</h2>
   <ul className="ps-6 my-2 list-disc list-inside">
+    <li><a href="https://www.instagram.com/grbikepolo/" target="_blank">
+        Grand Rapids, MI
+      </a></li>
+    <li><a href="https://www.instagram.com/lexingtonbikepolo/" target="_blank">
+        Lexington, KT
+      </a></li>
+    <li><a href="https://www.instagram.com/dcbikepolo/" target="_blank">
+        Washington, D.C.
+      </a></li>
     <li><a href="https://www.instagram.com/beehivebikepolo/" target="_blank">
         Salt Lake City, UT
       </a></li>
     <li><a href="https://www.instagram.com/sf.bike.polo/?hl=en" target="_blank">
-        San Francisco, CA
+        SF, CA
       </a></li>
     <li><a href="https://www.instagram.com/losangelesbikepolo/?hl=en" target="_blank">
         LA, CA
@@ -254,7 +304,10 @@ export default function Page() {
 
   <h2 className="my-2 text-2xl font-extrabold">Popular Global Clubs</h2>
   <ul className="ps-6 my-2 list-disc list-inside">
-    <li>To be added</li>
+    <li><a href="https://www.instagram.com/montrealbikepolo/" target="_blank">
+        Montréal, QC, CA
+      </a></li>
+    <li>more to be added...</li>
   </ul>
 
   <h2 className="my-2 text-2xl font-extrabold">Links</h2>
