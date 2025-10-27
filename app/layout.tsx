@@ -14,8 +14,9 @@ const NAV_TABS = [
   { label: "Home", href: "/" },
   { label: "Rumble", href: "/rumble" },
   { label: "Gear", href: "/gear" },
-  { label: "Tournaments", href: "/tournaments" },
+  { label: "Events", href: "/tournaments" },
   { label: "History", href: "/history" },
+  { label: "Photos", href: "/photos" },
 ];
 
 export default function RootLayout({
