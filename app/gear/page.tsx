@@ -6,14 +6,14 @@ export default function Page() {
         <div className="mb-2 mt-2">
         <b>NOTE:</b> Many people think we ride fixed. There are very few bike polo people (less than 1%) that still ride this way. Traditionally, in the early 2000s, people did indeed ride with a fixed gear 
             <ul className="ps-6 list-disc">
-                <li>the wheel and pedals always stay rotating... aka feet always move). </li>
+                <li>the wheel and pedals always stay rotating... aka feet always move </li>
             </ul>
         </div>
 
         <div className="mb-2 mt-2">
             But due to fast stopping and ability to hop, people moved to single speed freewheels! 
             <ul className="ps-6 list-disc">
-                <li>basically a normal bike with 1 gear at back that can coast)</li>
+                <li>basically a normal bike with 1 gear at back that can coast</li>
             </ul>
         </div>
 
