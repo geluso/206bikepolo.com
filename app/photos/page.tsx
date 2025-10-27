@@ -9,7 +9,7 @@ export default function Page() {
                         <ul className="ps-6 list-disc list-inside">
                             <li>this "Facebook Developer App" feature within ig/facebook. </li>
                         </ul>
-                    <li>But I do not have ig login... so waiting for someone to help out :(.</li>
+                    <li>But I do not have ig login... so waiting for someone to help out :{"("}.</li>
                 </ul>
 
               </div>
