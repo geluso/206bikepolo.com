@@ -1,3 +1,5 @@
+import { BikePoloCalendar } from "../components/BikePoloCalendar";
+
 export default function Page() {
   return (
     <div className="mb-32">
@@ -77,6 +79,9 @@ export default function Page() {
           </ul>
         </li>
       </ul>
+
+      <BikePoloCalendar />
+
       <h2 className="my-2 text-2xl font-extrabold">Local</h2>
       <p className="mb-2">Common tournaments that Seattlites attend:</p>
       <p>
