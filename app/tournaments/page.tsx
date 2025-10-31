@@ -88,10 +88,8 @@ export default function Page() {
       </p>
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
-          <a
-            href="https://bikepolocalendar.com/event/valentines-2v2-mixer"
-            target="_blank"
-          >
+          <a href="https://bikepolocalendar.com/event/valentines-2v2-mixer"
+            target="_blank">
             Kiss to Make it Count 2v2
           </a>
           <ul className="ps-6 list-disc list-inside">
