@@ -1,11 +1,10 @@
-import { warnOptionHasBeenDeprecated } from "next/dist/server/config";
-import fetchData, { formatEvent } from "./fetch-events";
+import fetchData, { formatEvent } from "./../components/BikePoloCalendar";
 
 export default async function Championships() {
 
-  const fetchedData = await fetchData();
+  const data = await fetchData();
 
-  if (fetchedData) {
+  if (data) {
     const championships: Array<string> = [
       "Championships",
       "AHC",
@@ -13,18 +12,22 @@ export default async function Championships() {
       "NAHC",
       "WHBPC"
     ]
-    let event = [];
 
-    for (let i = 0; i < fetchedData.events.length; i++) {
-      for (let j = 0; j < championships.length; j++){
-        if (fetchedData.events[i].title.includes(championships[j])) {
-          event.push(formatEvent(fetchedData, i));
+    const containsChampKeywords = (event: any) => {
+      let title = event.title;
+      for (let i = 0; i < championships.length; i++) {
+        if (title.includes(championships[i])) {
+          return true;
         }
       }
     }
-    return event;
 
+    return (
+      data.events.filter(containsChampKeywords).map((event: any) => {
+        return formatEvent(event)
+      })
+    )
   } else {
-      return "Could not fetch data from bikepolocalendar.com... :(";
+    return "Could not fetch data from bikepolocalendar.com... :(";
   }
 }

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Page() {
   return <div>
     <h1>2024 Emerald City Open: Cascadia Triple Crown</h1>
@@ -25,7 +27,8 @@ export default function Page() {
     </ul>
     <div>
       <a href="https://forms.gle/6z6ba3aCkqtqJS416">
-        <img src="/img/2024_eco_3xcrown1.png" />
+        <Image src={"/img/2024_eco_3xcrown1.png"} alt=""/>
+
       </a>
     </div>
   </div>

@@ -5,7 +5,7 @@ import aprilNewbieDay from "../public/img/april_newbie_day.png";
 import NAs2025Winners from "../public/img/NAs_2025_winners_first_place_gulls.jpg"
 import seattleLogoImage from "../public/img/206_seattle_bike_polo_logo.png";
 import crown from "../public/img/2024_eco_3xcrown1.png";
-import CascadiaEvents from "./tournaments/cascadia-events"
+import NearbyEvents from "./tournaments/NearbyEvents";
 
 export default function Home() {
   return (
@@ -122,7 +122,7 @@ export default function Home() {
       <p className="mb-2 my-2">
         These events below actively pulled from bikepolocalendar.com:
       </p>
-      <CascadiaEvents />
+      <NearbyEvents />
 
       <h2 className="my-2 text-2xl font-extrabold">2025 North Americans Champions!!</h2>
       <p className="mb-2 mt-2">

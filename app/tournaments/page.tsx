@@ -1,5 +1,5 @@
-import CascadiaEvents from "./cascadia-events";
-import Championships from "./championships";
+import NearbyEvents from "./NearbyEvents";
+import Championships from "./Championships";
 
 export default function Page() {
   return (
@@ -31,7 +31,7 @@ export default function Page() {
       <p className="mb-2">
         **These events are actively pulled from bikepolocalendar.com
       </p>
-      <CascadiaEvents />
+      <NearbyEvents />
       <h2 className="my-2 text-2xl font-extrabold">Upcoming Championships </h2>
       <Championships />
       <h2 className="my-2 text-lg font-bold">Championships around the World </h2>
