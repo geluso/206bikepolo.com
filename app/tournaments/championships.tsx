@@ -1,8 +1,9 @@
+
 export default async function Champtionships() {
   return "TEST CODE";
 }
-
 /*
+
 import fetchData, { formatEvent } from "../components/BikePoloCalendar";
 
 export default async function Championships() {
@@ -36,5 +37,6 @@ export default async function Championships() {
   } else {
     return "Could not fetch data from bikepolocalendar.com... :(";
   }
-  */
 }
+
+*/
