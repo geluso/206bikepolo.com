@@ -1,8 +1,10 @@
+import CascadiaEvents from "./cascadia-events";
+
 export default function Page() {
   return (
     <div className="mb-32">
       <h2 className="my-2 text-2xl font-extrabold">Tournaments</h2>
-      <p className="">
+      <p>
         The bike polo tournaments around the world are listed here:
       </p>
       <ul className="mb-2 ps-6 list-disc list-inside">
@@ -17,23 +19,23 @@ export default function Page() {
         up to date tbh...
       </p>
       <ul className="ps-6 list-disc list-inside">
-        <li>
-          <a href="https://www.nahardcourt.com/clubs/">
-            https://www.nahardcourt.com/clubs/
-          </a>
+        <li><a href="https://www.nahardcourt.com/clubs/">
+            https://www.nahardcourt.com/clubs/</a>
         </li>
         <li>
           <a href="whereispolo.com">whereispolo.com</a>
         </li>
       </ul>
+      <h2 className="my-2 text-2xl font-extrabold">Upcoming Cascadia Tournaments  </h2>
+      <p className="mb-2">
+        These events are actively pulled from bikepolocalendar.com
+      </p>
+      <CascadiaEvents />
       <h2 className="my-2 text-2xl font-extrabold">Major in 2025 </h2>
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
-          <a
-            href="https://bikepolocalendar.com/event/asianhbpc-2025"
-            target="_blank"
-          >
-            2025 Asian Hardcourt Championships (AHC)
+          <a href="https://bikepolocalendar.com/event/asianhbpc-2025" target="_blank">
+              2025 Asian Hardcourt Championships (AHC)
           </a>
           <ul className="ps-6 list-disc list-inside">
             <li>May 3-4</li>
@@ -41,10 +43,7 @@ export default function Page() {
           </ul>
         </li>
         <li>
-          <a
-            href="https://bikepolocalendar.com/event/ehbpc-2025"
-            target="_blank"
-          >
+          <a href="https://bikepolocalendar.com/event/ehbpc-2025" target="_blank">
             2025 European Hardcourt Championships (EHC)
           </a>
           <ul className="ps-6 list-disc list-inside">
@@ -74,7 +73,7 @@ export default function Page() {
           <ul className="ps-6 list-disc list-inside">
             <li>November 13-16</li>
             <li>Taiwan</li>
-          </ul>
+        </ul>
         </li>
       </ul>
       <h2 className="my-2 text-2xl font-extrabold">Local</h2>
