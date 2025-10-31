@@ -1,3 +1,4 @@
+import { warnOptionHasBeenDeprecated } from "next/dist/server/config";
 import fetchData, { formatEvent } from "../components/BikePoloCalendar";
 
 export default async function Championships() {
