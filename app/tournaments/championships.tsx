@@ -1,5 +1,5 @@
 
-export default async function Championships() {
+export async function Championships() {
   return "TEST CODE";
 }
 /*
