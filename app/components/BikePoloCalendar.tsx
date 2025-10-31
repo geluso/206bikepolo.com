@@ -35,7 +35,7 @@ export function formatEvent(event: any) {
       <li><a href={event.url}>{event.title}</a>.**</li>
       <ul className="ps-6 list-disc list-inside">
          <li>{date}</li>
-        <li>{event.venue.city}, {event.venue.state}</li>
+        <li>{event.venue.city}, {event.venue.city}</li>
       </ul>
     </ul>
   );
