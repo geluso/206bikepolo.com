@@ -27,7 +27,7 @@ export function formatEvent(event: any, index: number) {
 
   return (
     <ul className="ps-6 list-disc list-inside">
-      <li><a href={fetchedData.events[index].url}>{fetchedData.events[index].title}</a></li>
+      <li><a href={fetchedData.events[index].url}>{fetchedData.events[index].title}</a>.**</li>
       <ul className="ps-6 list-disc list-inside">
         <li>{startDateFormatted}-{endDateFormatted}</li>
         <li>{fetchedData.events[index].venue.city}, {fetchedData.events[index].venue.state}</li>

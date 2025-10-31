@@ -1,7 +1,7 @@
 export default function Page() {
   return <div>
     <h1>2024 Emerald City Open: Cascadia Triple Crown</h1>
-    
+
     <h1>
       <a href="https://docs.google.com/spreadsheets/d/10KEAhz9imGsgOnUdHGiN0hnuGsIBvT-qL-43DHuy_v8/edit?pli=1&fbclid=IwZXh0bgNhZW0CMTEAAR1zNNee6uk2-Pz1wL3LUmD8V_yTQi6GvTFJT6IOf1VU9TP4JgeDLlFGwEs_aem_vKr3IFWviVSN2hhgp-shdQ&gid=1040872743#gid=1040872743">spreadsheet</a>
     </h1>

@@ -1,4 +1,5 @@
 import CascadiaEvents from "./cascadia-events";
+import Championships from "./championships";
 
 export default function Page() {
   return (
@@ -28,27 +29,29 @@ export default function Page() {
       </ul>
       <h2 className="my-2 text-2xl font-extrabold">Upcoming Cascadia Tournaments  </h2>
       <p className="mb-2">
-        These events are actively pulled from bikepolocalendar.com
+        **These events are actively pulled from bikepolocalendar.com
       </p>
       <CascadiaEvents />
-      <h2 className="my-2 text-2xl font-extrabold">Major in 2025 </h2>
+      <h2 className="my-2 text-2xl font-extrabold">Upcoming Championships </h2>
+      <Championships />
+      <h2 className="my-2 text-lg font-bold">Championships around the World </h2>
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
           <a href="https://bikepolocalendar.com/event/asianhbpc-2025" target="_blank">
-              2025 Asian Hardcourt Championships (AHC)
+              Asian Hardcourt Championships (AHC)
           </a>
           <ul className="ps-6 list-disc list-inside">
-            <li>May 3-4</li>
-            <li>Bangkok, Thailand</li>
+            <li>May</li>
+            <li>Bangkok, Thailand in 2025</li>
           </ul>
         </li>
         <li>
           <a href="https://bikepolocalendar.com/event/ehbpc-2025" target="_blank">
-            2025 European Hardcourt Championships (EHC)
+             European Hardcourt Championships (EHC)
           </a>
           <ul className="ps-6 list-disc list-inside">
-            <li>July 4-6</li>
-            <li>Perpignan, France</li>
+            <li>July</li>
+            <li>Perpignan, France in 2025</li>
           </ul>
         </li>
         <li>
@@ -56,11 +59,11 @@ export default function Page() {
             href="https://bikepolocalendar.com/event/nahbpc-2025"
             target="_blank"
           >
-            2025 North American Hardcourt Championships (NAHC)
+            North American Hardcourt Championships (NAHC)
           </a>
           <ul className="ps-6 list-disc list-inside">
-            <li>August 14-15</li>
-            <li>Grand Rapids, MI</li>
+            <li>August</li>
+            <li>Grand Rapids, MI in 2025</li>
           </ul>
         </li>
         <li>
@@ -68,11 +71,11 @@ export default function Page() {
             href="https://bikepolocalendar.com/event/whbpc-2025"
             target="_blank"
           >
-            2025 World Hardcourt Bike Polo Championships (WHBPC)
+            World Hardcourt Bike Polo Championships (WHBPC)
           </a>
           <ul className="ps-6 list-disc list-inside">
-            <li>November 13-16</li>
-            <li>Taiwan</li>
+            <li>November</li>
+            <li>Taipei, Taiwan in 2025</li>
         </ul>
         </li>
       </ul>
