@@ -1,7 +1,7 @@
 import NearbyEvents from "./NearbyEvents";
 //import { Championships } from "./Championships";
 
-export async function Championships() {
+export function Championships() {
   return "TEST CODE";
 }
 
