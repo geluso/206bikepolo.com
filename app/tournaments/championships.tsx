@@ -3,6 +3,8 @@ import fetchData, { formatEvent } from "../components/BikePoloCalendar";
 export default async function Championships() {
 
   return <div>TEST CODE</div>
+
+  {/*
   const data = await fetchData();
 
   if (data) {
@@ -21,7 +23,6 @@ export default async function Championships() {
         }
       }
     }
-{/*
     return (
       data.events.filter(containsChampKeywords).map((event: any) => {
         return formatEvent(event)
