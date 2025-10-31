@@ -1,7 +1,7 @@
 import NearbyEvents from "./NearbyEvents";
 //import { Championships } from "./Championships";
 
-export function Championships() {
+export function TestFunction() {
   return "TEST CODE";
 }
 
@@ -37,7 +37,7 @@ export default function Page() {
       </p>
       <NearbyEvents />
       <h2 className="my-2 text-2xl font-extrabold">Upcoming Championships </h2>
-      <Championships />
+      <TestFunction />
       <h2 className="my-2 text-lg font-bold">Championships around the World </h2>
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
