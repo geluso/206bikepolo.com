@@ -1,5 +1,5 @@
 import NearbyEvents from "./NearbyEvents";
-import Championships from "./Championships";
+import { Championships } from "./Championships";
 
 export default function Page() {
   return (
