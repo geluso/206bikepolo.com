@@ -4,7 +4,6 @@ export default async function NearbyEvents() {
   const data = await fetchData()
 
   if (data) {
-
     const nearbyCities: Array<string> =
       ["seattle",
         "bellingham",

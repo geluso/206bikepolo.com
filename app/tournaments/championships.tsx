@@ -1,12 +1,11 @@
-import fetchData, { formatEvent } from "./../components/BikePoloCalendar";
+import fetchData, { formatEvent } from "../components/BikePoloCalendar";
 
 export default async function Championships() {
-
   const data = await fetchData();
 
   if (data) {
-    const championships: Array<string> = [
-      "Championships",
+    const championshipKeywords: Array<string> = [
+      "CHAMPIONSHIP",
       "AHC",
       "EHC",
       "NAHC",
@@ -14,9 +13,9 @@ export default async function Championships() {
     ]
 
     const containsChampKeywords = (event: any) => {
-      let title = event.title;
-      for (let i = 0; i < championships.length; i++) {
-        if (title.includes(championships[i])) {
+      let title = event.title?.toUpperCase();
+      for (let i = 0; i < championshipKeywords.length; i++) {
+        if (title.includes(championshipKeywords[i])) {
           return true;
         }
       }
