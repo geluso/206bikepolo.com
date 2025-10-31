@@ -1,10 +1,7 @@
-//import fetchData, { formatEvent } from "../components/BikePoloCalendar";
+import fetchData, { formatEvent } from "../components/BikePoloCalendar";
 
-export function Champs() {
+export default async function Championships() {
 
-  return <div>TEST CODE</div>
-
-  {/*
   const data = await fetchData();
 
   if (data) {
@@ -32,5 +29,4 @@ export function Champs() {
   } else {
     return "Could not fetch data from bikepolocalendar.com... :(";
   }
-  */}
 }
