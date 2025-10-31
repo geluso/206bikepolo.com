@@ -1,6 +1,6 @@
 //import fetchData, { formatEvent } from "../components/BikePoloCalendar";
 
-export default async function Champs() {
+export function Champs() {
 
   return <div>TEST CODE</div>
 
