@@ -22,6 +22,7 @@ export default async function Championships() {
       }
     }
 
+    return "TEST CODE"
     return (
       data.events.filter(containsChampKeywords).map((event: any) => {
         return formatEvent(event)
