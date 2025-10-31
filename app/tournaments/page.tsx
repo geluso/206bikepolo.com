@@ -1,6 +1,6 @@
 import NearbyEvents from "./NearbyEvents";
 //import { Champs } from "./Championships";
-import Championships from "./Championships";
+import Championships from "./ChampionshipEvents";
 
 export default function Page() {
   return (
