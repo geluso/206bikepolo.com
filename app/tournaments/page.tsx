@@ -1,9 +1,11 @@
 import NearbyEvents from "./NearbyEvents";
-import { Champs } from "./Championships";
+//import { Champs } from "./Championships";
+import TestCode from "./TestCode";
 
 export default function Page() {
   return (
     <div className="mb-32">
+      <TestCode />
       <h2 className="my-2 text-2xl font-extrabold">Tournaments</h2>
       <p>
         The bike polo tournaments around the world are listed here:
@@ -33,7 +35,7 @@ export default function Page() {
       </p>
       <NearbyEvents />
       <h2 className="my-2 text-2xl font-extrabold">Upcoming Championships </h2>
-      <Champs />
+      {/*<Champs />*/}
       <h2 className="my-2 text-lg font-bold">Championships around the World </h2>
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
