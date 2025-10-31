@@ -1,33 +1,33 @@
 import NearbyEvents from "./NearbyEvents";
-//import { Champs } from "./Championships";
 import Championships from "./ChampionshipEvents";
+import FormatEvents from "./FormatEvents";
 
-export default function Page() {
+function Header() {
   return (
-    <div className="mb-32">
+    <div>
       <h2 className="my-2 text-2xl font-extrabold">Tournaments</h2>
-      <p>
-        The bike polo tournaments around the world are listed here:
-      </p>
+      <p>The bike polo tournaments around the world are listed here:</p>
       <ul className="mb-2 ps-6 list-disc list-inside">
-        <li>
-          <a href="https://bikepolocalendar.com/" target="_blank">
-            https://bikepolocalendar.com/
-          </a>
-        </li>
+        <li><a href="https://bikepolocalendar.com/" target="_blank">
+          https://bikepolocalendar.com/</a></li>
       </ul>
-      <p>
-        There is also a map on these websites, but they aren{"'"}t that good or
+      <p>There is also a map on these websites, but they aren{"'"}t that good or
         up to date tbh...
       </p>
       <ul className="ps-6 list-disc list-inside">
         <li><a href="https://www.nahardcourt.com/clubs/">
-            https://www.nahardcourt.com/clubs/</a>
-        </li>
-        <li>
-          <a href="whereispolo.com">whereispolo.com</a>
-        </li>
+          https://www.nahardcourt.com/clubs/</a></li>
+        <li><a href="whereispolo.com">whereispolo.com</a></li>
       </ul>
+    </div>
+  );
+}
+
+export default function Page() {
+  return (
+    <div className="mb-32">
+      <Header />
+
       <h2 className="my-2 text-2xl font-extrabold">Upcoming Cascadia Tournaments  </h2>
       <p className="mb-2">
         **These events are actively pulled from bikepolocalendar.com
@@ -37,49 +37,32 @@ export default function Page() {
       <Championships />
       {/*<Champs />*/}
       <h2 className="my-2 text-lg font-bold">Championships around the World </h2>
+
       <ul className="ps-6 my-2 list-disc list-inside">
-        <li>
-          <a href="https://bikepolocalendar.com/event/asianhbpc-2025" target="_blank">
-              Asian Hardcourt Championships (AHC)
-          </a>
-          <ul className="ps-6 list-disc list-inside">
-            <li>May</li>
-            <li>Bangkok, Thailand in 2025</li>
-          </ul>
-        </li>
-        <li>
-          <a href="https://bikepolocalendar.com/event/ehbpc-2025" target="_blank">
-             European Hardcourt Championships (EHC)
-          </a>
-          <ul className="ps-6 list-disc list-inside">
-            <li>July</li>
-            <li>Perpignan, France in 2025</li>
-          </ul>
-        </li>
-        <li>
-          <a
-            href="https://bikepolocalendar.com/event/nahbpc-2025"
-            target="_blank"
-          >
-            North American Hardcourt Championships (NAHC)
-          </a>
-          <ul className="ps-6 list-disc list-inside">
-            <li>August</li>
-            <li>Grand Rapids, MI in 2025</li>
-          </ul>
-        </li>
-        <li>
-          <a
-            href="https://bikepolocalendar.com/event/whbpc-2025"
-            target="_blank"
-          >
-            World Hardcourt Bike Polo Championships (WHBPC)
-          </a>
-          <ul className="ps-6 list-disc list-inside">
-            <li>November</li>
-            <li>Taipei, Taiwan in 2025</li>
-        </ul>
-        </li>
+        {FormatEvents(
+          "Asian Hardcourt Championships (AHC)",
+          "https://bikepolocalendar.com/event/asianhbpc-2025",
+          "May",
+          "Bangkok, Thailand in 2025"
+        )}
+        {FormatEvents(
+          "European Hardcourt Championships (EHC)",
+          "https://bikepolocalendar.com/event/ehbpc-2025",
+          "July",
+          "Perpignan, France in 2025"
+        )}
+        {FormatEvents(
+          "North American Hardcourt Championships (NAHC)",
+          "https://bikepolocalendar.com/event/nahbpc-2025",
+          "August",
+          "Grand Rapids, MI in 2025"
+        )}
+        {FormatEvents(
+          "World Hardcourt Championships (WHC)",
+          "https://bikepolocalendar.com/event/whbpc-2025",
+          "November",
+          "Taipei, Taiwan in 2025"
+        )}
       </ul>
 
       <h2 className="my-2 text-2xl font-extrabold">Local</h2>
@@ -89,16 +72,13 @@ export default function Page() {
         event generally via Instagram of club (and seats fill up within a week)
       </p>
       <ul className="ps-6 my-2 list-disc list-inside">
-        <li>
-          <a href="https://bikepolocalendar.com/event/valentines-2v2-mixer"
-            target="_blank">
-            Kiss to Make it Count 2v2
-          </a>
-          <ul className="ps-6 list-disc list-inside">
-            <li>February</li>
-            <li>Vancouver, BC</li>
-          </ul>
-        </li>
+
+        {FormatEvents(
+          "Kiss to Make it Count 2v2",
+          "https://bikepolocalendar.com/event/valentines-2v2-mixer",
+          "February",
+          "Vancouver, BC"
+        )}
         <li>
           <a
             href="https://bikepolocalendar.com/event/tropiclassic-2023"
@@ -112,10 +92,7 @@ export default function Page() {
           </ul>
         </li>
         <li>
-          <a
-            href="https://bikepolocalendar.com/event/rose-city-royal-rumble"
-            target="_blank"
-          >
+          <a href="https://bikepolocalendar.com/event/rose-city-royal-rumble" target="_blank">
             Rose City Royal Rumble
           </a>
           <ul className="ps-6 list-disc list-inside">
