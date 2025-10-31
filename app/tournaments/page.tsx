@@ -1,10 +1,12 @@
-import { BikePoloCalendar } from "../components/BikePoloCalendar";
+import NearbyEvents from "./NearbyEvents";
+//import { Champs } from "./Championships";
+import Championships from "./ChampionshipEvents";
 
 export default function Page() {
   return (
     <div className="mb-32">
       <h2 className="my-2 text-2xl font-extrabold">Tournaments</h2>
-      <p className="">
+      <p>
         The bike polo tournaments around the world are listed here:
       </p>
       <ul className="mb-2 ps-6 list-disc list-inside">
@@ -19,39 +21,39 @@ export default function Page() {
         up to date tbh...
       </p>
       <ul className="ps-6 list-disc list-inside">
-        <li>
-          <a href="https://www.nahardcourt.com/clubs/">
-            https://www.nahardcourt.com/clubs/
-          </a>
+        <li><a href="https://www.nahardcourt.com/clubs/">
+            https://www.nahardcourt.com/clubs/</a>
         </li>
         <li>
           <a href="whereispolo.com">whereispolo.com</a>
         </li>
       </ul>
-      <h2 className="my-2 text-2xl font-extrabold">Major in 2025 </h2>
+      <h2 className="my-2 text-2xl font-extrabold">Upcoming Cascadia Tournaments  </h2>
+      <p className="mb-2">
+        **These events are actively pulled from bikepolocalendar.com
+      </p>
+      <NearbyEvents />
+      <h2 className="my-2 text-2xl font-extrabold">Upcoming Championships </h2>
+      <Championships />
+      {/*<Champs />*/}
+      <h2 className="my-2 text-lg font-bold">Championships around the World </h2>
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
-          <a
-            href="https://bikepolocalendar.com/event/asianhbpc-2025"
-            target="_blank"
-          >
-            2025 Asian Hardcourt Championships (AHC)
+          <a href="https://bikepolocalendar.com/event/asianhbpc-2025" target="_blank">
+              Asian Hardcourt Championships (AHC)
           </a>
           <ul className="ps-6 list-disc list-inside">
-            <li>May 3-4</li>
-            <li>Bangkok, Thailand</li>
+            <li>May</li>
+            <li>Bangkok, Thailand in 2025</li>
           </ul>
         </li>
         <li>
-          <a
-            href="https://bikepolocalendar.com/event/ehbpc-2025"
-            target="_blank"
-          >
-            2025 European Hardcourt Championships (EHC)
+          <a href="https://bikepolocalendar.com/event/ehbpc-2025" target="_blank">
+             European Hardcourt Championships (EHC)
           </a>
           <ul className="ps-6 list-disc list-inside">
-            <li>July 4-6</li>
-            <li>Perpignan, France</li>
+            <li>July</li>
+            <li>Perpignan, France in 2025</li>
           </ul>
         </li>
         <li>
@@ -59,11 +61,11 @@ export default function Page() {
             href="https://bikepolocalendar.com/event/nahbpc-2025"
             target="_blank"
           >
-            2025 North American Hardcourt Championships (NAHC)
+            North American Hardcourt Championships (NAHC)
           </a>
           <ul className="ps-6 list-disc list-inside">
-            <li>August 14-15</li>
-            <li>Grand Rapids, MI</li>
+            <li>August</li>
+            <li>Grand Rapids, MI in 2025</li>
           </ul>
         </li>
         <li>
@@ -71,16 +73,14 @@ export default function Page() {
             href="https://bikepolocalendar.com/event/whbpc-2025"
             target="_blank"
           >
-            2025 World Hardcourt Bike Polo Championships (WHBPC)
+            World Hardcourt Bike Polo Championships (WHBPC)
           </a>
           <ul className="ps-6 list-disc list-inside">
-            <li>November 13-16</li>
-            <li>Taiwan</li>
-          </ul>
+            <li>November</li>
+            <li>Taipei, Taiwan in 2025</li>
+        </ul>
         </li>
       </ul>
-
-      <BikePoloCalendar />
 
       <h2 className="my-2 text-2xl font-extrabold">Local</h2>
       <p className="mb-2">Common tournaments that Seattlites attend:</p>
@@ -90,10 +90,8 @@ export default function Page() {
       </p>
       <ul className="ps-6 my-2 list-disc list-inside">
         <li>
-          <a
-            href="https://bikepolocalendar.com/event/valentines-2v2-mixer"
-            target="_blank"
-          >
+          <a href="https://bikepolocalendar.com/event/valentines-2v2-mixer"
+            target="_blank">
             Kiss to Make it Count 2v2
           </a>
           <ul className="ps-6 list-disc list-inside">

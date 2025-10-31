@@ -6,12 +6,12 @@ export default function Page() {
   <div className="mb-32">
     <h2 className=" my-2 text-2xl font-extrabold">206 Bike Polo History</h2>
     <p className="mb-2">
-      Some 206 Bike Polo history, and good talking points 
+      Some 206 Bike Polo history, and good talking points
       if you ever find yourself at a community meeting.
     </p>
 
     <p className="mb-2">
-      The general bike polo history can be found at 
+      The general bike polo history can be found at
       <a href="https://www.nahardcourt.com/about/" className="text-blue-500"> nahardcourt.com</a> and {" "}
       <a href="https://en.wikipedia.org/wiki/Bike_polo" className="text-blue-500"> wiki/bike_polo</a>.
     </p>

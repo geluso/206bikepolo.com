@@ -5,8 +5,7 @@ import aprilNewbieDay from "../public/img/april_newbie_day.png";
 import NAs2025Winners from "../public/img/NAs_2025_winners_first_place_gulls.jpg"
 import seattleLogoImage from "../public/img/206_seattle_bike_polo_logo.png";
 import crown from "../public/img/2024_eco_3xcrown1.png";
-import { BikePoloCalendar } from "./components/BikePoloCalendar";
-
+import NearbyEvents from "./tournaments/NearbyEvents";
 
 export default function Home() {
   return (
@@ -113,25 +112,17 @@ export default function Home() {
         </li>
       </ul>
 
-      <h4 className="my-2 text-lg font-bold">Upcoming Local Tournaments</h4>
+      <h4 className="my-2 text-lg font-bold">Upcoming Cascadia Tournaments</h4>
+          <a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">🏆 World Champs, Taiwan</a>
+        <ul className="ps-6 list-disc list-inside">
+          <li>Taiwan</li>
+          <li>Nov 13-16, 2025</li>
+        </ul>
 
-      <a href="https://forms.gle/kx5W8DUjQ2HPyNiS6" target="_blank">🌸💀 Day of the Deadbeats</a>
-      <ul className="ps-6 list-disc list-inside">
-        <li>Seattle, WA</li>
-        <li>Oct 31st - Nov 1st, 2025</li>
-      </ul>
-        <a href="https://www.bikereg.com/bellingham-bike-polo?fbclid=PAZXh0bgNhZW0CMTEAAafZI_pj6p5WiBrtLm7j5O0RLiVvia0DRi_pXLIYTj3vprsL8hNcCubCq7oOXQ_aem_nH1Hi9f6v1X8ZCUcui5Opw" target="_blank">🎃👻 Freakoween</a>
-      <ul className="ps-6 list-disc list-inside">
-        <li>Bellingham, WA</li>
-        <li>Oct 31st - Nov 2nd, 2025</li>
-      </ul>
-        <a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">🏆 World Champs, Taiwan</a>
-      <ul className="ps-6 list-disc list-inside">
-        <li>Taiwan</li>
-        <li>Nov 13-16, 2025</li>
-      </ul>
-
-      <BikePoloCalendar />
+      <p className="mb-2 my-2">
+        These events below actively pulled from bikepolocalendar.com:
+      </p>
+      <NearbyEvents />
 
       <h2 className="my-2 text-2xl font-extrabold">2025 North Americans Champions!!</h2>
       <p className="mb-2 mt-2">
