@@ -80,8 +80,6 @@ export default function Page() {
         </li>
       </ul>
 
-      <BikePoloCalendar />
-
       <h2 className="my-2 text-2xl font-extrabold">Local</h2>
       <p className="mb-2">Common tournaments that Seattlites attend:</p>
       <p>
