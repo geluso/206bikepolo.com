@@ -1,6 +1,6 @@
 import fetchData, { formatEvent } from "../components/BikePoloCalendar";
 
-export default async function TestCode() {
+export default async function Championships() {
 
   const data = await fetchData();
 
