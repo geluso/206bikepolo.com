@@ -12,7 +12,8 @@ export default async function Championships() {
       "NAHC",
       "WHBPC"
     ]
-
+    return "TEST CODE"
+    /*
     const containsChampKeywords = (event: any) => {
       let title = event.title?.toUpperCase();
       for (let i = 0; i < championshipKeywords.length; i++) {
@@ -21,13 +22,13 @@ export default async function Championships() {
         }
       }
     }
-
-    return "TEST CODE"
     return (
       data.events.filter(containsChampKeywords).map((event: any) => {
         return formatEvent(event)
       })
     )
+
+    */
   } else {
     return "Could not fetch data from bikepolocalendar.com... :(";
   }
