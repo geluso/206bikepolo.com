@@ -1,28 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* The only sane Tailwind preflight configurations */
-/* https://tailwindcss.com/docs/preflight */
-img, svg, video, canvas, audio, iframe, embed, object {
-  display: block;
-  vertical-align: middle;
-}
-
-a {
-  @apply text-blue-600 hover:text-blue-800
-}
-
-img, video {
-  max-width: 100%;
-  height: auto;
-}
-
-body {
-  background-image: url('../public/img/royal_rumble.jpg');
-  background-image: url('../public/img/build_more_space_needles.png');
-  background-size: 40%;
-}
 
 #main {
   max-width: 800px;
@@ -61,26 +36,11 @@ body {
   }
 }
 
-.tournament-nav-container a { 
+.tournament-nav-container a {
   margin-right: 4px;
 }
 
-iframe {
-  width: 100%;
-  min-height: 80vh;
-}
-
 /* bracket */
-
-.container {
-  max-width: 900px;
-  overflow-x: scroll;
-}
-
-h1 {
-  color: #333;
-}
-
 .tournament-bracket {
   display: flex;
   justify-content: space-evenly;

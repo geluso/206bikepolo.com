@@ -31,9 +31,9 @@ export function formatEvent(event: any) {
   const date = formatDate(event)
   console.log(event.venue.city)
    return (
-    <ul className="ps-6 list-disc list-inside">
+    <ul>
       <li><a href={event.url}>{event.title}</a>.**</li>
-      <ul className="ps-6 list-disc list-inside">
+      <ul>
          <li>{date}</li>
         <li>{event.venue.city}, {event.venue.state}</li>
       </ul>

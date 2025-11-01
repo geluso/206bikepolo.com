@@ -14,7 +14,7 @@ export default function Home() {
         <Image src={seattleLogoImage} alt="206 Seattle Bike Polo Logo" />
       </div>
 
-      <h2 className="my-2 text-2xl font-extrabold">General Info</h2>
+      <h2>General Info</h2>
       <p className="mb-2">
         Bike polo is a 3v3 team sport, similar to traditional horse polo, except we ride bicycles.
       </p>
@@ -26,7 +26,7 @@ export default function Home() {
         </a> in Central District, Seattle || near i90 Rainier Ave exit
       </p>
 
-      <ul className="ps-6 my-2 list-disc list-inside">
+      <ul>
         <li>Saturdays 2PM till dark</li>
         <li>Sundays 11AM till dark</li>
         <li>Wednesdays 5PM till dark or later w/ lights</li>
@@ -42,7 +42,7 @@ export default function Home() {
           @206bikepolo
         </a>
       </p>
-      <ul className="ps-6 my-2 list-disc list-inside">
+      <ul>
         <li>
           What is bike polo?{" "}
           <ul className="ps-6 list-disc list-inside">
@@ -58,9 +58,9 @@ export default function Home() {
         </a></li>
       </ul>
 
-      <h2 className="my-2 text-2xl font-extrabold">New Players</h2>
+      <h2>New Players</h2>
       <p className="mb-2">We love new players! Come hang out.</p>
-      <ul className="ps-6 my-2 list-disc list-inside">
+      <ul>
         <li>
           We meet Wednesday & Saturday until sundown, specifically for
           newbies!
@@ -73,7 +73,7 @@ export default function Home() {
         speed, flat bar polo bike!
       </p>
 
-      <h2 className="my-2 text-2xl font-extrabold">Getting your own Gear</h2>
+      <h2>Getting your own Gear</h2>
       <p>
         Bike polo gear is generally purchased through{" "}
         <a href="https://hecklersalley.com/" target="_blank">
@@ -81,7 +81,7 @@ export default function Home() {
         </a> maintained out in Portland by Jordan
       </p>
 
-      <ul className="ps-6 my-2 list-disc list-inside">
+      <ul>
           <li>But our local seattle club generally has old equipment to sell/give away.</li>
           <li>We often do group orders to save on shipping</li>
       </ul>
@@ -90,14 +90,14 @@ export default function Home() {
         See <a href="/gear">/gear</a> page for more information.
       </p>
 
-      <h2 className="my-2 text-2xl font-extrabold">Spectate!</h2>
+      <h2>Spectate!</h2>
 
       <p className="mb-2 mt-2">
         We have some bleachers at Judkins Park, so you can just come and watch!
       </p>
 
-      <h2 className="my-2 text-2xl font-extrabold">Tournaments</h2>
-      <ul className="ps-6 my-2 list-disc list-inside">
+      <h2>Tournaments</h2>
+      <ul>
         <li>
           See tourney page - {" "}
           <a href="/tournaments" target="_blank">
@@ -124,7 +124,7 @@ export default function Home() {
       </p>
       <NearbyEvents />
 
-      <h2 className="my-2 text-2xl font-extrabold">2025 North Americans Champions!!</h2>
+      <h2>2025 North Americans Champions!!</h2>
       <p className="mb-2 mt-2">
         Congratulations to <strong>Gulls winning 1st place</strong> bringing home glory to Seattle and Cascadia.
         Carol, Bronco, Julian, and Hamms bring home the gold emblazing SEA back on the trophy forever.
@@ -138,7 +138,7 @@ export default function Home() {
       <Image src={aprilNewbieDay} alt="Poster for April Newbie Day" />
       */}
 
-      <h2 className="my-2 text-2xl font-extrabold">Source Code</h2>
+      <h2>Source Code</h2>
 
       <p className="pb-5 mt-2">
         Check out the source code or edit it on GitHub{" "}

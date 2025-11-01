@@ -4,7 +4,7 @@ import judkinsPoloHistory from '../../public/img/judkins_polo_history.jpg'
 export default function Page() {
   return(
   <div className="mb-32">
-    <h2 className=" my-2 text-2xl font-extrabold">206 Bike Polo History</h2>
+    <h2>206 Bike Polo History</h2>
     <p className="mb-2">
       Some 206 Bike Polo history, and good talking points
       if you ever find yourself at a community meeting.
