@@ -1,8 +1,8 @@
-@tailwind components;
 @tailwind utilities;
 
 @import "./rumble.css";
 @import "./base.css";
+@import "./components.css";
 
 /* The only sane Tailwind preflight configurations */
 /* https://tailwindcss.com/docs/preflight */

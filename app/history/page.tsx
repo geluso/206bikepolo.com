@@ -3,7 +3,7 @@ import judkinsPoloHistory from '../../public/img/judkins_polo_history.jpg'
 
 export default function Page() {
   return(
-  <div className="mb-32">
+  <div className="page">
     <h2>206 Bike Polo History</h2>
     <p className="mb-2">
       Some 206 Bike Polo history, and good talking points

@@ -9,7 +9,7 @@ import NearbyEvents from "./tournaments/NearbyEvents";
 
 export default function Home() {
   return (
-    <div className="mb-32">
+    <div className="page">
       <div className="logo">
         <Image src={seattleLogoImage} alt="206 Seattle Bike Polo Logo" />
       </div>
@@ -112,7 +112,7 @@ export default function Home() {
         </li>
       </ul>
 
-      <h4 className="my-2 text-lg font-bold">Upcoming Cascadia Tournaments</h4>
+      <h3>Upcoming Nearby Tournaments</h3>
           <a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">🏆 World Champs, Taiwan</a>
         <ul className="ps-6 list-disc list-inside">
           <li>Taiwan</li>

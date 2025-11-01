@@ -1,6 +1,6 @@
 export default function Page() {
     return (
-              <div className="mb-32">
+              <div className="page">
                 <h2>Photos</h2>
                 <p>
                     TODO: Render images from: <a href="https://www.instagram.com/206bikepolo/">https://www.instagram.com/206bikepolo/</a>

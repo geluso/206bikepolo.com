@@ -16,7 +16,7 @@ export default function Page() {
   }
 
   return (
-    <div className="mb-32">
+    <div className="page">
       <h2>Gear</h2>
 
       <div className="mb-2 mt-2">

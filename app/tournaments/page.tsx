@@ -26,10 +26,10 @@ function Header() {
 
 export default function Page() {
   return (
-    <div className="mb-32">
+    <div className="page">
       <Header />
 
-      <h2>Upcoming Cascadia Tournaments  </h2>
+      <h2>Upcoming Nearby Tournaments  </h2>
 
       <p>**These events are actively pulled from bikepolocalendar.com</p>
       <NearbyEvents />
