@@ -185,7 +185,7 @@ export default function Page() {
   const randomImage = images[Math.floor(Math.random() * images.length)]
   const randomShot = shots[Math.floor(Math.random() * shots.length)]
   return (
-    <div className="mb-32">
+    <div className="page">
       <ul className="ps-3 list-disc list-inside">
         <li>Friday 7PM party at Tough Luck Bar</li>
         <li>Saturday 9AM start games at Alberta Park</li>

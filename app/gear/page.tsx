@@ -16,8 +16,8 @@ export default function Page() {
   }
 
   return (
-    <div className="mb-32">
-      <h2 className="my-2 text-2xl font-extrabold">Gear</h2>
+    <div className="page">
+      <h2>Gear</h2>
 
       <div className="mb-2 mt-2">
         <b>NOTE:</b> Many people think we ride fixed. There are very few bike
@@ -39,9 +39,7 @@ export default function Page() {
         </ul>
       </div>
 
-      <h2 className="my-2 text-2xl font-extrabold">
-        Start by buying a bike frame
-      </h2>
+      <h2>Start by buying a bike frame</h2>
 
       <p className="mb-2 mt-2">
         Can buy a starter frame from{" "}
@@ -53,13 +51,13 @@ export default function Page() {
         A great deal is to buy an{" "}
         <a href="https://www.enforcerbikes.com/">Enforcer frame</a>
       </p>
-      <ul className="ps-6 my-2 list-disc list-inside">
+      <ul>
         <li>Runs at $300 for new aluminum frame from Portland</li>
         <li>Built out in China & Peru</li>
         <li>Made 4 polo</li>
       </ul>
 
-      <h2 className="my-2 text-2xl font-extrabold">General bike specs</h2>
+      <h2>General bike specs</h2>
       <ol className="ps-6 list-decimal">
         <li className="font-bold">Gear Ratio</li>
         <ul className="ps-3 my-2 mt-2 list-disc ">
@@ -77,9 +75,7 @@ export default function Page() {
         </ul>
 
         <div className="ml-0">
-          <h2 className="my-2 text-l font-extrabold">
-            Calculate your Gear Ratio
-          </h2>
+          <h3>Calculate your Gear Ratio</h3>
           <p>
             # of Teeth on Back Gear:{" "}
             <input

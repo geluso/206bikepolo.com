@@ -5,7 +5,7 @@ export default async function Page({ children }: { children: React.ReactNode }) 
   const tagSettings = await getCurrentTagSettings()
   return (
     <div>
-      <h2 className=" my-2 text-2xl font-extrabold">🌹☠️ 2025 Rose City Royal Rumble <Link className="no-underline" href="/rumble/admin">💀</Link>🥀</h2>
+      <h2>🌹☠️ 2025 Rose City Royal Rumble <Link className="no-underline" href="/rumble/admin">💀</Link>🥀</h2>
       <div className="my-2">
         <Link href="/rumble/players">Players</Link> |{' '}
         {tagSettings?.isRound1Up && <><Link href="/rumble/rounds/1">Round 1</Link> |{' '}</>}
