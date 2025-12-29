@@ -58,6 +58,11 @@ export default function Page() {
       </ul>
 
       <h2>General bike specs</h2>
+      <p>
+        Most bike polo specific gear can be found at:{" "}
+        <a href="https://hecklersalley.com">hecklersalley.com</a>.
+      </p>
+
       <ol className="ps-6 list-decimal">
         <li className="font-bold">Gear Ratio</li>
         <ul className="ps-3 my-2 mt-2 list-disc ">
@@ -196,7 +201,7 @@ export default function Page() {
           <li>Some of us have old/spare mallets to donate to newbies</li>
           <li>
             But at some point just buy parts on{" "}
-            <a href="hecklersalley.com">hecklersalley</a>
+            <a href="https://hecklersalley.com">hecklersalley</a>
           </li>
           <li>Will run around $100 for parts :(</li>
         </ul>
@@ -206,15 +211,37 @@ export default function Page() {
           <li>We have dozens of balls available in the shed on the courts</li>
           <li>No need to buy your own, just ask on slack!</li>
           <li>
-            The balls are color coated, because they are suited to certain
-            temperatures
+            The <a href="https://hecklersalley.com/collections/bike-polo-balls">balls</a> are color coated, because they are suited to certain temperatures.
           </li>
           <ul className="ps-6 list-disc list-inside">
             <li>In hot weather, the cold weather balls become to bouncy</li>
             <li>In cold weather, the warm weather balls become to brittle</li>
+            <table style={{ width: '50%',border: '1px solid black' }}>
+              <thead>
+                <tr style={{textAlign: 'left'}}>
+                  <th >Ball</th>
+                  <th>Hot</th>
+                  <th>Cool</th>
+                  <th>Cold</th>
+                </tr>
+              </thead>
+              <tbody style={{border: '1px solid black' }} >
+                <tr>
+                  <td>Color</td>
+                  <td>Orange</td>
+                  <td>Pink</td>
+                  <td>Yellow</td>
+                </tr>
+                <tr>
+                  <td>Temp Rating (F)</td>
+                  <td>60</td>
+                  <td>50-70</td>
+                  <td>{"<"}50</td>
+                </tr>
+              </tbody>
+            </table>
           </ul>
         </ul>
-
         <li className="font-bold">Safety Equipment</li>
         <ul className="ps-3 my-2 list-disc list-inside">
           Manditory:
