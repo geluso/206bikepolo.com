@@ -1,5 +1,6 @@
 export default async function fetchData() {
   const poloCalUrl = "https://bikepolocalendar.com/wp-json/tribe/events/v1/events"
+  //Alt place to fetch: https://bikepolocalendar.com/wp-json/wp/v2/posts
   const data = await fetch(poloCalUrl)
     .then(res => res.json())
     .catch(err => { return null })
