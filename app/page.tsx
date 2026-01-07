@@ -6,6 +6,7 @@ import NAs2025Winners from "../public/img/NAs_2025_winners_first_place_gulls.jpg
 import seattleLogoImage from "../public/img/206_seattle_bike_polo_logo.png";
 import crown from "../public/img/2024_eco_3xcrown1.png";
 import NearbyEvents from "./tournaments/NearbyEvents";
+import SlackLink from "./components/SlackLink";
 
 export default function Home() {
   return (
@@ -34,9 +35,7 @@ export default function Home() {
 
       <p>
         Talk to everyone on{" "}
-        <a href="https://join.slack.com/t/seattlebikepolo/shared_invite/zt-2m8wd3zl2-RxZBe~fmA_1abfLNSAZ5yg" target="_blank">
-          Slack
-        </a>{" "}
+        <SlackLink />{" "}
         and follow us on Instagram{" "}
         <a href="https://www.instagram.com/206bikepolo/" target="_blank">
           @206bikepolo
