@@ -12,6 +12,7 @@
   "dependencies": {
     "@neondatabase/serverless": "^1.0.0",
     "@prisma/client": "^6.5.0",
+    "@south-paw/react-obfuscate-ts": "^2.0.0",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
