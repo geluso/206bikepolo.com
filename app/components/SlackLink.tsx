@@ -11,7 +11,7 @@ const SlackLink: React.FC = () => {
   // The second, and probably more important place we need to obfuscate
   // is in the source code because this is an open source project. That's
   // why the link only appears in the source backwards.
-  const backwardsLink = 'Q2406CmJAvtiltze2Xh2PX-vp4vrunm3-tz/etivni_derah' +
+  const backwardsLink = 'QkwN_C3f10x9Wr5Jd6ltTN-6ko3rcvn3-tz/etivni_derah' +
     's/olopekibelttaes/t/moc.kcals.nioj//:sptth';
   return (
       <Obfuscate href={backwardsLink.split('').reverse().join('')}>
