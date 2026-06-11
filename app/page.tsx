@@ -11,6 +11,18 @@ import SlackLink from "./components/SlackLink";
 export default function Home() {
   return (
     <div className="page">
+      <div className="bg-[url(/barber-pole-stripes.png)] bg-[length:auto_100px] p-2 mb-4">
+        <div className="flex justify-center items-center bg-white">
+          <div>
+              <span className="text-6xl">🗽</span>
+          </div>
+          <div>
+              <a href="https://forms.gle/ZXxv4fQeR33dxhyG7">Register</a>
+              {" "}for Polodependence Day shuffle tournament July 4th & 5th!
+          </div>
+        </div>
+      </div>
+
       <div className="logo">
         <Image src={seattleLogoImage} alt="206 Seattle Bike Polo Logo" />
       </div>
@@ -112,7 +124,13 @@ export default function Home() {
       </ul>
 
       <h3>Upcoming Nearby Tournaments</h3>
-          <a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">🏆 World Champs, Taiwan</a>
+        <a href="https://forms.gle/ZXxv4fQeR33dxhyG7" target="_blank">🗽 Polodependence Day Shuffle</a>
+        <ul className="ps-6 list-disc list-inside">
+          <li>Seattle</li>
+          <li>July 4th-5th</li>
+        </ul>
+
+        <a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">🏆 World Champs, Taiwan</a>
         <ul className="ps-6 list-disc list-inside">
           <li>Taiwan</li>
           <li>Nov 13-16, 2025</li>
