@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>206 Seattle Bike Polo</title>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.png" sizes="any" />
       </head>
       <body className={inter.className}>
         <div className="min-h-screen bg-[#b0ccd7] m-auto" id="main">
