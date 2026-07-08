@@ -30,9 +30,8 @@ function formatDate(event: any) {
 
 export function formatEvent(event: any) {
   const date = formatDate(event)
-  console.log(event.venue.city)
    return (
-    <ul>
+    <ul key={event.title}>
       <li><a href={event.url}>{event.title}</a>.**</li>
       <ul>
          <li>{date}</li>

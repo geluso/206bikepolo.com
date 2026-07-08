@@ -1,33 +1,39 @@
 import Image from "next/image";
-import judkinsPlayTimes from "../public/img/judkins_play_times.png";
-import cascadiaQualifier2024 from "../public/img/cascadia_qualifier_2024.png";
-import aprilNewbieDay from "../public/img/april_newbie_day.png";
+import tripleCrown2026 from "../public/img/triplecrown2026.png";
 import NAs2025Winners from "../public/img/NAs_2025_winners_first_place_gulls.jpg"
 import seattleLogoImage from "../public/img/206_seattle_bike_polo_logo.png";
-import crown from "../public/img/2024_eco_3xcrown1.png";
-import NearbyEvents from "./tournaments/NearbyEvents";
-import SlackLink from "./components/SlackLink";
+import SlackLink from "./components/SlackLink";;
 
 export default function Home() {
   return (
     <div className="page">
-      <div className="bg-[url(/barber-pole-stripes.png)] bg-[length:auto_100px] p-2 mb-4">
-        <div className="flex justify-center items-center bg-white">
+      <a href="https://podiumbikepolo.com/t/eco2026" target="_blank">
+      <div className="bg-gradient-to-tl from-emerald-800 to-emerald-500 bg-[length:auto_100px] rounded-xl p-2 mb-4">
+        <div className="flex justify-center items-center bg-gray-900 p-2 rounded-xl text-emerald-200 text-lg font-sans font-semibold">
           <div>
-              <span className="text-6xl">🗽</span>
+              <span className="text-3xl">🏆</span>
           </div>
-          <div>
-              <a href="https://forms.gle/ZXxv4fQeR33dxhyG7">Register</a>
-              {" "}for Polodependence Day shuffle tournament July 4th & 5th!
-          </div>
+              Register for Emerald City Open August 29th-30th
         </div>
       </div>
+      </a>
 
       <div className="logo">
         <Image src={seattleLogoImage} alt="206 Seattle Bike Polo Logo" />
       </div>
 
       <h2>General Info</h2>
+      <div className="flex justify-center border-2 border-dashed border-gray-900 p-2 m-4 rounded-sm text-lg ">
+      <span>
+        {">"} Talk to everyone on{" "}
+        <SlackLink />{" "}
+        and follow us on Instagram{" "}
+        <a href="https://www.instagram.com/206bikepolo/" target="_blank">
+          @206bikepolo
+        </a>
+      </span>
+      </div>
+
       <p className="mb-2">
         Bike polo is a 3v3 team sport, similar to traditional horse polo, except we ride bicycles.
       </p>
@@ -36,7 +42,7 @@ export default function Home() {
         We play at{" "}
         <a href="https://maps.app.goo.gl/KcbNeoC6srRq2T8r7" target="_blank">
           Judkins Park
-        </a> in Central District, Seattle || near i90 Rainier Ave exit
+        </a> in Central District, Seattle || near the Judkins Park light rail station
       </p>
 
       <ul>
@@ -45,14 +51,6 @@ export default function Home() {
         <li>Wednesdays 5PM till dark or later w/ lights</li>
       </ul>
 
-      <p>
-        Talk to everyone on{" "}
-        <SlackLink />{" "}
-        and follow us on Instagram{" "}
-        <a href="https://www.instagram.com/206bikepolo/" target="_blank">
-          @206bikepolo
-        </a>
-      </p>
       <ul>
         <li>
           What is bike polo?{" "}
@@ -123,23 +121,32 @@ export default function Home() {
         </li>
       </ul>
 
-      <h3>Upcoming Nearby Tournaments</h3>
-        <a href="https://forms.gle/ZXxv4fQeR33dxhyG7" target="_blank">🗽 Polodependence Day Shuffle</a>
+      <h3>Upcoming Nearby Events</h3>
+      <a href="https://www.instagram.com/kitsapbikepolo/" target="_blank">Battle Point</a>
+        <ul className="ps-6 list-disc list-inside">
+          <li>Bainbridge Island</li>
+          <li>July 23rd-26th, 2026</li>
+          <li>Camping & pickup games!</li>
+        </ul>
+
+      <a href="https://www.instagram.com/portlandbikepolo/" target="_blank">Oregon Championships</a>
+        <ul className="ps-6 list-disc list-inside">
+          <li>Portland</li>
+          <li>August 8th-9th, 2026</li>
+        </ul>
+
+        <a href="https://podiumbikepolo.com/t/eco2026" target="_blank">Emerald City Open (ECO)</a>
         <ul className="ps-6 list-disc list-inside">
           <li>Seattle</li>
-          <li>July 4th-5th</li>
+          <li>August 29th-30th, 2026</li>
         </ul>
 
-        <a href="https://bikepolocalendar.com/event/whbpc-2025" target="_blank">🏆 World Champs, Taiwan</a>
+         <a href="https://www.instagram.com/eastvanbikepolo/" target="_blank">East Van Crown</a>
         <ul className="ps-6 list-disc list-inside">
-          <li>Taiwan</li>
-          <li>Nov 13-16, 2025</li>
+          <li>Vancouver</li>
+          <li>September 19th-20th, 2026</li>
         </ul>
-
-      <p className="mb-2 my-2">
-        These events below actively pulled from bikepolocalendar.com:
-      </p>
-      <NearbyEvents />
+      <Image className="p-3" src={tripleCrown2026} height="500" alt="cascadia triple crown poster"  />
 
       <h2>2025 North Americans Champions!!</h2>
       <p className="mb-2 mt-2">
@@ -147,13 +154,7 @@ export default function Home() {
         Carol, Bronco, Julian, and Hamms bring home the gold emblazing SEA back on the trophy forever.
       </p>
 
-      <Image src={NAs2025Winners} alt="Sign showing Judkins play times"  />
-      {/*
-      <Image src={crown} alt="..." />
-      <Image src={judkinsPlayTimes} alt="Sign showing Judkins play times" />
-      <Image src={cascadiaQualifier2024} alt="Cascadia Qualifiers 2024 poster" />
-      <Image src={aprilNewbieDay} alt="Poster for April Newbie Day" />
-      */}
+      <Image src={NAs2025Winners} alt="Gulls hold the trophy"  />
 
       <h2>Source Code</h2>
 
