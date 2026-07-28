@@ -13,7 +13,7 @@ export default function Home() {
           <div>
               <span className="text-3xl">🏆</span>
           </div>
-              Register for Emerald City Open August 29th-30th
+              Emerald City Open August 29th-30th, Seattle WA
         </div>
       </div>
       </a>
@@ -83,16 +83,12 @@ export default function Home() {
       </p>
 
       <h2>Getting your own Gear</h2>
-      <p>
-        Bike polo gear is generally purchased through{" "}
-        <a href="https://hecklersalley.com/" target="_blank">
-          hecklersalley.com
-        </a> maintained out in Portland by Jordan
-      </p>
 
       <ul>
-          <li>But our local seattle club generally has old equipment to sell/give away.</li>
+          <li>Our local polo shop is <b><a href="https://www.instagram.com/whisperwheelworks/" target="_blank">Whisper Wheelworks</a></b></li>
+          <li>Mallets, balls, and more are found on Portland{"'"}s <b><a href="https://hecklersalley.com/" target="_blank">Heckler{"'"}s Alley</a></b></li>
           <li>We often do group orders to save on shipping</li>
+          <li>Our club has old equipment to sell/give away. Ask in the Slack!</li>
       </ul>
 
       <p className="mb-2 mt-2">
