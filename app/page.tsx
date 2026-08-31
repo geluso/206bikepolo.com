@@ -1,5 +1,6 @@
 import Image from "next/image";
 import tripleCrown2026 from "../public/img/triplecrown2026.png";
+import bus from "../public/img/bus.png";
 import NAs2025Winners from "../public/img/NAs_2025_winners_first_place_gulls.jpg"
 import seattleLogoImage from "../public/img/206_seattle_bike_polo_logo.png";
 import SlackLink from "./components/SlackLink";;
@@ -7,13 +8,14 @@ import SlackLink from "./components/SlackLink";;
 export default function Home() {
   return (
     <div className="page">
-      <a href="https://podiumbikepolo.com/t/eco2026" target="_blank">
-      <div className="bg-gradient-to-tl from-emerald-800 to-emerald-500 bg-[length:auto_100px] rounded-xl p-2 mb-4">
-        <div className="flex justify-center items-center bg-gray-900 p-2 rounded-xl text-emerald-200 text-lg font-sans font-semibold">
+      <a href="https://forms.gle/MvtupoShbqBFhZTh6" target="_blank">
+      <div className="bg-gradient-to-tl from-yellow-800 to-yellow-500 bg-[length:auto_100px] rounded-xl p-2 mb-4">
+        <div className="flex justify-center items-center bg-gray-900 p-2 rounded-xl text-yellow-200 text-lg font-sans font-semibold">
           <div>
-              <span className="text-3xl">🏆</span>
+              <span className="text-3xl"></span>
           </div>
-              Emerald City Open August 29th-30th, Seattle WA
+              <Image className="p-3" src={bus} height="35" alt="Back to School Bash school bus icon"  />
+              Back to School Bash September 26th-27th, Seattle WA
         </div>
       </div>
       </a>
