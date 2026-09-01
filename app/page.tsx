@@ -1,5 +1,6 @@
 import Image from "next/image";
 import tripleCrown2026 from "../public/img/triplecrown2026.png";
+import back2school from "../public/img/back2school.jpg";
 import bus from "../public/img/bus.png";
 import NAs2025Winners from "../public/img/NAs_2025_winners_first_place_gulls.jpg"
 import seattleLogoImage from "../public/img/206_seattle_bike_polo_logo.png";
@@ -14,14 +15,14 @@ export default function Home() {
           <div>
               <span className="text-3xl"></span>
           </div>
-              <Image className="p-3" src={bus} height="35" alt="Back to School Bash school bus icon"  />
-              Back to School Bash September 26th-27th, Seattle WA
+              <Image className="p-3 transition hover:-skew-x-12" src={bus} height="35" alt="Back to School Bash school bus icon"  />
+              Back to School Newbie Tournament Sept 26th-27th
         </div>
       </div>
       </a>
 
-      <div className="logo">
-        <Image src={seattleLogoImage} alt="206 Seattle Bike Polo Logo" />
+      <div className="logo flex justify-center">
+        <Image src={seattleLogoImage} width="400" alt="206 Seattle Bike Polo Logo" />
       </div>
 
       <h2>General Info</h2>
@@ -120,39 +121,29 @@ export default function Home() {
       </ul>
 
       <h3>Upcoming Nearby Events</h3>
-      <a href="https://www.instagram.com/kitsapbikepolo/" target="_blank">Battle Point</a>
-        <ul className="ps-6 list-disc list-inside">
-          <li>Bainbridge Island</li>
-          <li>July 23rd-26th, 2026</li>
-          <li>Camping & pickup games!</li>
-        </ul>
-
-      <a href="https://www.instagram.com/portlandbikepolo/" target="_blank">Oregon Championships</a>
-        <ul className="ps-6 list-disc list-inside">
-          <li>Portland</li>
-          <li>August 8th-9th, 2026</li>
-        </ul>
-
-        <a href="https://podiumbikepolo.com/t/eco2026" target="_blank">Emerald City Open (ECO)</a>
-        <ul className="ps-6 list-disc list-inside">
-          <li>Seattle</li>
-          <li>August 29th-30th, 2026</li>
-        </ul>
-
          <a href="https://www.instagram.com/eastvanbikepolo/" target="_blank">East Van Crown</a>
         <ul className="ps-6 list-disc list-inside">
           <li>Vancouver</li>
           <li>September 19th-20th, 2026</li>
         </ul>
-      <Image className="p-3" src={tripleCrown2026} height="500" alt="cascadia triple crown poster"  />
 
+        <a href="https://forms.gle/MvtupoShbqBFhZTh6" target="_blank">Seattle Bike Polo Goes Back to School</a>
+        <ul className="ps-6 list-disc list-inside">
+          <li>Each team must have at least one newbie (2 years or less experience)</li>
+          <li>Seattle</li>
+          <li>September 26th-27th, 2026</li>
+        </ul>
+      
+      <Image className="m-3 border border-solid border-gray-600 shadow-lg" src={back2school} width="350" alt="back to school tournament poster"  />
+      <Image className="m-3 shadow-lg" src={tripleCrown2026} width="350" alt="cascadia triple crown poster"  />
+      
       <h2>2025 North Americans Champions!!</h2>
       <p className="mb-2 mt-2">
         Congratulations to <strong>Gulls winning 1st place</strong> bringing home glory to Seattle and Cascadia.
         Carol, Bronco, Julian, and Hamms bring home the gold emblazing SEA back on the trophy forever.
       </p>
 
-      <Image src={NAs2025Winners} alt="Gulls hold the trophy"  />
+      <Image className="m-3 shadow-lg" src={NAs2025Winners} width="350" alt="Gulls hold the trophy"  />
 
       <h2>Source Code</h2>
 
