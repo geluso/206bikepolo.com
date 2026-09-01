@@ -4,7 +4,7 @@ import back2school from "../public/img/back2school.jpg";
 import bus from "../public/img/bus.png";
 import NAs2025Winners from "../public/img/NAs_2025_winners_first_place_gulls.jpg"
 import seattleLogoImage from "../public/img/206_seattle_bike_polo_logo.png";
-import SlackLink from "./components/SlackLink";;
+import DiscordLink from "./components/DiscordLink";
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
       <div className="flex justify-center border-2 border-dashed border-gray-900 p-2 m-4 rounded-sm text-lg ">
       <span>
         {">"} Talk to everyone on{" "}
-        <SlackLink />{" "}
+        <DiscordLink />{" "}
         and follow us on Instagram{" "}
         <a href="https://www.instagram.com/206bikepolo/" target="_blank">
           @206bikepolo
@@ -91,7 +91,7 @@ export default function Home() {
           <li>Our local polo shop is <b><a href="https://www.instagram.com/whisperwheelworks/" target="_blank">Whisper Wheelworks</a></b></li>
           <li>Mallets, balls, and more are found on Portland{"'"}s <b><a href="https://hecklersalley.com/" target="_blank">Heckler{"'"}s Alley</a></b></li>
           <li>We often do group orders to save on shipping</li>
-          <li>Our club has old equipment to sell/give away. Ask in the Slack!</li>
+          <li>Our club has old equipment to sell/give away. Ask in the Discord!</li>
       </ul>
 
       <p className="mb-2 mt-2">
