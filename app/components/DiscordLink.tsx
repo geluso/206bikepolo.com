@@ -11,7 +11,7 @@ const DiscordLink: React.FC = () => {
   // The second, and probably more important place we need to obfuscate
   // is in the source code because this is an open source project. That's
   // why the link only appears in the source backwards.
-  const backwardsLink = 'zAeYhuy5W/gg.dro' + 'csid//:sptth';
+  const backwardsLink = 'TKpsVcc4bb/gg.dro' + 'csid//:sptth';
   return (
       <Obfuscate href={backwardsLink.split('').reverse().join('')}>
         Discord
