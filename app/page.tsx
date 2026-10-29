@@ -62,7 +62,7 @@ export default function Home() {
           We meet Wednesday & Saturday until sundown, specifically for
           newbies! In the winter, we have lights we can set up to play
           after dark. Check the discord for the latest updates on when
-          we're playing.
+          we{"'"}re playing.
         </li>
         <li>We have <b>extra mallets and bicycles to borrow!</b></li>
       </ul>
@@ -117,7 +117,7 @@ export default function Home() {
 
         <a href="https://www.instagram.com/p/DesOwdlCIS3/" target="_blank">Quetza Mixer</a>
         <ul className="ps-6 list-disc list-inside">
-          <li>Not local, but a great mixer tournament that's open to all skill levels</li>
+          <li>Not local, but a great mixer tournament that{"'"}s open to all skill levels</li>
           <li>Mexico City, MX</li>
           <li>January 9th-10th, 2027</li>
         </ul>
