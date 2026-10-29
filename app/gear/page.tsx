@@ -24,7 +24,7 @@ export default function Page() {
 
       <h2>Mallets</h2>
       <ul className="pb-4 ps-3 my-2 list-disc">
-         <li>People in the Slack may have old spare mallets to donate to newbies</li>
+         <li>People in the Discord may have old spare mallets to donate to newbies</li>
          <li>
           Mallet parts and a mallet guide can be bought on{" "}
             <a href="https://hecklersalley.com" target="_blank">
@@ -87,7 +87,7 @@ export default function Page() {
       <h2>Balls</h2>
       <ul className="pb-4 ps-3 my-2 list-disc list-inside">
           <li>We have dozens of balls available in the shed on the courts</li>
-          <li>No need to buy your own, just ask on slack! We often do group orders</li>
+          <li>No need to buy your own, just ask on discord! We often do group orders</li>
           <li>
             The <a href="https://hecklersalley.com/collections/bike-polo-balls">balls</a> are color coated, because they are suited to certain temperatures.
           </li>
@@ -158,7 +158,7 @@ export default function Page() {
       <h3>Frame</h3>
 
       <p className="mb-2 mt-2">
-        The cheapest option is to ask around for a used frame on our slack channel or on{" "}
+        The cheapest option is to ask around for a used frame on our discord or on{" "}
         <a href="https://www.facebook.com/marketplace/" target="_blank">FB marketplace</a>.
         You can probably find something usable for ~$100.
       </p>

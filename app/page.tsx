@@ -1,26 +1,11 @@
 import Image from "next/image";
-import tripleCrown2026 from "../public/img/triplecrown2026.png";
-import back2school from "../public/img/back2school.jpg";
-import bus from "../public/img/bus.png";
-import NAs2025Winners from "../public/img/NAs_2025_winners_first_place_gulls.jpg"
+import NAs2026Winners from "../public/img/NAs_2026_winners_first_place_gulls.jpg"
 import seattleLogoImage from "../public/img/206_seattle_bike_polo_logo.png";
 import DiscordLink from "./components/DiscordLink";
 
 export default function Home() {
   return (
     <div className="page">
-      <a href="https://forms.gle/MvtupoShbqBFhZTh6" target="_blank">
-      <div className="bg-gradient-to-tl from-yellow-800 to-yellow-500 bg-[length:auto_100px] rounded-xl p-2 mb-4">
-        <div className="flex justify-center items-center bg-gray-900 p-2 rounded-xl text-yellow-200 text-lg font-sans font-semibold">
-          <div>
-              <span className="text-3xl"></span>
-          </div>
-              <Image className="p-3 transition hover:-skew-x-12" src={bus} height="35" alt="Back to School Bash school bus icon"  />
-              Back to School Newbie Tournament Sept 26th-27th
-        </div>
-      </div>
-      </a>
-
       <div className="logo flex justify-center">
         <Image src={seattleLogoImage} width="400" alt="206 Seattle Bike Polo Logo" />
       </div>
@@ -75,7 +60,9 @@ export default function Home() {
       <ul>
         <li>
           We meet Wednesday & Saturday until sundown, specifically for
-          newbies!
+          newbies! In the winter, we have lights we can set up to play
+          after dark. Check the discord for the latest updates on when
+          we're playing.
         </li>
         <li>We have <b>extra mallets and bicycles to borrow!</b></li>
       </ul>
@@ -121,29 +108,27 @@ export default function Home() {
       </ul>
 
       <h3>Upcoming Nearby Events</h3>
-         <a href="https://www.instagram.com/eastvanbikepolo/" target="_blank">East Van Crown</a>
+         <a href="https://www.instagram.com/p/DdtvXu2M2WB/" target="_blank">C-Food Scramble</a>
         <ul className="ps-6 list-disc list-inside">
-          <li>Vancouver</li>
-          <li>September 19th-20th, 2026</li>
+          <li>One day newbie-focused mixer</li>
+          <li>Eugene, OR</li>
+          <li>November 15th, 2026</li>
         </ul>
 
-        <a href="https://forms.gle/MvtupoShbqBFhZTh6" target="_blank">Seattle Bike Polo Goes Back to School</a>
+        <a href="https://www.instagram.com/p/DesOwdlCIS3/" target="_blank">Quetza Mixer</a>
         <ul className="ps-6 list-disc list-inside">
-          <li>Each team must have at least one newbie (2 years or less experience)</li>
-          <li>Seattle</li>
-          <li>September 26th-27th, 2026</li>
+          <li>Not local, but a great mixer tournament that's open to all skill levels</li>
+          <li>Mexico City, MX</li>
+          <li>January 9th-10th, 2027</li>
         </ul>
       
-      <Image className="m-3 border border-solid border-gray-600 shadow-lg" src={back2school} width="350" alt="back to school tournament poster"  />
-      <Image className="m-3 shadow-lg" src={tripleCrown2026} width="350" alt="cascadia triple crown poster"  />
-      
-      <h2>2025 North Americans Champions!!</h2>
+      <h2>2026 North Americans Champions!!</h2>
       <p className="mb-2 mt-2">
-        Congratulations to <strong>Gulls winning 1st place</strong> bringing home glory to Seattle and Cascadia.
-        Carol, Bronco, Julian, and Hamms bring home the gold emblazing SEA back on the trophy forever.
+        <strong>BACK-TO-BACK!</strong> Gulls are <strong>North American champs</strong> for the <strong>second year in a row!</strong>🥇🔥 <br/>
+        Congratulations to Carol, B, Julian, and Hamms for playing some <a href="https://www.instagram.com/losangelesbikepolo/reel/DfEZAldJsQb/" target="_blank">great polo</a> out there!
       </p>
 
-      <Image className="m-3 shadow-lg" src={NAs2025Winners} width="350" alt="Gulls hold the trophy"  />
+      <Image className="m-3 shadow-lg" src={NAs2026Winners} width="350" alt="Gulls hold the trophy"  />
 
       <h2>Source Code</h2>
 
