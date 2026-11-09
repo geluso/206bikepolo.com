@@ -90,12 +90,15 @@ export default function JudkinsPhotoGallery() {
         }`}
       />
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 flex items-end justify-between bg-gradient-to-t from-black/65 to-transparent px-5 pb-4 pt-12 text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
-        <a href="/photos" aria-label="View all photos" className="pointer-events-auto text-sm font-medium text-white hover:text-white underline underline-offset-2">{currentIndex + 1} of {photos.length}</a>
-        <span className="absolute bottom-4 left-1/2 -translate-x-1/2 text-sm font-medium">
-          206 Bike Polo
-        </span>
-        <span className="text-right text-sm font-medium"><span aria-hidden="true" className="mr-1 text-xl align-[-2px]">📷</span>{photographer}</span>
+      <div className="absolute inset-x-0 bottom-0 z-20 flex items-end justify-between bg-gradient-to-t from-black/65 to-transparent px-5 pb-4 pt-12 text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
+        <a
+          href="/photos"
+          aria-label="View all photos"
+          className="text-sm font-medium text-white underline underline-offset-2 hover:text-white"
+        >
+          {currentIndex + 1} of {photos.length}
+        </a>
+        <span className="text-right text-sm font-medium">📷 {photographer}</span>
       </div>
 
       <button
