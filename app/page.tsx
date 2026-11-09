@@ -2,6 +2,7 @@ import Image from "next/image";
 import NAs2026Winners from "../public/img/NAs_2026_winners_first_place_gulls.jpg"
 import seattleLogoImage from "../public/img/206_seattle_bike_polo_logo.png";
 import DiscordLink from "./components/DiscordLink";
+import JudkinsPhotoGallery from "./components/JudkinsPhotoGallery";
 
 export default function Home() {
   return (
@@ -90,6 +91,8 @@ export default function Home() {
       <p className="mb-2 mt-2">
         We have some bleachers at Judkins Park, so you can just come and watch!
       </p>
+
+      <JudkinsPhotoGallery />
 
       <h2>Tournaments</h2>
       <ul>
