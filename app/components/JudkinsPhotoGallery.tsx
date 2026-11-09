@@ -95,7 +95,7 @@ export default function JudkinsPhotoGallery() {
         <span className="absolute bottom-4 left-1/2 -translate-x-1/2 text-sm font-medium">
           206 Bike Polo
         </span>
-        <span className="text-right text-sm font-medium">📷 {photographer}</span>
+        <span className="text-right text-sm font-medium"><span aria-hidden="true" className="mr-1 text-xl align-[-2px]">📷</span>{photographer}</span>
       </div>
 
       <button
